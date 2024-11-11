@@ -1,0 +1,7 @@
+/.metadata/
+/TestArchitectProgram/.*
+/factory-design-pattern/__MACOSX/
+/factory-design-pattern/factory-design-pattern/.*
+/TestArchitectProgram/target/
+/factory-design-pattern/factory-design-pattern/bin/
+/factory-design-pattern/factory-design-pattern/src/.*
