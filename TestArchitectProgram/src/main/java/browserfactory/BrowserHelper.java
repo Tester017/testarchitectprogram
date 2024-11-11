@@ -1,6 +1,6 @@
 package browserfactory;
 
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 import java.util.logging.Logger;
 
 
@@ -15,7 +15,7 @@ public class BrowserHelper extends Browsers{
 	
 	public static void implicitWait() {
 		logger.info("setting the driver wait ");
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 	
 	public static void loadUrl() {

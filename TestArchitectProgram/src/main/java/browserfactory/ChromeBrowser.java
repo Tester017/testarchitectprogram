@@ -5,7 +5,6 @@ import java.util.logging.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ChromeBrowser extends Browsers implements IBrowser{
 	
@@ -14,7 +13,7 @@ public class ChromeBrowser extends Browsers implements IBrowser{
 	public WebDriver launchBrower() {
 
 		logger.info("Launching chrome");
-		WebDriverManager.chromedriver().setup();
+//		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		postLaunchSteps();
 		return driver;

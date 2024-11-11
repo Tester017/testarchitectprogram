@@ -7,9 +7,9 @@ public class BrowserFactory {
 		
 
 		switch (browser) {
-		case Chrome:
+		case CHROME:
 			return new ChromeBrowser();
-		case Edge:
+		case EDGE:
 			return new EdgeBrowser();
 
 		default:

@@ -1,6 +1,6 @@
 package browserfactory;
 
 public enum Browser {
-	Chrome, Edge, Firefox, Safari ;
+	CHROME, EDGE, FIREFOX, SAFARI ; // Everything should be caps
 
 }
