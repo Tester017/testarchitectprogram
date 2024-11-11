@@ -1,7 +1,9 @@
 package browserfactory;
 
+import org.openqa.selenium.WebDriver;
+
 public interface IBrowser {
 	
-	void launchBrower();
+	WebDriver launchBrower();
 
 }

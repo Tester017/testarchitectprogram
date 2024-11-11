@@ -2,13 +2,22 @@ package browserfactory;
 
 import java.util.logging.Logger;
 
-public class ChromeBrowser implements IBrowser{
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class ChromeBrowser extends Browsers implements IBrowser{
 	
 	private static final Logger logger = Logger.getLogger(ChromeBrowser.class.getName());
-
-	public void launchBrower() {
+	
+	public WebDriver launchBrower() {
 
 		logger.info("Launching chrome");
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		postLaunchSteps();
+		return driver;
 	}
 
 }
