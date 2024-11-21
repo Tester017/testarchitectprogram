@@ -1,4 +1,4 @@
-package objectpoolwithbrowserfactory;
+package driverobjectpoolwithbrowserfactory;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -10,16 +10,26 @@ import org.openqa.selenium.WebDriver;
 
 
 public class DriverPool extends BrowserFactory implements WebdriverPool {
+	
+	WebDriver driver;
 
-	Map<BrowserType, Queue<WebDriver>> driverPool = new HashMap<BrowserType, Queue<WebDriver>>();
+	Map<BrowserType, Queue<WebDriver>> driverPool;
+	
+	public DriverPool(){
+		driverPool = new HashMap<BrowserType, Queue<WebDriver>>();
+	}
 
 	public WebDriver getDriver(BrowserType type) {
 		driverPool.putIfAbsent(type, new LinkedList<WebDriver>());
 		if (!driverPool.get(type).isEmpty()) {
-			return (WebDriver) driverPool.get(type).poll();
+			driver = driverPool.get(type).poll();
+			 System.err.println(driver.hashCode());
+			 return driver;
 		}
 		else {
-			return (WebDriver) createDriver(type);
+			driver = createDriver(type);
+			 System.err.println(driver.hashCode());
+			return driver;
 		}
 	}
 

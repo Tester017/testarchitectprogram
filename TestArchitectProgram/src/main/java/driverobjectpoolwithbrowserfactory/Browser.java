@@ -1,4 +1,4 @@
-package objectpoolwithbrowserfactory;
+package driverobjectpoolwithbrowserfactory;
 
 import org.openqa.selenium.WebDriver;
 

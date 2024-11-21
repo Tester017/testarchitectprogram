@@ -1,6 +1,8 @@
-package objectpoolwithbrowserfactory;
+package driverobjectpoolwithbrowserfactory;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BrowserFactory {
 
@@ -8,9 +10,9 @@ public class BrowserFactory {
 
 		switch (type) {
 		case CHROME:
-			return new ChromeBrowser().prepareDriver();
+			return new ChromeDriver();
 		case FIREFOX:
-			return new FirefoxBrowser().prepareDriver();
+			return new FirefoxDriver();
 
 		default:
 			throw new IllegalArgumentException("Incorrect browser type is provided");
