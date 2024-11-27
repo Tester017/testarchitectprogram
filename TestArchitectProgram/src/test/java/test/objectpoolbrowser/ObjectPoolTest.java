@@ -37,8 +37,6 @@ public class ObjectPoolTest {
 		WebDriver driver = wdop.getDriver(BrowserType.CHROME, optionsList, "https://www.facebook.com/");
 		System.out.println(driver.hashCode());
 		wdop.releaseDriver(driver);
-
-
 		
 	}
 	
