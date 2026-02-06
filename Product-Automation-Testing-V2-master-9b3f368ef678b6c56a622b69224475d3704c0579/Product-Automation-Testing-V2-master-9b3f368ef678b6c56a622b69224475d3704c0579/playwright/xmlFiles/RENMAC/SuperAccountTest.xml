@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="2" name="Suite" data-provider-thread-count="1">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" verbose="2" name="Test" parallel="methods">
+    <classes>
+      <class name="com.dz.prism.test.SuperAccountTearSheet.SuperAccountTest">
+        <methods>
+          <include name="verifyCleanUpPrefForBrokenLinkSkipFromSuperATS"/>
+          <include name="verifyAnnualCommInSACRevbyAccountTab"/>
+          <include name="verifyCleanUpPrefForBrokenLinkCleanSendFromSuperATS"/>
+          <include name="addToListSuperATSContacts"/>
+          <include name="verifyAnnualCommInSACRevbyProductTab"/>
+          <include name="checkSuperAccountTearSheetTabs"/>
+          <include name="verifyRevByAccSuperAccount"/>
+          <include name="checkAccountTierInHeadersForConfigZeroOrOne"/>
+          <include name="inactiveSuperAccountWithMandatoryFields"/>
+          <include name="verifyCleanUpPrefforvalidLinkFromSuperATS"/>
+          <include name="editSuperAccountWithMandatoryFields"/>
+          <include name="VerifyInvestorActivityInSuperATS"/>
+          <include name="checkYOYComparisonRenamedHeadersInRevByAcc"/>
+          <include name="verifyCoverageDataViaInvestorAccount"/>
+          <include name="addToBulkMailSuperATSContacts"/>
+          <include name="addSuperAccount"/>
+          <include name="verifyExcludedBulkMailSuperATSContacts"/>
+          <include name="verifyCleanUpPrefForInvalidLinkFromSuperATS"/>
+          <include name="saveBulkLogInteration"/>
+          <include name="verifySuspendResearchFromSuperATS"/>
+          <include name="addSuperAccountWithMandatoryFields"/>
+          <include name="checkTableUsingShowHideFilter"/>
+          <include name="VerifyInvestorContactsInSuperATS"/>
+          <include name="BulkLogInteractionSuperATS"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.SuperAccountTearSheet.SuperAccountTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

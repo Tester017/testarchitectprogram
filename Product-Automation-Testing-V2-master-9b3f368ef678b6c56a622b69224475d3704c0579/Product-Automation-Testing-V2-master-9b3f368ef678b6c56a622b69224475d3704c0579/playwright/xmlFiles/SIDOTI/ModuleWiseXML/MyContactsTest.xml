@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="2" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.mycontacts.MyContactsTest">
+        <methods>
+          <include name="checkBulkLogInteractionBtn"/>
+          <include name="saveAddInteraction"/>
+          <include name="verifyInAccountOrTickerActivityTab"/>
+          <include name="verifyInActivity"/>
+          <include name="verifyInContactTearSheet"/>
+          <include name="verifyBulkMailLogFromBulkMailInMyContacts"/>
+          <include name="verifyExcludedBulkMailLogFromBulkMailInMyContacts"/>
+          <include name="verifyExcludedBulkMailLogFromBulkMailInMyContact"/>
+          <include name="checkLoggedByFieldDisplaInMyContactsLogInterPage"/>
+          <include name="verifyCleanUpPrefForBrokenLinkSkipFromMyContact"/>
+          <include name="verifyCleanUpPrefForBrokenLinkCleanSendFromMyContact"/>
+          <include name="verifyCleanUpPrefforvalidLinkFromMyContact"/>
+          <include name="verifyCleanUpPrefForInvalidLinkFromMyContact"/>
+          <include name="verifyEditInteracDateTimeInRespectiveTearSheet"/>
+          <include name="verifyInteracInContactTearSheet"/>
+          <include name="verifyInteracInActivity"/>
+          <include name="saveAddInteractionUsingInteracDateTime"/>
+          <include name="verifyDefaultDurationTime"/>
+          <include name="verifyTagAsMandaMycontactsLogInteractionPage"/>
+          <include name="editEmailCheckInMyContactsModule"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.mycontacts.MyContactsTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

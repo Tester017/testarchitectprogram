@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="1" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="1" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.Mylist.MyListTest">
+        <methods>
+          <include name="checkBulkMailAllowDocuments"/>
+          <include name="checkBulkMailDocumentLinkHasRestrictedData"/>
+          <include name="checkBulkMailSubjectContentHasRestrictedData"/>
+          <include name="checkBulkMailSubjectHasRestrictedData"/>
+          <include name="doBulkMailActivityInMyLists"/>
+          <include name="verifyBulkMailLogFromBulkMailInMyList"/>
+          <include name="verifyBulkMailPreviouslyUsedCheckboxLogicChange"/>
+          <include name="verifyDelivaryStatus"/>
+          <include name="verifyDynamicBulkMailbyEnableandDisableCovAccConfigs"/>
+          <include name="verifyDynamicListBulkMailSendLaterPopUpPg"/>
+          <include name="verifyExcludedBulkMailLogFromBulkMailInMyList"/>
+          <include name="verifyStaticBulkMailbyEnableandDisableCovAccConfigs"/>
+          <include name="verifyStaticListBulkMailSendLaterPopUpPg"/>
+        </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

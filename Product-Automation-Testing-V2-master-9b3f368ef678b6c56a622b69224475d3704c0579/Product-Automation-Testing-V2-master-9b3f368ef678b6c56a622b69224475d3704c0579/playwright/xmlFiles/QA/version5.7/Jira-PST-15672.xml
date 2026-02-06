@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="2" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.accounttearsheet.AccountTearsheetBulkAddContactTest">
+        <methods>
+          <include name="checkForExistingOverwrite"/>
+          <include name="checkForValidContact"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.accounttearsheet.AccountTearsheetBulkAddContactTest -->
+      <class name="com.dz.prism.test.addcontactpage.AddContactTest">
+        <methods>
+          <include name="saveAddServiceContactAllFields"/>
+          <include name="saveAddInvestorContactAllFields"/>
+          <include name="saveAddCorporateContactAllFields"/>
+          <include name="saveAddCorpContactAllFieldsWithDiffResearchEmail"/>
+          <include name="saveAddInvestorContactAllFieldsWithDiffResearchEmail"/>
+          <include name="saveAddServiceContactAllFieldsWithDiffResearchEmail"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.addcontactpage.AddContactTest -->
+      <class name="com.dz.prism.test.BulkAddContacts.BulkAddContactsTest">
+        <methods>
+          <include name="checkForValidExistingCorporate"/>
+          <include name="checkForValidNewCorporate"/>
+          <include name="checkForValidExistingInvestor"/>
+          <include name="checkForValidExistingService"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.BulkAddContacts.BulkAddContactsTest -->
+      <class name="com.dz.prism.test.ServiceAccountTearSheet.ServiceAccountTearsheetBulkAddContactTest">
+        <methods>
+          <include name="checkWithEmptyFile"/>
+          <include name="checkForExistingOverwrite"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ServiceAccountTearSheet.ServiceAccountTearsheetBulkAddContactTest -->
+      <class name="com.dz.prism.test.TickerTearSheet.TickerTearsheetBulkAddContactTest">
+        <methods>
+          <include name="checkForExistingContactsOverwrite"/>
+          <include name="checkForValidContacts"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.TickerTearSheet.TickerTearsheetBulkAddContactTest -->
+      <class name="com.dz.prism.test.TickerTearSheet.TickerTearsheetBulkEditContactTest">
+        <methods>
+          <include name="checkBulkEditContacts"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.TickerTearSheet.TickerTearsheetBulkEditContactTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="2" name="Suite" data-provider-thread-count="1">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" verbose="2" name="Test" parallel="methods">
+    <classes>
+      <class name="com.dz.prism.test.ib.accounttearsheet.IBAccountTearSheetTest">
+        <methods>
+          <include name="checkATSDealListV2TabDatawithIBandSTClosedDealsData"/>
+          <include name="checkATSDealListV2TabNewFieldsDatawithIBandSTClosedDealsData"/>
+          <include name="checkATSDealListV2TabEditNewFieldsDatawithIBandSTClosedDealsData"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.accounttearsheet.IBAccountTearSheetTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

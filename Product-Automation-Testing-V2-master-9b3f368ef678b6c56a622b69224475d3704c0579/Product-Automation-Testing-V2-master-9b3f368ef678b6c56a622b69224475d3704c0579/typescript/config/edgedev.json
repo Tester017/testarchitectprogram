@@ -1,0 +1,6 @@
+{
+    "environment": {
+        "prismUrl": "https://leerinkuat.datazoic.com/prismst/home.html",
+        "storageStatePath": "secure/storage-state/OutlookLoginAuth_prismalert.json"
+    }
+}

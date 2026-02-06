@@ -1,0 +1,78 @@
+{
+    "environment": {
+        "prismUrl": "https://craighallumuat.datazoic.com/chprismst/home.html",
+        "prismUserName": "shamily",
+        "prismPassword": "123",
+        "outlookUrl": "https://outlook.office.com/mail/",
+        "outlookUserName": "kowsalya@datazoic.com",
+        "outlookPassword": "",
+        "storageStatePath": "secure/storage-state/OutlookLoginAuth_prismalert.json"
+    },
+    "login": {
+        "loginType": "Prism Login",
+        "isLandingPageSummary": true,
+        "landingPage": "Dashboard"
+    },
+    "Dashboard": {
+        "isApplicable": true,
+        "name": "Dashboard",
+        "parentModule": null,
+        "equityTiles": {
+            "isApplicable": true
+        },
+        "commissionBySectors": {
+            "isApplicable": true,
+            "name": "Commission by Sectors"
+        },
+        "commissionByRegion": {
+            "isApplicable": true,
+            "name": "Commission by Region"
+        },
+        "TopSummary": {
+            "isApplicable": true
+        },
+        "fadingContacts": {
+            "isApplicable": true,
+            "name": "Fading Contacts"
+        }
+    },
+    "Activity": {
+        "isApplicable": true,
+        "name": "Activity",
+        "parentModule": null
+    },
+    "Readership": {
+        "isApplicable": true,
+        "name": "Readership",
+        "parentModule": null
+    },
+    "Revenue": {
+        "isApplicable": true,
+        "name": "Revenue",
+        "parentModule": "Revenue"
+    },
+    "RevenueAdvanced": {
+        "isApplicable": true,
+        "name": "Revenue Advanced",
+        "parentModule": "Revenue"
+    },
+    "AccountTearSheet": {
+        "investorAccountName":"Capital Research Global Investors (U.S.)",
+        "holdingsTab": {
+            "isApplicable": true,
+            "name": "Holdings",
+            "newTickerPositionsByHolding": {
+                "isApplicable": true,
+                "name": "New Ticker Positions By Holdings"
+            },
+            "holdingsBySector": {
+                "isApplicable": true,
+                "name": "Holdings By Sector"
+            },
+            "equityHolding": {
+                "isApplicable": true,
+                "name": "Equity Holding"
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="1" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.BulkAddContacts.QuickLookBulkAddContactsTest">
+        <methods>
+          <include name="checkExistNewAndSimilarCorporate"/>
+          <include name="checkExistNewAndSimilarService"/>
+          <include name="checkExistingCorporateAccInvestorType"/>
+          <include name="checkExistingCorporateAccServiceType"/>
+          <include name="checkExistingInvestorAccCorporateType"/>
+          <include name="checkExistingInvestorAccServiceType"/>
+          <include name="checkExistingServiceAccInvestorType"/>
+          <include name="checkForAllAccountTypes"/>
+          <include name="checkForAnyContactType"/>
+          <include name="checkForCombinationOfOverwriteAndSkip"/>
+          <include name="checkForExistingOverwrite"/>
+          <include name="checkForInvalidContact"/>
+          <include name="checkForValidExistingCorporate"/>
+          <include name="checkForValidExistingInvestor"/>
+          <include name="checkForValidExistingService"/>
+          <include name="checkForValidNewCorporate"/>
+          <include name="checkForValidNewInvestor"/>
+          <include name="checkForValidNewService"/>
+          <include name="checkForValidSimilarCorporate"/>
+          <include name="checkForValidSimilarInvestor"/>
+          <include name="checkForValidSimilarService"/>
+          <include name="checkNewAndSimilarInvestor"/>
+          <include name="checkOverwriteAndSkipForCorporate"/>
+          <include name="checkOverwriteSkipForService"/>
+          <include name="checkPageNavigationInPopup"/>
+          <include name="checkSecondaryEmailInOtherContPrimaryEmail"/>
+          <include name="checkSecondaryEmailInOtherContSeconEmail"/>
+          <include name="checkSimilarInvestorAccountsByDefaultMatch"/>
+          <include name="checkSimilarServiceAccountsByDefaultMatch"/>
+          <include name="checkWithEmptyFile"/>
+          <include name="checkWithoutUploadingFile"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.BulkAddContacts.QuickLookBulkAddContactsTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

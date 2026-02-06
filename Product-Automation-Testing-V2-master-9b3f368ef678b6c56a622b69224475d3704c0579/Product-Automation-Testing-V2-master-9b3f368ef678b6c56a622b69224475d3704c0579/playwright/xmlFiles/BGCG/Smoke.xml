@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="2" name="Suite" verbose="3">
+	<listeners>
+		<listener
+			class-name="com.dz.core.testng.listeners.DriverListener2" />
+	</listeners>
+	<test thread-count="2" parallel="methods" name="Test" verbose="3">
+		<classes>
+			<class
+				name="com.dz.prism.test.adminConsole.ProcedureSummaryTest">
+				<methods>
+					<include name="gotoCronModuleVerifyJobStatus" />
+				</methods>
+			</class>
+			<class
+				name="com.dz.prism.test.prismblast.dashboard.PrismBlastDashboardTest">
+				<methods>
+					<include name="verifyDashboardModuleTabs" />
+				</methods>
+			</class>
+			<class name="com.dz.prism.test.Emails.EmailsModuleTest">
+				<methods>
+					<include name="verifyPrismBlastEmailsModuleTabs"/>
+					<include name="verifyEmailTearsheetTabs"/>
+				</methods>
+			</class>
+			<class name="com.dz.prism.test.Mylist.MyListTest">
+				<methods>
+					<include name="verifyListIsOpened" />
+
+				</methods>
+			</class> 
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

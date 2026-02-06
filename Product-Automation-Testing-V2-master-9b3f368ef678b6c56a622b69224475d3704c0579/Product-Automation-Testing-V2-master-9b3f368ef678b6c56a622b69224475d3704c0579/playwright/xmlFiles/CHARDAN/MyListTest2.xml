@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="1" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.Mylist.ContactRelationshipTest">
+        <methods>
+          <include name="verifyContactRelationWithContact"/>
+          <include name="verifyContactRelationWithCorporateAccount"/>
+          <include name="verifyContactRelationWithServiceAccount"/>
+          <include name="verifyUpdateContactRelationFromListHistory"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Mylist.ContactRelationshipTest -->
+      <class name="com.dz.prism.test.Mylist.MyListTest">
+        <methods>
+          <include name="checkBulkMailAllowDocuments"/>
+          <include name="checkBulkMailDocumentLinkHasRestrictedData"/>
+          <include name="checkBulkMailPageInMylistDynamicList"/>
+          <include name="checkBulkMailPageInMylistStaticList"/>
+          <include name="checkBulkMailSubjectContentHasRestrictedData"/>
+          <include name="checkBulkMailSubjectHasRestrictedData"/>
+          <include name="checkSuspendResearchEnabledInMyListModule"/>
+          <include name="createandVerifySearchbarForDynamicList"/>
+          <include name="createandVerifySearchbarForSimpleList"/>
+          <include name="credOperationForDynamicList"/>
+          <include name="credOperationForDynamicListCopySeletdToNewAndExistingList"/>
+          <include name="credOperationForSimpleList"/>
+          <include name="credOperationForSimpleListCopySeletdToNewAndExistingList"/>
+          <include name="credOperationForSimpleListQuickAddContactsAndDeleteContact"/>
+          <include name="verifyBulkMailCCFieldforDynamic"/>
+          <include name="verifyBulkMailCCFieldforStatic"/>
+          <include name="verifyBulkMailLogFromBulkMailInMyList"/>
+          <include name="verifyBulkMailPreviouslyUsedCheckboxLogicChange"/>
+          <include name="verifyCleanUpPrefForBrokenLinkByRightClickSkipDynamic"/>
+          <include name="verifyCleanUpPrefForBrokenLinkByRightClickSkipStatic"/>
+          <include name="verifyCleanUpPrefForBrokenLinkCleanSendByRightClickDynamic"/>
+          <include name="verifyCleanUpPrefForBrokenLinkCleanSendByRightClickStatic"/>
+          <include name="verifyCleanUpPrefForBrokenLinkCleanSendDynamic"/>
+          <include name="verifyCleanUpPrefForBrokenLinkCleanSendStatic"/>
+          <include name="verifyCleanUpPrefForBrokenLinkSkipDynamic"/>
+          <include name="verifyCleanUpPrefForBrokenLinkSkipStatic"/>
+          <include name="verifyCleanUpPrefForInvalidLinkByRightClickDynamic"/>
+          <include name="verifyCleanUpPrefForInvalidLinkByRightClickStatic"/>
+          <include name="verifyCleanUpPrefForInvalidLinkDynamic"/>
+          <include name="verifyCleanUpPrefForInvalidLinkStatic"/>
+          <include name="verifyCleanUpPrefForValidLinkByRightClickDynamic"/>
+          <include name="verifyCleanUpPrefForValidLinkByRightClickStatic"/>
+          <include name="verifyCleanUpPrefForValidLinkDynamic"/>
+          <include name="verifyCleanUpPrefForValidLinkStatic"/>
+          <include name="verifyCustomSearchListLoads"/>
+          <include name="verifyDelivaryStatus"/>
+          <include name="verifyDynamicBulkMailbyEnableandDisableCovAccConfigs"/>
+          <include name="verifyDynamicListBulkMailSendLaterPopUpPg"/>
+          <include name="verifyDynamicListCreation"/>
+          <include name="verifyExcludedBulkMailLogFromBulkMailInMyList"/>
+          <include name="verifyExistingDynamicListLoads"/>
+          <include name="verifyExistingSimpleListLoads"/>
+          <include name="verifyListIsOpened"/>
+          <include name="verifyMyListPinAndUnpinOption"/>
+          <include name="verifyMylistHeaders"/>
+          <include name="verifyMylistPanelSearchTabErrorMsg"/>
+          <include name="verifyNoMatchingRecordsFoundOnMyListSearchbar"/>
+          <include name="verifyResearchLinkHoveredvalue"/>
+          <include name="verifySearchbarForGreaterthanThousandContactsinMyList"/>
+          <include name="verifySearchbarForPinnedDynamicListinMyList"/>
+          <include name="verifySearchbarForPinnedStaticList"/>
+          <include name="verifySimpleListCreation"/>
+          <include name="verifyStaticBulkMailbyEnableandDisableCovAccConfigs"/>
+          <include name="verifyStaticListBulkMailSendLaterPopUpPg"/>
+          <include name="verifyUsedTemplateInDraftTab"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Mylist.MyListTest -->
+      <class name="com.dz.prism.test.Mylist.MyListDynamicFiltersTest">
+        <methods>
+          <include name="verifyAccNameWithContSearchFilterForEquals"/>
+          <include name="verifyAccStageWithAccountFilterForEquals"/>
+          <include name="verifyAccStageWithAccountFilterForNotEquals"/>
+          <include name="verifyAccTypeWithAccountFilterForEquals"/>
+          <include name="verifyAccTypeWithAccountFilterForNotEquals"/>
+          <include name="verifyAccTypeWithContSearchFilterForEquals"/>
+          <include name="verifyAccountRegionWithAccountFilterForEquals"/>
+          <include name="verifyAccountRegionWithAccountFilterForNotEquals"/>
+          <include name="verifyAccountTierWithAccountFilterForEquals"/>
+          <include name="verifyAccountTierWithAccountFilterForNotEquals"/>
+          <include name="verifyBankingTierWithAccountFilterForEquals"/>
+          <include name="verifyBankingTierWithAccountFilterForNotEquals"/>
+          <include name="verifyCityWithAccountFilterForEquals"/>
+          <include name="verifyCityWithAccountFilterForNotEquals"/>
+          <include name="verifyCovTypeWithAccountFilterForEquals"/>
+          <include name="verifyCovTypeWithAccountFilterForNotEquals"/>
+          <include name="verifyGovernedByMifidWithAccountFilterForEquals"/>
+          <include name="verifyGovernedByMifidWithAccountFilterForNotEquals"/>
+          <include name="verifyInvestorTypeWithAccountFilterForEquals"/>
+          <include name="verifyInvestorTypeWithAccountFilterForNotEquals"/>
+          <include name="verifyResearchDocumentFilter"/>
+          <include name="verifyResearchTierWithAccountFilterForEquals"/>
+          <include name="verifyResearchTierWithAccountFilterForNotEquals"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Mylist.MyListDynamicFiltersTest -->
+      <class name="com.dz.prism.test.Mylist.MylistPublishedDateCR_7900">
+        <methods>
+          <include name="VerifyLastReadDocumentPublishedDateInAnalystMyList"/>
+          <include name="gotoMylistTab"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Mylist.MylistPublishedDateCR_7900 -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

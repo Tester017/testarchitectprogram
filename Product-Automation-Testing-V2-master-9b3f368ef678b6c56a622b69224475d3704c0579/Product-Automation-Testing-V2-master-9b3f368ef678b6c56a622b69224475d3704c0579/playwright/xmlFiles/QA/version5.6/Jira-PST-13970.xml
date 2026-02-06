@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="2" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.Mylist.MyListDynamicFiltersTest">
+        <methods>
+          <include name="verifyCityWithAccountFilterForEquals"/>
+          <include name="verifyInvestorTypeWithAccountFilterForNotEquals"/>
+          <include name="verifyGovernedByMifidWithAccountFilterForNotEquals"/>
+          <include name="verifyGovernedByMifidWithAccountFilterForEquals"/>
+          <include name="verifyAccountRegionWithAccountFilterForNotEquals"/>
+          <include name="verifyAccountTierWithAccountFilterForEquals"/>
+          <include name="verifyAccountRegionWithAccountFilterForEquals"/>
+          <include name="verifyAccTypeWithAccountFilterForEquals"/>
+          <include name="verifyBankingTierWithAccountFilterForEquals"/>
+          <include name="verifyAccountTierWithAccountFilterForNotEquals"/>
+          <include name="verifyInvestorTypeWithAccountFilterForEquals"/>
+          <include name="verifyAccTypeWithAccountFilterForNotEquals"/>
+          <include name="verifyResearchTierWithAccountFilterForNotEquals"/>
+          <include name="verifyAccStageWithAccountFilterForNotEquals"/>
+          <include name="verifyBankingTierWithAccountFilterForNotEquals"/>
+          <include name="verifyResearchTierWithAccountFilterForEquals"/>
+          <include name="verifyCityWithAccountFilterForNotEquals"/>
+          <include name="verifyAccStageWithAccountFilterForEquals"/>
+          <include name="verifyCovTypeWithAccountFilterForEquals"/>
+          <include name="verifyCovTypeWithAccountFilterForNotEquals"/>
+          <include name="verifyResearchDocumentFilter"/>
+          <include name="verifyAccTypeWithContSearchFilterForEquals"/>
+          <include name="verifyAccNameWithContSearchFilterForEquals"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Mylist.MyListDynamicFiltersTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

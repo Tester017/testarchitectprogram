@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="2" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.accounttearsheet.AccountTearSheetTest">
+        <methods>
+          <include name="verifyATSBulkMailedExcludeListsContactsNameInListsContactExcludedOnBulkMailLogPopup"/>
+          <include name="verifyATSBulkMailedListsAccountNamesInListsContactsUsedOnBulkMailLogPopup"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.accounttearsheet.AccountTearSheetTest -->
+      <class name="com.dz.prism.test.coveragemanagement.AccountCoverageManagementTest">
+        <methods>
+          <include name="verifyCopiedCoverageDataInCoverageHistory"/>
+          <include name="verifyEditedDataInATSAccountHistory"/>
+          <include name="editAddedCovergeInCoverageTab"/>
+          <include name="deactivateCoverageFromEditPageATSAndVerify"/>
+          <include name="addCoverageInCoverageManagementAccountTab"/>
+          <include name="verifyAddedCoverageInATSEditPage"/>
+          <include name="verifyAddedCoverageInATSCoverageTab"/>
+          <include name="verifyDeactivatedDataInAccountHistory"/>
+          <include name="verifyDeactivatedDataInEmployeesTearsheet"/>
+          <include name="verifyEditedDataInEmployeesTearsheet"/>
+          <include name="verifyInCoverageHistoryPopup"/>
+          <include name="verifyCopiedCoverageInATSAccountHistory"/>
+          <include name="verifyDeactivatedDataOnATSCoverage"/>
+          <include name="verifyCopiedCoverageInATSEditPage"/>
+          <include name="verifyDeactivatedDataInEditPageATS"/>
+          <include name="verifyEditedDataInCoverageHistory"/>
+          <include name="verifyCopiedCoverageInEmployeesTearsheet"/>
+          <include name="verifyDeactivatedDataInQuicklookWidget"/>
+          <include name="verifyAddedInCoverageTable"/>
+          <include name="verifyEditedDataOnCoverageTable"/>
+          <include name="verifyDeactivatedDataInCoverageTable"/>
+          <include name="verifyCopiedCoverageInATSCoverageTab"/>
+          <include name="verifyCopiedInPrevUserCoverageTable"/>
+          <include name="verifyCopiedCoverageOnCoverageManagement"/>
+          <include name="deactivateAddedCoverageAccount"/>
+          <include name="verifyCoverageDataInATSAccountHistory"/>
+          <include name="verifyAddedCoverageInEmployeesTearsheet"/>
+          <include name="verifyEditedDataInEditPageATS"/>
+          <include name="verifyCoverageInATSQuicklookWidget"/>
+          <include name="verifyEditedDataOnATSCoverage"/>
+          <include name="verifyCopiedCoverageInATSQuicklookWidget"/>
+          <include name="deactivateCoverageInCoverageAccountTab"/>
+          <include name="copyAddedCoverage"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.coveragemanagement.AccountCoverageManagementTest -->
+      <class name="com.dz.prism.test.coveragemanagement.TickerCoverageManagementTest">
+        <methods>
+          <include name="deactivateCoverage"/>
+          <include name="deactivateCoverageFromEditPageTTSAndVerify"/>
+          <include name="verifyCopiedCoverageDataInCoverageHistory"/>
+          <include name="verifyAddedCoverageOnTable"/>
+          <include name="verifyEditedDataInCoverageHistory"/>
+          <include name="verifyEditedCoverageInEditTTS"/>
+          <include name="verifyCopiedCoverageInEmployeesTearsheet"/>
+          <include name="verifyCoverageInCoverageHistory"/>
+          <include name="addCoverageInTickerTab"/>
+          <include name="verifyCoverageOnTTSCoverage"/>
+          <include name="verifyEditedInEmployeesTearsheet"/>
+          <include name="verifyDeactivatedInCoverageHistory"/>
+          <include name="verifyDeactivatedOnTTSCoverage"/>
+          <include name="verifyCopiedCoverageOnTTSCoverage"/>
+          <include name="verifyDeactivatedInTTSHistory"/>
+          <include name="verifyDeactivatedOnCoverageTable"/>
+          <include name="verifyCoverageInTickerHistory"/>
+          <include name="verifyCopiedCoverageInQuicklookWidget"/>
+          <include name="verifyCopiedCoverageInTTSEditPage"/>
+          <include name="deactivateaddedCoverageTicker"/>
+          <include name="verifyAddedInEmployeesTearsheet"/>
+          <include name="verifyCopiedCoverageInTTSAccountHistory"/>
+          <include name="verifyEditedDataInTickerHistory"/>
+          <include name="verifyDeactivatedCoverageInEmployeesTearsheet"/>
+          <include name="verifyTickerCoverageInQuicklookWidget"/>
+          <include name="editAddedCoverge"/>
+          <include name="verifyDeactivatedCoverageInEditTTS"/>
+          <include name="copyAddedCoverage"/>
+          <include name="verifyDeactivatedInQuicklookWidget"/>
+          <include name="verifyAddedCoverageInTTSEditPage"/>
+          <include name="verifyCopiedInPrevUserCoverageTable"/>
+          <include name="verifyCopiedCoverageOnTable"/>
+          <include name="verifyEditedCoverageOnTable"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.coveragemanagement.TickerCoverageManagementTest -->
+      <class name="com.dz.prism.test.mycontacts.MyContactsTest">
+        <methods>
+          <include name="verifyMyContactsBulkMailedExcludedListsContactsNameInListsContactsExcludedOnBulkMailLogPopup"/>
+          <include name="verifyMyContactsBulkMailedContactNameInListsContactsUsedOnBulkMailLogPopup"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.mycontacts.MyContactsTest -->
+      <class name="com.dz.prism.test.Mylist.MyListTest">
+        <methods>
+          <include name="verifyNewlyAddedSearchbarinMyList"/>
+          <include name="verifyMyListPinAndUnpinOption"/>
+          <include name="verifyBulkMailPreviouslyUsedCheckboxLogicChange"/>
+          <include name="verifyMyListBulkMailedListNameInListsContactsUsedOnBulkMailLogPopup"/>
+          <include name="verifyMyListBulkMailedExcludedListsContactsNameInListsContactsExcludedOnBulkMailLogPopup"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Mylist.MyListTest -->
+      <class name="com.dz.prism.test.Reports.ReportTest">
+        <methods>
+          <include name="verifyParticularSelectedValuesforDailyMonthlyCallLogReport"/>
+          <include name="verifyMultiSelectValuesforInterestReport"/>
+          <include name="verifyMultiSelectforClientServiceReport"/>
+          <include name="verifyParticularSelectedValuesforClientServiceReport"/>
+          <include name="verifyParticularSelectedValuesforTrendsInTouchPointReport"/>
+          <include name="verifyParticularSelectedValuesforInterestReport"/>
+          <include name="verifyMultiSelectValuesforTrendsInTouchPointReport"/>
+          <include name="verifyMultiSelectValuesforDailyMonthlyCallLogReport"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Reports.ReportTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

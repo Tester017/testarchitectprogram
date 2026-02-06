@@ -1,0 +1,46 @@
+{
+    "environment": {
+        "prismUrl": "https://canaccorduat.datazoic.com/prismst/home.html",
+        "prismUserName": "equity",
+        "prismPassword": "new",
+        "outlookUrl": "https://outlook.office.com/mail/",
+        "outlookUserName": "kowsalya@datazoic.com",
+        "outlookPassword": ""
+    },
+    "login": {
+        "loginType": "Prism Login",
+        "pageMessage": {
+            "commissionBySectors": "Commission by Sectors V2"
+        }
+    },
+    "Modules":{
+        "Activity":{
+            "isApplicable":true,
+            "name":"Activity",
+            "parentModule": null
+        },
+        "Readership":{
+            "isApplicable":true,
+            "name":"Readership",
+            "parentModule": "Research"
+        }
+
+    },
+    "Dashboard": {
+        "equityTiles": {
+            "isApplicable": true
+        },
+        "commissionBySectors": {
+            "isApplicable": true,
+            "name": "Commission by Sectors V2"
+        },
+        "commissionByRegion": {
+            "isApplicable": true,
+            "name": "Commission by Region"
+        },
+        "fadingContacts":{
+            "isApplicable": true,
+            "name": "Fading Contacts"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "environment": {
+        "prismUrl": "https://qa1.datazoic.com/prismST/home.html",
+        "storageStatePath": "secure/storage-state/PrismLoginAuth_qa1.json"
+    },
+    "login": {
+        "loginType": "Prism Login"
+    },
+    "Dashboard": {
+        "equityTiles": {
+            "isApplicable": false
+        },
+        "fadingContacts": {
+            "isApplicable": false
+        }
+    },
+    "Activity": {
+        "parentModule": "Activity"
+    }
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="1" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.addcontactpage.AddContactTest">
+        <methods>
+          <include name="saveAddContactViaATS"/>
+          <include name="moveServiceContactToCorporateAcc"/>
+          <include name="saveAddCorpContactAllFieldsWithDiffResearchEmail"/>
+          <include name="moveCorporateContactToInvestorAcc"/>
+          <include name="saveAddInvestorContactAllFields"/>
+          <include name="saveAddServiceContactAllFields"/>
+          <include name="checkAddedCorpContactfrmQuickActionUsingSameAsPrimaryCheckbox"/>
+          <include name="verifyInMylistAndRSV2"/>
+          <include name="checkAddedServiceContactFromQuickActionUsingDiffResearchEmailId"/>
+          <include name="doEditServiceContactAndUpdate"/>
+          <include name="checkSameasPrimaryEmailAddressCheckBoxOptioninAddContactandEditContactPage"/>
+          <include name="saveAddCorporateContactAllFields"/>
+          <include name="saveAddServiceContactAllFieldsWithDiffResearchEmail"/>
+          <include name="saveAddContact"/>
+          <include name="saveAddInvestorContactAllFieldsWithDiffResearchEmail"/>
+          <include name="checkAddedCorporateContactFromQuickActionUsingDiffResearchEmailId"/>
+          <include name="checkAddedInvestorContactfrmQuickActionUsingSameAsPrimaryCheckbox"/>
+          <include name="moveInvestorContactToCorporateAcc"/>
+          <include name="doEditCorporateContactAndUpdate"/>
+          <include name="checkAddedInvestorContactFromQuickActionUsingDiffResearchEmailId"/>
+          <include name="verifyInATSContactTab"/>
+          <include name="saveAddContactMandatoryFields"/>
+          <include name="checkAddedServiceContactfrmQuickActionUsingSameAsPrimaryCheckbox"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.addcontactpage.AddContactTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

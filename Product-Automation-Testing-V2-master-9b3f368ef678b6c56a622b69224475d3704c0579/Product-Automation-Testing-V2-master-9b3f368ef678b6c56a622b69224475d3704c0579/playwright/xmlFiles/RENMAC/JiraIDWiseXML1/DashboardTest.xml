@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="2" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.Dashboard.DashboardTest">
+        <methods>
+          <include name="gotoCommissionTilePopup"/>
+          <include name="gotoCommWidgetByProduct"/>
+          <include name="gotoCommWidgetByRegion"/>
+          <include name="verifyAnnualCommInSectorWidgetRevByProdForConfigZero"/>
+          <include name="checkAnnuCommInGrossCommTileForConfigOne"/>
+          <include name="checkAnnuCommInProductWidgetRevByAccForConfigOne"/>
+          <include name="verifyAnnualCommInTopSalesTraderForConfigZero"/>
+          <include name="checkAnnuCommInRegionWidgetRevByProductForConfigOne"/>
+          <include name="verifyAnnualCommInSectorWidgetRevByAccountForConfigOne"/>
+          <include name="gotoCommBySectorWidget"/>
+          <include name="checkAnnuCommInRegionWidgetRevByProductForConfigZero"/>
+          <include name="verifyAnnualCommInTopResearchSalesPersonForConfigZero"/>
+          <include name="checkAnnuCommInProductWidgetRevBySectorForConfigZero"/>
+          <include name="verifyAnnualCommInTopClientCommiForConfigOne"/>
+          <include name="verifyAnnualCommInTopclientCommForConfigZero"/>
+          <include name="checkAnnuCommInProductWidgetRevByAccForConfigZero"/>
+          <include name="checkAnnuCommInRegionWidgetRevByAccForConfigZero"/>
+          <include name="verifyAnnualCommInTopTickerCommForConfigZero"/>
+          <include name="checkAnnuCommInProductWidgetRevBySectorForConfigOne"/>
+          <include name="verifyAnnualCommInSectorWidgetRevByAccountForConfigZero"/>
+          <include name="verifyAnnualCommInTopSalesTraderForConfigOne"/>
+          <include name="verifyAnnualCommInTopTickerCommForConfigOne"/>
+          <include name="verifyAnnualCommInGrossCommPopUpTableForConfigZero"/>
+          <include name="checkAnnuCommInGrossCommTileForConfigZero"/>
+          <include name="verifyAnnualCommInSectorWidgetRevByProdForConfigOne"/>
+          <include name="checkAnnuCommInRegionWidgetRevByAccForConfigOne"/>
+          <include name="verifyAnnualCommInTopResearchSalesPersonForConfigOne"/>
+          <include name="verifyAnnualCommInGrossCommPopUpTableForConfigOne"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Dashboard.DashboardTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

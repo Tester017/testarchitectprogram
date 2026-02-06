@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="2" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.FloatingCTS.FloatingCTSTest">
+        <methods>
+          <include name="saveAddInteraction"/>
+          <include name="verifyFloatingCTSInTTS_ContactTab"/>
+          <include name="verifyInActivity"/>
+          <include name="verifyFloatingTearSheetRecentTabFromActivity"/>
+          <include name="verifyHoveringInFloatingContactTearSheetRecentTab"/>
+          <include name="verifyFloatingCTSFromBulkEmpChange"/>
+          <include name="verifyFloatingCTSFromMycontact"/>
+          <include name="verifyFloatingCTSInActivity"/>
+          <include name="verifyFloatingCTSInATS_ActivityTab"/>
+          <include name="verifyFloatingCTSInATS_ContactsTab"/>
+          <include name="verifyFloatingCTSInATS_ReadershipTab"/>
+          <include name="verifyFloatingCTSInCTS_ActivityTab"/>
+          <include name="verifyFloatingCTSInCTS_EmailReadershipTab"/>
+          <include name="verifyFloatingCTSInCTS_ReadershipTab"/>
+          <include name="verifyFloatingCTSInMyLisyV3"/>
+          <include name="verifyFloatingCTSInReadership"/>
+          <include name="verifyFloatingCTSInTTS_ActivityTab"/>
+          <include name="verifyFloatingCTSInTTS_InterestListTab"/>
+          <include name="verifyFloatingCTSInTTS_ReadershipTab"/>
+          <include name="verifyFloatingCTSCoverageWidget"/>
+          <include name="checkAccountTierInFloatingSheet"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.FloatingCTS.FloatingCTSTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

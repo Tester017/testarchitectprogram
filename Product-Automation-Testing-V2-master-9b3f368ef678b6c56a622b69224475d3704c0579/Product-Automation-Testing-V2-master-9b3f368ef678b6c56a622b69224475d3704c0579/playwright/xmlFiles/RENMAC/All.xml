@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite data-provider-thread-count="1" name="Suite" verbose="3">
+
+	<listeners>
+		<listener class-name="com.dz.core.testng.listeners.DriverListener2" />
+	</listeners>
+ 
+
+	<test thread-count="2" parallel="methods" name="Test" preserve-order="true">
+		<classes>
+           <class name="com.dz.prism.test.accounttearsheet.AccountTearSheetTest">
+        	<methods>
+          <include name="verifyAddInterestList"/>
+          <include name="verifyAddSimpleInterestList"/>
+          <include name="verifyDeleteSubscriptionInterestList"/>
+          <include name="verifyAddSubscriptionInterestList"/>
+          <include name="verifyAddBulkInterestList"/>
+          <include name="addVerifyBulkSubscription"/>
+          <include name="verifyBulkSubscInMyContAndMyList"/>
+          <include name="verifyBulkSubscInRSV2AndTS"/>
+          
+          <include name="VerifyBulkUnSubscription"/>
+          <include name="verifyBulkUnSubscInMyContAndList"/>
+          <include name="verifyBulkUnSubscInRSTS"/>
+          <include name="verifyDeleteBulkSubscriptionInterestList"/>
+          <include name="verifyAddMultipleInterestList"/>
+          <include name="addVerifyMultipleSubscription"/>
+          <include name="verifyMultipleUnSubscription"/>
+          <include name="verifyDeleteMulSubscriptionInterestList"/>
+          <include name="verifyAddSectorSingleInterestList"></include>
+          <include name="addVerifySingleSectorSubscription"></include>
+          <include name="verifyDeleteSectorSubscrInterestList"></include>
+          <include name="verifyAddMultipleSectorInterestList"></include>
+          <include name="addVerifyMultipleSectorSubscription"></include>
+          <include name="verifyDeleteMulSecSubscriptionInterestList"></include>
+          <include name="verifyAddSubContInterestList"></include>
+          <include name="verifyAddSubSecContInterestList"></include>
+          <include name="verifyAddMifidSingleInterestList"></include>
+          <include name="verifyAddMifidSectorSingleInterestList"></include>
+        </methods>
+      </class> 
+       <class
+                name="com.dz.prism.test.ContactTearSheet.ContactTearSheetTest">
+                <methods>
+                    <include name="saveAddInterestListInCTS"></include>
+                    <include name="addSimpleInterestList"></include>
+                    <include name="verifySingleAddSubscriptionInterestList"></include>
+                    <include name="verifyDeleteSingleSubscriptionInterestList"></include>
+                    <include name="verifyAddBulkInterestList"></include>
+                    <include name="verifyAddBulkSubscriptionInCTS"></include>
+                    <include name="verifyBulkSubscriptionInRSV2AndTS"></include>
+                    <include name="verifyBulkSubscriptionInMycontactsAndMylist"></include>
+                    <include name="VerifyBulkUnSubscription"></include>
+                    <include name="verifyBulkUnSubscInMyContAndList"></include>
+                    <include name="verifyBulkUnSubscInRSV2AndTS"></include>
+                    <include name="verifyDeleteBulkSubscriptionInterestList"></include>
+                    <include name="checkModifyBtnForTickerSubscribedContact"></include>
+                    <include name="verifyAddSingleInterestListBySector"></include>
+                    <include name="addVerifySingleSectorSubscription"></include>
+                    <include name="verifyAddMultipleSectorInterestList"></include>
+                    <include name="verifyDeleteMulSectorSubscriptionInterestList"></include>
+                    <include name="addVerifyMultipleSectorSubscription"></include>
+                    <include name="checkModifyBtnForSectorSubscribedContact"></include>
+                    <include name="checkLoggedByFieldDisplaInCTSLogInterPage"></include>
+                    <include name="verifyAddInterestListByMifidTicker"></include>
+                    <include name="verifyAddMifidSectorSingleInterestList"></include>
+                </methods>
+            </class>
+             <class name="com.dz.prism.test.TickerTearSheet.TickerTearSheetTest">
+        <methods>
+        <include name="verifyAddSimpleInterestList"/>
+          <include name="saveAddInterestListInTTS"/>
+            <include name="verifyAddSubscriptionInterestList"/>
+             <include name="verifyDeleteSubscriptionInterestList"/>
+             <include name="verifyMultipleInterestList"/>
+               <include name="addVerifyMultipleSubscription"/>
+                <include name="verifyMultipleSubscInMyContAndList"/>
+                 <include name="verifyMultipleSubscInRSV2andTS"/>
+                  <include name="unSubscribeVerifyMultipleUnSubscriptionData"/>
+                   <include name="verifyMultipleUnSubscInMyContAndList"/>
+                    <include name="verifyMultipleUnSubscInRSV2andTS"/>
+                     <include name="verifyDeleteMultSubscriptionInterestList"/>
+                      <include name="verifySingleInterestListusingTickerConts"/>
+                       <include name="verifySingleAddSubscrTicContInterestList"/>
+                        <include name="verifyDeleteSubscriptionIntListUsingTicCont"/>
+                         <include name="verifyAddSubContInterestList"/>
+                           <include name="verifyAddMifidSingleInterestList"/>
+         
+        </methods>
+      </class>
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

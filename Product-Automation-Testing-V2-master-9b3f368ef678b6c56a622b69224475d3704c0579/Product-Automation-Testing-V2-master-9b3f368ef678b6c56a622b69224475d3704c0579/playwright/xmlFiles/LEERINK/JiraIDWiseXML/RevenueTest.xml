@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="2" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.Revenue.RevenueTest">
+        <methods>
+          <include name="verifyAnnCommvsPrevFullYrCommOfEachProduct"/>
+          <include name="verifyAnnualCommInATSRevbyProductForConfigOne"/>
+          <include name="verifyAnnualCommInATSRevbyProductForConfigZero"/>
+          <include name="verifyAnnualCommInRevByAccTab"/>
+          <include name="verifyAnnualCommInRevbyPersonForConfigOne"/>
+          <include name="verifyAnnualCommInRevbyPersonForConfigZero"/>
+          <include name="verifyAnnuCommInSuperAccountTable"/>
+          <include name="verifyAnnualCommInATSRevbyProduct"/>
+          <include name="verifyAnnualCommInRevbyPerson"/>
+          <include name="verifyAnnCommInRegionTab"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Revenue.RevenueTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

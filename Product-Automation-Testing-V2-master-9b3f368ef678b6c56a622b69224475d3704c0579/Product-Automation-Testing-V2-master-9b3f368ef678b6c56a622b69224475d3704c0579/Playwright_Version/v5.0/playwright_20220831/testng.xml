@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="3">
+    <listeners>
+        <listener
+            class-name="com.dz.core.testng.listeners.DriverListener">
+        </listener>
+    </listeners>
+
+    <test name="Class" thread-count="1">
+    <classes>
+
+         <!-- <class name="com.dz.prism.test.accounttearsheet.EH_AT_CT_AC_S_0085" />-->
+         <!-- <class name="com.dz.prism.test.addcontactpage.EQ_CM_CI_ECT_S_0002" /> -->
+        <!--  <class name="com.dz.prism.test.Prism_Login.EQ_PLP_AC_PEL_SC_0016" /> -->
+         <!--<class name="com.dz.prism.test.Dashboard.EH_D_DT_D_S_0001" />
+         <class name="com.dz.prism.test.accounttearsheet.EH_AT_AC_PGN_S_0070" />
+         <class name="com.dz.prism.test.Readership.EH_RSP_RTBL_SE_S_0020" />
+         <class name="com.dz.prism.test.accounttearsheet.EH_AT_TST_SNSTNF_S_0065" />
+         <class name="com.dz.prism.test.AccountTearSheet.EH_AT_RT_VDSFV_S_0079" />
+         <class name="com.dz.prism.test.Prism_Login.EQ_PL_AC_PEL_S_0001" />
+         <class name="com.dz.prism.test.Prism_Login.EQ_PL_AC_EP_S_0007" />  
+         <class name="com.dz.prism.test.Prism_Login.PLP_AC_PEL_SC_0001" />
+         <class name="com.dz.prism.test.Prism_Login.PLP_AC_PAT_SC_0002" />
+         <class name="com.dz.prism.test.Prism_Login.PLP_PL_LUP_S_0004" />
+         <class name="com.dz.prism.test.Prism_Login.PLP_AC_FL_S_0005" />
+         <class name="com.dz.prism.test.Prism_Login.EQ_PLP_AC_PEL_SC_0016" />
+          <class name="com.dz.prism.test.Prism_Login.EQ_PLP_PL_LUP_S_0003" />
+          <class name="com.dz.prism.test.Prism_Login.EH_PLP_PL_PAT_SC_0014" />
+          <class name="com.dz.prism.test.Mylist.EH_ML_STLST_BM_S_14" />
+         <class name="com.dz.prism.page.addcontact.EQ_CM_CI_ACT_S_0001" />
+         <class name="com.dz.prism.test.addcontactpage.EQ_CM_CI_ECT_S_0002" /> -->
+         <!-- <class name="com.dz.prism.page.addcontact.EQ_CM_CI_ACT_S_0001" />
+          <class name="com.dz.prism.test.Mylist.EH_ML_STLST_BM_S_14" />-->
+          <!--<class name="com.dz.prism.test.Prism_Login.EQ_PL_AC_EP_S_0007"/>
+           <class name="com.dz.prism.test.Mylist.EH_ML_STLST_BM_S_14"/>
+          <class name="com.dz.prism.page.addcontact.EQ_CM_CI_ACT_S_0001"/>
+          <class name="com.dz.prism.test.BulkEmploymentChange.DM_NCT_SC_0008" />
+          <class name="com.dz.prism.test.BulkEmploymentChange.S_03_TC_01" />
+          <class name="com.dz.prism.test.Readership.EH_RSP_RT_VDSFV_S_0013"/> -->
+          <!-- <class name="com.dz.prism.test.BulkEmploymentChange.DM_NCT_SC_0008" /> -->
+           <!--  <class name="com.dz.prism.test.BulkEmploymentChange.DM_NCT_SC_0008" /> -->
+          
+        <!--  <class name="com.dz.prism.test.Readership.EH_RSP_RT_VDSFV_S_0013"/>  -->
+        <!--  <class name="com.dz.prism.test.Readership.EH_RSP_RT_EDSFV_S_0014"/>  -->
+        <!--  <class name="com.dz.prism.test.Readership.EH_RSP_RT_AMTOF_S_0015"/> -->
+        <!--  <class name="com.dz.prism.test.Readership.EH_RSP_RT_RACSF_S_0016"/> -->
+         
+        <!--  <class name="com.dz.prism.test.ContactTearSheet.EH_CT_RT_VDSFV_S_0079"/> -->
+        <!--  <class name="com.dz.prism.test.ContactTearSheet.EH_CT_RT_EDSFV_S_0080"/> -->
+        <!--  <class name="com.dz.prism.test.ContactTearSheet.EH_CT_RT_AMTOF_S_0081"/> -->
+        <!-- <class name="com.dz.prism.test.ContactTearSheet.EH_CT_RT_RACSF_S_0082"/> -->
+        
+            
+         <!-- <class name="com.dz.prism.test.TickerTearSheet.EH_TT_RT_VDSFV_S_0079"/> -->
+         <!-- <class name="com.dz.prism.test.TickerTearSheet.EH_TT_RT_EDSFV_S_0080"/>  -->
+         <!-- <class name="com.dz.prism.test.TickerTearSheet.EH_CT_RT_AMTOF_S_0081"/> -->
+         <!-- class name="com.dz.prism.test.TickerTearSheet.EH_TT_RT_RACSF_S_0082"/> -->
+         
+           <class name="com.dz.prism.test.Revenue.EH_RA_RS_RSC_S_0001"/>
+          
+           <!-- <class name="com.dz.prism.test.accounttearsheet.EH_AT_CT_AC_S_0085" />-->
+          
+      	<class name="com.dz.prism.test.TickerTearSheet.EH_TTS_CTT_AC_S_0085" />
+      	<class name="com.dz.prism.test.accounttearsheet.EH_AT_CT_AC_S_0085" />
+          
+    </classes>
+    </test>
+
+</suite>

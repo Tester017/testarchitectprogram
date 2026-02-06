@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="2" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.accounttearsheet.AccountReveneByProduct">
+        <methods>
+          <include name="openAccTrSheet"/>
+          <include name="TableHeader"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.accounttearsheet.AccountReveneByProduct -->
+      <class name="com.dz.prism.test.accounttearsheet.AccountRevenueByPerson">
+        <methods>
+          <include name="TableHeader"/>
+          <include name="openAccTrSheet"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.accounttearsheet.AccountRevenueByPerson -->
+      <class name="com.dz.prism.test.accounttearsheet.AccountTearSheetHeaderVerify">
+        <methods>
+          <include name="verifyRedershipTabHeaders"/>
+          <include name="gotoAccountTearSheet"/>
+          <include name="verifyActivityTabHeaders"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.accounttearsheet.AccountTearSheetHeaderVerify -->
+      <class name="com.dz.prism.test.accounttearsheet.AccountTearSheetTest">
+        <methods>
+          <include name="verifyInActivityTab"/>
+          <include name="saveAddContactFromATSContactTabWithManageContactOption"/>
+          <include name="checkBulkLogInteractionBtn"/>
+          <include name="saveAddInteraction"/>
+          <include name="verifyInATSContactTab"/>
+          <include name="checkInvestorTearSheetTabs"/>
+          <include name="checkInvestorEditAccountTabsData"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.accounttearsheet.AccountTearSheetTest -->
+      <class name="com.dz.prism.test.accounttearsheet.AccountTradeSummaryTab">
+        <methods>
+          <include name="openAccTrSheet"/>
+          <include name="ShowFilter"/>
+          <include name="TableHeader"/>
+          <include name="tradesSummryShowHideFilter"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.accounttearsheet.AccountTradeSummaryTab -->
+      <class name="com.dz.prism.test.accounttearsheet.ReaderShipTabShowHideFilter">
+        <methods>
+          <include name="ShowFilter"/>
+          <include name="gotoAccReadershipTab"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.accounttearsheet.ReaderShipTabShowHideFilter -->
+      <class name="com.dz.prism.test.activity.ActivityShowFilter">
+        <methods>
+          <include name="gotoActivityModule"/>
+          <include name="TableHeader"/>
+          <include name="ShowFilter"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.activity.ActivityShowFilter -->
+      <class name="com.dz.prism.test.addAccountpage.AddAccountTest">
+        <methods>
+          <include name="saveAddAccountForCorporate"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.addAccountpage.AddAccountTest -->
+      <class name="com.dz.prism.test.addAccountpage.AddCorporateAccountTest">
+        <methods>
+          <include name="addCorporateAccountWithAllInputFields"/>
+          <include name="addCorporateAccountWithMandatoryFieldsOnly"/>
+          <include name="EditCorporateAccountWithMandatoryFieldsOnly"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.addAccountpage.AddCorporateAccountTest -->
+      <class name="com.dz.prism.test.addAccountpage.AddInvestorAccountTest">
+        <methods>
+          <include name="addInvestorAccountWithAllInputFields"/>
+          <include name="checkExistingInvestorAccountMiFIDDate"/>
+          <include name="addOnlyInvestorAccountWithAllInputFieldsAnDOpenByDefault"/>
+          <include name="verifyMifidWidgetUpdateFromInvestorAccount"/>
+          <include name="addOnlyInvestorAccountWithAllInputFields"/>
+          <include name="editAccCoverageAndVerifyInAccountHistry"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.addAccountpage.AddInvestorAccountTest -->
+      <class name="com.dz.prism.test.addcontactpage.AddContactTest">
+        <methods>
+          <include name="verifyInCTSEditContact"/>
+          <include name="saveAddContact"/>
+          <include name="saveAddContactMandatoryFields"/>
+          <include name="saveAddContactAllFields"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.addcontactpage.AddContactTest -->
+      <class name="com.dz.prism.test.addInteraction.AddInteractionTest">
+        <methods>
+          <include name="checkPEFlowInLogInteraction"/>
+          <include name="checkPEFlowInMyContactsModule"/>
+          <include name="checkPEFlowInFadingModule"/>
+          <include name="verifyInActivity"/>
+          <include name="checkPEFlowInActivity"/>
+          <include name="verifyInContactTearSheet"/>
+          <include name="saveAddInteraction"/>
+          <include name="checkPEFlowInLogInteractionOnMyListModule"/>
+          <include name="checkPEFlowInContactTearSheet"/>
+          <include name="verifyMultipleInteractionInActivity"/>
+          <include name="saveAddAsSingleInteraction"/>
+          <include name="verifySingleInteractionInServiceTearSheet"/>
+          <include name="checkActivityHistoryForInternalAttendees"/>
+          <include name="verifySingleInteractionInActivity"/>
+          <include name="verifyAddInterationInternalAttendeesField"/>
+          <include name="verifySingleInteractionInContactTearSheet"/>
+          <include name="saveAddAsMultipleInteraction"/>
+          <include name="verifyMultipleInteractionInContactTearSheet"/>
+          <include name="verifyMultipleInteractionInServiceTearSheet"/>
+          <include name="saveAddInteractionWithTags"/>
+          <include name="verifyInTickerTearSheet"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.addInteraction.AddInteractionTest -->
+      <class name="com.dz.prism.test.ContactTearSheet.ContactTearSheetHeadersVerify">
+        <methods>
+          <include name="verifyActivityTabHeaders"/>
+          <include name="verifyInterestListTabHeaders"/>
+          <include name="verifyReadershipTabHeaders"/>
+          <include name="gotoContactTearSheet"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ContactTearSheet.ContactTearSheetHeadersVerify -->
+      <class name="com.dz.prism.test.ContactTearSheet.ShowHideFilterForEmailReaderShipAndReadershipTab">
+        <methods>
+          <include name="readerShipTabShowFilter"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ContactTearSheet.ShowHideFilterForEmailReaderShipAndReadershipTab -->
+      <class name="com.dz.prism.test.Dashboard.DashboardTest">
+        <methods>
+          <include name="verifyTopResearchSalesAcctsCoveredData"/>
+          <include name="checkCommissionTilesPopupOfAllProductsVerifyHeaders"/>
+          <include name="checkTopClientsByCommissionTableDataForPeriods"/>
+          <include name="checkDeltaPCalculationInTopClientsByCommTab"/>
+          <include name="gotoCommissionTilePopup"/>
+          <include name="checkAddInteractionDataFromPlusIcon"/>
+          <include name="checkTopSalesTraderHeadersandSymbols"/>
+          <include name="checkTopResearchSalesPersonExpandTable"/>
+          <include name="checkAddContactDataFromPlusIcon"/>
+          <include name="checkGrossCommissionTilesPopupWithRevByAccount"/>
+          <include name="checkTopClientByCommissionHeadersandSymbols"/>
+          <include name="checkTopSalesTraderWithSalesTearSheet"/>
+          <include name="checkGrossCommissionTilesPopupDelta"/>
+          <include name="checkDeltaCalculationForProductWidgetInRevBySectorTable"/>
+          <include name="checkCommissionByProductAPIDataVerification"/>
+          <include name="checkAnnualizedCommissionTiles"/>
+          <include name="checkTopResearchSalesPersonHeadersandSymbols"/>
+          <include name="checkTopReaserchAnalystHeaders"/>
+          <include name="checkTopResearchSalesPersonDeltaCalculation"/>
+          <include name="gotoCommWidgetByProduct"/>
+          <include name="checkpreviousYTDTiles"/>
+          <include name="gotoCommWidgetByRegion"/>
+          <include name="checkGrossCommissionTilesPopupHeaderValidation"/>
+          <include name="checkCommissionByProductWidgetGridHeaderVerification"/>
+          <include name="checkDeltaCalculationForRegionWidInRevByProdTable"/>
+          <include name="checkPreviousFullYearTiles"/>
+          <include name="verifyTopTickersByCommTab"/>
+          <include name="checkServiceAddAccountTabsDataFromPlusIcon"/>
+          <include name="checkCommissionByRegionWidget"/>
+          <include name="checkWdigets"/>
+          <include name="checkCommissionByRegionAPIDataVerification"/>
+          <include name="checkTopClientsByCommWithRevByAccount"/>
+          <include name="checkTopClientsByCommTabWithATS"/>
+          <include name="checkCorporateAddAccountTabsDataFromPlusIcon"/>
+          <include name="checkGrossCommissionasofPreviousDayTiles"/>
+          <include name="checkInvestorAddAccountTabsDataFromPlusIcon"/>
+          <include name="checkCommissionBySectorInDashboard"/>
+          <include name="checkTopTickersByCommHeadersandSymbols"/>
+          <include name="checkCommissionByRegionWidgetGridHeaderVerification"/>
+          <include name="checkCommissionBySectorWidgetGridHeaderVerification"/>
+          <include name="checkGrossCommissionTilesPopup"/>
+          <include name="checkDeltaCalculationForRegionWidInRevByAccountTable"/>
+          <include name="checkDeltaCalculationForProductWidgetInRevByAccountTable"/>
+          <include name="checkTopSalesTraderDeltaCalculation"/>
+          <include name="checkCommissionTilesPopupOfProducts"/>
+          <include name="checkTopResearchBySalesPersonTable"/>
+          <include name="checkCommissionByProductWidget"/>
+          <include name="checkTabsInDashboard"/>
+          <include name="checkDashboardTiles"/>
+          <include name="checkCommissionTilesPopupDeltaOfProducts"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Dashboard.DashboardTest -->
+      <class name="com.dz.prism.test.libraryportal.LibraryPortalTest">
+        <methods>
+          <include name="verifyTickerSymbolInResearchLibraryShowHideFilter"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.libraryportal.LibraryPortalTest -->
+      <class name="com.dz.prism.test.productionBugs.TopResearchSalesPerson">
+        <methods>
+          <include name="goToDashboard"/>
+          <include name="verifyGrossCommInTopResearchSalesPersonTearSheet"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.productionBugs.TopResearchSalesPerson -->
+      <class name="com.dz.prism.test.productionBugs.TopSalesTradersGrossComm">
+        <methods>
+          <include name="goToDashboard"/>
+          <include name="verifyGrossCommInTopSalesTraderTearSheet"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.productionBugs.TopSalesTradersGrossComm -->
+      <class name="com.dz.prism.test.Readership.ReaderShipModule">
+        <methods>
+          <include name="ShowFilter"/>
+          <include name="TableHeader"/>
+          <include name="gotoReadershipModule"/>
+          <include name="checkReaderShipTable"/>
+          <include name="getTickerName"/>
+          <include name="checkCustomRangeDatefilterVerificationWithTable"/>
+          <include name="checkSummaryTilesCountMatchedWithTableCount"/>
+          <include name="checkReadershipTableWithATSReadershipTab"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Readership.ReaderShipModule -->
+      <class name="com.dz.prism.test.ReaderShipEmail.ReaderShipEmailModule">
+        <methods>
+          <include name="ShowFilter"/>
+          <include name="gotoEmailReadershipModule"/>
+          <include name="TableHeader"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ReaderShipEmail.ReaderShipEmailModule -->
+      <class name="com.dz.prism.test.ResearchLibrary.ResearchLibraryModuleTest">
+        <methods>
+          <include name="ShowFilter"/>
+          <include name="gotoResearchLibraryModule"/>
+          <include name="TableHeader"/>
+          <include name="checkResearchLibraryTable"/>
+          <include name="checkSentAndReadCount"/>
+          <include name="checkDocumentNameHyperLinked"/>
+          <include name="checkSummaryTilesCountMatchedWithTableCount"/>
+          <include name="verifyTableHeader"/>
+          <include name="verifyShowFilter"/>
+          <include name="verifyTableSearch"/>
+          <include name="verifyReadCount"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ResearchLibrary.ResearchLibraryModuleTest -->
+      <class name="com.dz.prism.test.ResearchLibrary.ResearchLibraryTableHeader">
+        <methods>
+          <include name="TableHeader"/>
+          <include name="gotoResearchLibraryModule"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ResearchLibrary.ResearchLibraryTableHeader -->
+      <class name="com.dz.prism.test.researchsalestearsheet.VerifyGrossCommInTradesBasedOnSalesPerson">
+        <methods>
+          <include name="goToResearchSalesTearsheetFromDashBoard"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.researchsalestearsheet.VerifyGrossCommInTradesBasedOnSalesPerson -->
+      <class name="com.dz.prism.test.researchsalestearsheet.VerifyGrossCommisionPopUpPage">
+        <methods>
+          <include name="goToResearchSalesTearsheetFromDashBoard"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.researchsalestearsheet.VerifyGrossCommisionPopUpPage -->
+      <class name="com.dz.prism.test.researchsalestearsheet.verifyGrossCommWithRevenueModule">
+        <methods>
+          <include name="verifyCommPopupPageTabValWithResRevByAccAndRevByProdAndRevByPerson"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.researchsalestearsheet.verifyGrossCommWithRevenueModule -->
+      <class name="com.dz.prism.test.researchsalestearsheet.VerifySplitCommBasedOnSalesPerson">
+        <methods>
+          <include name="goToResearchSalesTearsheetFromDashBoard"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.researchsalestearsheet.VerifySplitCommBasedOnSalesPerson -->
+      <class name="com.dz.prism.test.Revenue.RevenueModule">
+        <methods>
+          <include name="verifyCommissionBreakUpInAccountTearsheet"/>
+          <include name="compareCommValFrmRevByRegionWithDashbrdRegionCommWidget"/>
+          <include name="verifyRevenueByProductInAccountTearSheet"/>
+          <include name="verifyYTDvsGoalOfEachProduct"/>
+          <include name="verifyRevenueByProductCommInRevRegionTab"/>
+          <include name="calculateVerifyAnnComm"/>
+          <include name="verifyRevenueByProductCommInDashboardProductWidget"/>
+          <include name="calculateVerifyGrossComm"/>
+          <include name="calculateVerifyYOYComparison"/>
+          <include name="verifyAllSymbolsEachProduct"/>
+          <include name="verifyPrevCommOfEachProduct"/>
+          <include name="compareRevByRegnCommValWithATSRevByProdVal"/>
+          <include name="calculateVerifyPrevYearNetComm"/>
+          <include name="verifyRevenueByProductCommInRevAccountTab"/>
+          <include name="verifyYearsPeriodFilter"/>
+          <include name="calculateVerifyGrowthValues"/>
+          <include name="verifyRevenueByProductPrevCommInDashboard"/>
+          <include name="verifyGrossCommOfEachProduct"/>
+          <include name="gotoRevenuModule"/>
+          <include name="verifyYTDvsPrevCommOfEachProduct"/>
+          <include name="verifyRevenueByProductCommInTradesTab"/>
+          <include name="calculateVerifyNetComm"/>
+          <include name="verifyRevenueByProductGrossComm"/>
+          <include name="verifyRevenueByProductCommInRevPersonTab"/>
+          <include name="verifyAnnCommvsPrevFullYrCommOfEachProduct"/>
+          <include name="verifyRevenueByProductPrevComm"/>
+          <include name="verifyRevenueByProductGrossCommInDashboard"/>
+          <include name="demoTestException"/>
+          <include name="verifyRevenueByAccountInAccountTearSheet"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Revenue.RevenueModule -->
+      <class name="com.dz.prism.test.TickerTearSheet.TickerTearSheetTest">
+        <methods>
+          <include name="verifyTickerSymbolFieldInEditAccountPage"/>
+          <include name="verifyInActivityTab"/>
+          <include name="verifyTickerSymbolInReaderShipShowHideFilter"/>
+          <include name="verifyTickerSymbolInShowHideFilterTickerFieldSugg"/>
+          <include name="verifyTickerSymbolInActivityShowHideFilter"/>
+          <include name="verifyTickerSymbolInTradesShowHideFilter"/>
+          <include name="checkBulkLogInteractionBtn"/>
+          <include name="saveAddInteraction"/>
+          <include name="verifyTickerSymbolInResearchLibraryShowHideFilter"/>
+          <include name="checkTickerTearSheetTabs"/>
+          <include name="checkCorporateEditAccountTabsDataInTTS"/>
+          <include name="tradesSummryShowHideFilter"/>
+          <include name="checkShowHideFilterExcludeBtn"/>
+          <include name="openTickerTearSheet"/>
+          <include name="checkAddorDeleteInterestList"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.TickerTearSheet.TickerTearSheetTest -->
+      <class name="com.dz.prism.test.Trades.TradesModule">
+        <methods>
+          <include name="gotoTradesModule"/>
+          <include name="ShowFilter"/>
+          <include name="tradesTableHeaders"/>
+          <include name="tableDataCheckWithPeriodFilter"/>
+          <include name="checkTradesTable"/>
+          <include name="checkCustomDateFilter"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Trades.TradesModule -->
+      <class name="com.dz.prism.test.activity.ActivityNewlyAddedColumnsVerification">
+        <methods>
+          <include name="verifyActivityTableNewColumns"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.activity.ActivityNewlyAddedColumnsVerification -->
+      <class name="com.dz.prism.test.activity.ActivityTest">
+        <methods>
+          <include name="checkEditInterationForSingle"/>
+          <include name="checkEditInterationByAddingRecommendation"/>
+          <include name="checkActivityTable"/>
+          <include name="checkEditedInterationForMultipleInActivityTable"/>
+          <include name="deleteInteractionInActivityPage"/>
+          <include name="checkEditedInterationForSingleInActivityTable"/>
+          <include name="EditdeleteHistoryPageCheckInActivityPage"/>
+          <include name="checkEditInterationForMultiple"/>
+          <include name="deleteInteraction"/>
+          <include name="checkCustomDateFilter"/>
+          <include name="checkEditInterationForSingleByAddingContact"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.activity.ActivityTest -->
+      <class name="com.dz.prism.test.addAccountpage.AddServiceAccountTest">
+        <methods>
+          <include name="addServiceAccountWithAllInputFields"/>
+          <include name="addServiceAccountWithMandatoryFieldsOnly"/>
+          <include name="editServiceAccountWithMandatoryFieldsOnly"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.addAccountpage.AddServiceAccountTest -->
+      <class name="com.dz.prism.test.addcontactpage.AddNewContactTest">
+        <methods>
+          <include name="verifyContactHistoryAfterUnedit"/>
+          <include name="saveAddContact"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.addcontactpage.AddNewContactTest -->
+      <class name="com.dz.prism.test.addInteraction.CRUD_LogInteraction">
+        <methods>
+          <include name="addInteractionWithAllInputFields"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.addInteraction.CRUD_LogInteraction -->
+      <class name="com.dz.prism.test.adminConsole.ProcedureSummaryTest">
+        <methods>
+          <include name="gotoProcedureSummary"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.adminConsole.ProcedureSummaryTest -->
+      <class name="com.dz.prism.test.ContactTearSheet.ContactTearSheetTest">
+        <methods>
+          <include name="doEditContactAndUpdate"/>
+          <include name="checkDeactivateContact"/>
+          <include name="verifyAddSingleInteractionInContactTearSheet"/>
+          <include name="checkContactHistryPage"/>
+          <include name="verifyInContactHistry"/>
+          <include name="checkDataAvailableInCTSTabs"/>
+          <include name="checkCTSInterestListTab"/>
+          <include name="checkEditContactPage"/>
+          <include name="verifyAddSingleInteractionInteractionInServiceTearSheet"/>
+          <include name="checkResearchSubscriptionTabPage"/>
+          <include name="checkMoveContact"/>
+          <include name="checkContactTearSheet"/>
+          <include name="verifyAddMultipleInteractionInteractionInServiceTearSheet"/>
+          <include name="verifyAddMultipleInteractionInContactTearSheet"/>
+          <include name="checkMoveContactPage"/>
+          <include name="saveAddSingleInteractionFromServiceCTS"/>
+          <include name="verifyAddMultipleInteractionInActivity"/>
+          <include name="saveAddMultipleInteractionFromServiceCTS"/>
+          <include name="verifyAddSingleInteractionInActivity"/>
+          <include name="verifyContactTearSheetHomePage"/>
+          <include name="checkEmploymentChangePage"/>
+          <include name="doMoveContact"/>
+          <include name="verifyContactInNewAccountAfterEmpChange"/>
+          <include name="checkContactDeactivation"/>
+          <include name="verifyContactInNewAccountAfterMoveContact"/>
+          <include name="doEmploymentChange"/>
+          <include name="saveAddInteraction"/>
+          <include name="checkEditContact"/>
+          <include name="saveAddContactMandatoryFields"/>
+          <include name="verifyContactInOldAccountAftrMoveContact"/>
+          <include name="verifyContactInOldAccountAftrEmpChang"/>
+          <include name="verifyInActivity"/>
+          <include name="checkInterestListTabUploadFilePage"/>
+          <include name="verifyInContactTearSheet"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ContactTearSheet.ContactTearSheetTest -->
+      <class name="com.dz.prism.test.coveragemanagement.AddCoverage">
+        <methods>
+          <include name="copyCoverageInCM"/>
+          <include name="editCoverageToActiveStatus"/>
+          <include name="addCoverageUsingCoverageManagement"/>
+          <include name="addCoverageUsingCMWithEndDateAsToday"/>
+          <include name="addCoverageUsingCMWithInActive"/>
+          <include name="deActivateCoverageInCMUsingIcon"/>
+          <include name="editCoverageWithActiveStatus"/>
+          <include name="editCoveragetoInActiveStatus"/>
+          <include name="deActivateCoverageInCMUsingButton"/>
+          <include name="BulkCoverageInCM"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.coveragemanagement.AddCoverage -->
+      <class name="com.dz.prism.test.coveragemanagement.AddCoverageFromTickerTearSheet">
+        <methods>
+          <include name="addCoverageUsingTickerTearsheet"/>
+          <include name="editTheAddedCoverageUsingTickerTearsheet"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.coveragemanagement.AddCoverageFromTickerTearSheet -->
+      <class name="com.dz.prism.test.coveragemanagement.AddCoverageWithSector">
+        <methods>
+          <include name="addSectorCoverageUsingCMWithInActive"/>
+          <include name="copySectorCoverageInCM"/>
+          <include name="deActivateSectorCoverageUsingButton"/>
+          <include name="editSectorCoverageToActiveStatus"/>
+          <include name="addSectorCoverageUsingCoverageManagement"/>
+          <include name="deActivateCoverageInCMUsingIcon"/>
+          <include name="addSectorCoverageUsingCMWithEndDateAsToday"/>
+          <include name="editSectorCoverageToInActiveStatus"/>
+          <include name="editSectorCoverageWithActiveStatus"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.coveragemanagement.AddCoverageWithSector -->
+      <class name="com.dz.prism.test.globalsearch.GlobalSearchTest">
+        <methods>
+          <include name="verifyTopResearchSalesAcctsCoveredData"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.globalsearch.GlobalSearchTest -->
+      <class name="com.dz.prism.test.Mylist.ContactRelationshipTest">
+        <methods>
+          <include name="verifyContactRelationWithServiceAccount"/>
+          <include name="verifyUpdateContactRelationFromListHistory"/>
+          <include name="verifyContactRelationWithCorporateAccount"/>
+          <include name="verifyContactRelationWithContact"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Mylist.ContactRelationshipTest -->
+      <class name="com.dz.prism.test.Mylist.CredOperationMyList">
+        <methods>
+          <include name="credOperationForSimpleListCopySeletdToNewAndExistingList"/>
+          <include name="credOperationForSimpleList"/>
+          <include name="credOperationForSimpleListQuickAddContactsAndDeleteContact"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Mylist.CredOperationMyList -->
+      <class name="com.dz.prism.test.Mylist.MyListTest">
+        <methods>
+          <include name="credOperationForDynamicListCopySeletdToNewAndExistingList"/>
+          <include name="verifySimpleListLoads"/>
+          <include name="verifySingleInteractionInServiceTearSheet"/>
+          <include name="verifyExistingDynamicListLoads"/>
+          <include name="verifyRespectiveHeaderColumnsInMyListTable"/>
+          <include name="credOperationForDynamicList"/>
+          <include name="credOperationForSimpleListQuickAddContactsAndDeleteContact"/>
+          <include name="verifySingleInteractionInActivity"/>
+          <include name="checkBulkMailPageInMylistStaticList"/>
+          <include name="saveBulkLogSingleInteractionFromMylist"/>
+          <include name="verifyDynamicListBulkMailSendLaterPopUpPg"/>
+          <include name="credOperationForSimpleList"/>
+          <include name="verifySingleInteractionInContactTearSheet"/>
+          <include name="verifyExistingSimpleListLoads"/>
+          <include name="checkBulkUploadContactsFromStaticList"/>
+          <include name="verifyCustomSearchListLoads"/>
+          <include name="verifyDynamicListLoads"/>
+          <include name="checkBulkMailPageInMylistDynamicList"/>
+          <include name="credOperationForSimpleListCopySeletdToNewAndExistingList"/>
+          <include name="verifyStaticListBulkMailSendLaterPopUpPg"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Mylist.MyListTest -->
+      <class name="com.dz.prism.test.relationshipenhancements.RelationshipEnhancements">
+        <methods>
+          <include name="relationshipEnhancementUsingAccountTearsheet"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.relationshipenhancements.RelationshipEnhancements -->
+      <class name="com.dz.prism.test.Reports.ReportTest">
+        <methods>
+          <include name="checkReportsModule"/>
+          <include name="checkSalesCoverageReports"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Reports.ReportTest -->
+      <class name="com.dz.prism.test.researchsalestearsheet.TradesSummaryTabShowHideFilter">
+        <methods>
+          <include name="openResearchSalesTearSheet"/>
+          <include name="tradesSummryShowHideFilter"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.researchsalestearsheet.TradesSummaryTabShowHideFilter -->
+      <class name="com.dz.prism.test.Revenue.RevenueTest">
+        <methods>
+          <include name="checkTabsInRevenue"/>
+          <include name="verifyRevByAccPeriodFilters"/>
+          <include name="verifyRevByAccountGoalComparisonColumn"/>
+          <include name="verifyRevByPersonAccCoveredColumn"/>
+          <include name="checkCommInRevByAccAndRevByPersonTableWithDashboard"/>
+          <include name="checkFiveYearsFilters"/>
+          <include name="verifyRevByAccSuperAccount"/>
+          <include name="verifyRevenueByAccountWithAccountTearSheet"/>
+          <include name="checkFiscalYearFilters"/>
+          <include name="verifyRegionNameInATSBanner"/>
+          <include name="verifyRevByAccTotalGrossCommWithATSTileComm"/>
+          <include name="verifyRevenueByAccountTableCommision"/>
+          <include name="verifyRevByAccSubProductsComm"/>
+          <include name="verifyRevByAccOverallSubProductsComm"/>
+          <include name="verifySubProductInRevByProd"/>
+          <include name="verifyRevByRegionCommCalculation"/>
+          <include name="checkSubProdWithATSRevByProdTab"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Revenue.RevenueTest -->
+      <class name="com.dz.prism.test.ROI.ROITest">
+        <methods>
+          <include name="checkROITable"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ROI.ROITest -->
+      <class name="com.dz.prism.test.ServiceAccountTearSheet.ServiceAccountTest">
+        <methods>
+          
+          <include name="verifyInActivityHistryPage"/>
+          <include name="verifyInContactTearSheetActivityTab"/>
+          <include name="saveEditLogInterationInActivity"/>
+          <include name="verifyInEditedInteractionInHistryPage"/>
+          
+          <include name="verifyInActivityModuleTable"/>
+          <include name="doDeleteInteractionInCTSActivity"/>
+          
+          <include name="verifyInCTS_ActivityTab"/>
+          <include name="saveEditInteractionContactTearSheetActivityTab"/>
+          
+          <include name="verifyEditedInteractionInActivity"/>
+          <include name="verifyDeletedInteractionInActivityModuleTable"/>
+        
+          <include name="verifyActivityTabShowHideFilter"/>
+          <include name="verifyInActivity"/>
+          <include name="saveBulkLogInteration"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ServiceAccountTearSheet.ServiceAccountTest -->
+      <class name="com.dz.prism.test.SuperAccountTearSheet.SuperAccountTest">
+        <methods>
+          <include name="checkTableUsingShowHideFilter"/>
+          <include name="verifyRevByAccSuperAccount"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.SuperAccountTearSheet.SuperAccountTest -->
+      <class name="com.dz.prism.test.BulkEmploymentChange.BulkSuggestedEmployeChange">
+        <methods>
+          <include name="verifySuggestedEmployementChange"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.BulkEmploymentChange.BulkSuggestedEmployeChange -->
+      <class name="com.dz.prism.test.BulkEmploymentChange.NewContactTest">
+        <methods>
+          <include name="checkSelectedContactsIgnoredfor90days"/>
+          <include name="checkContactsAddedtoPrism"/>
+          <include name="checkContactAddedtoPrism"/>
+          <include name="newContactsVerificationOnPrism"/>
+          <include name="checkSelectedContactsIgnoredforAlways"/>
+          <include name="checkSelectedContactsIgnoredfor30days"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.BulkEmploymentChange.NewContactTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

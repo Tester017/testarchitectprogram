@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="2" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.Trades.TradesModule">
+        <methods>
+          <include name="checkCustomDateFilter"/>
+          <include name="checkTradesShowHideFilter"/>
+          <include name="gotoTradesModule"/>
+          <include name="ShowFilter"/>
+          <include name="tradesTableHeaders"/>
+          <include name="checkTradesTable"/>
+          <include name="tableDataCheckWithPeriodFilter"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Trades.TradesModule -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

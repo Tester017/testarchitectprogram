@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Playwright test">
+  <suite-files>
+    
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/ResearchLibraryModuleTest.xml"/>
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/ResearchLibraryTableHeader.xml"/>
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/ResearchSalesPeronTearsheet.xml"/>
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/RevenueAdvancedAllTableHeaders.xml"/>
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/RevenueAdvancedTest.xml"/>
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/ROITest.xml"/>
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/SalesTraderTearSheetTest.xml"/>
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/ServiceAccountTearsheetBulkAddContactTest.xml"/>
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/ServiceAccountTest.xml"/>
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/ShowHideFilterForEmailReaderShipAndReadershipTab.xml"/>
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/SponserCompaniesTab.xml"/>
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/SuperAccountTest.xml"/>
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/TickerTearsheetBulkAddContactTest.xml"/>
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/TickerTearSheetTest.xml"/>
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/TopResearchSalesPerson.xml"/>
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/TopSalesTradersGrossComm.xml"/>
+    <suite-file path="./xmlFiles/PIPER/ModuleWiseXML/TradesModule.xml"/>
+  </suite-files>
+</suite> <!-- Playwright test -->

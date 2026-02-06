@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="2" name="Suite" verbose="3">
+	<listeners>
+		<listener
+			class-name="com.dz.core.testng.listeners.DriverListener2" />
+	</listeners>
+	<test thread-count="2" parallel="methods" name="Test" verbose="3"
+		preserve-order="true">
+		<classes>	
+			<class
+                name="com.dz.prism.test.Mylist.MyListShareListTest">
+                <methods>
+                    <include name="verifySimpleListHistoryWhenDoModifications"/>
+                     <include name="verifyRightClickSimpleListHistoryWhenDoModifications"/>
+                      <include name="verifyDynamicListHistoryWhenDoModifications"/>
+                       <include name="verifyRightClickDynamicListHistoryWhenDoModifications"/>
+                   <include name="verifyMyListHistoryContactTSQuickLookMyListWidget"/>
+                         <include name="verifyMyListHistoryForAccountTSContacts"/>
+                          <include name="verifyMyListHistoryForTickerTSContacts"/>
+                    <include name="verifyMyListHistoryForServiceTSContacts"/>
+                            <include name="verifyMyListHistoryForSuperAccTSContacts"/>
+                             <include name="verifyMyListHistoryFromMyContactsModule"/>
+                             <include name="verifyMyListHistoryFromEventTS"/>
+                              <include name="verifyEditedStaticListNameInMyListHistory"/>
+                    <include name="verifyEditedDynamicListNameInMyListHistory"/>
+                </methods>
+            </class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

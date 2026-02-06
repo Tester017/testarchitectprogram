@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="1" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.EventManager.EventManagerTest">
+        <methods>
+          <include name="addAnalystEventEditSlotDetailsVerifyInMeetingSlot"/>
+          <include name="addEventWithPastDateVerifyEventDetailsInAllRoleCalendars"/>
+          <include name="checkAnalystEventWithAnySlotTypeMeetingInImpacts"/>
+          <include name="checkCTSMeetingsWidget"/>
+          <include name="checkEventManagerButtons"/>
+          <include name="createMulCorporateContInMultipleMeetSlotandVerifyInRespectiveAreas"/>
+          <include name="credMulServiceContInSingleMeetSlotandDoLogInteraction"/>
+          <include name="deleteMulVerifyPresentorInMeetingSlotBoothTourEventWithMandatoryFields"/>
+          <include name="deleteVerifyMultiServEventFromBookMeetingInCalendar"/>
+          <include name="deleteVerifyPresentorInMeetingSlotBoothTourEventWithMandatoryFields"/>
+          <include name="doVerifyCorpLogInteractionFromBookMeetInCalendar"/>
+          <include name="doVerifyServiceLogInteractionFromBookMeetInCalendar"/>
+          <include name="editMulCorporateContInMultipleMeetSlotandVerifyInRespectiveAreas"/>
+          <include name="editMulVerifyPresentorInMeetingSlotBoothTourEventWithMandatoryFields"/>
+          <include name="meetingSlotTimeZoneModify"/>
+          <include name="removeShowEventWithoutMeetConfigandVerifyInAllRoleCalendar"/>
+          <include name="verifyEMAlertNotifications"/>
+          <include name="verifyEventManagerExcludeShowHideFilter"/>
+          <include name="verifyEventManagerIncludeShowHideFilter"/>
+          <include name="verifyEventManagerSatSunFilter"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.EventManager.EventManagerTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

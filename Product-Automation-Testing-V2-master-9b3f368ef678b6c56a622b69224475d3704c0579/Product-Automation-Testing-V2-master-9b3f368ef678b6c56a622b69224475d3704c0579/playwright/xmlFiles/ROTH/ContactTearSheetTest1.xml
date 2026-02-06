@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="1" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.addcontactpage.AddContactTest">
+        <methods>
+          <include name="saveAddContactMandatoryFields"/>
+          <include name="verifyInATSContactTab"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.addcontactpage.AddContactTest -->
+      <class name="com.dz.prism.test.ContactTearSheet.ContactTearSheetTest">
+        <methods>
+          <include name="checkCTSFundsAndHoldingTable"/>
+          <include name="checkCTSInterestListTab"/>
+          <include name="checkContactDeactivation"/>
+          <include name="checkContactHistryPage"/>
+          <include name="checkContactTearSheet"/>
+          <include name="checkDataAvailableInCTSTabs"/>
+          <include name="checkEditContact"/>
+          <include name="doEditContactAndUpdate"/>
+          <include name="saveAddContactAllFieldsWithSameAsPrimaryEnabled"/>
+          <include name="verifyInCTSEditContact"/>
+          <include name="checkEditContactPage"/>
+          <include name="checkEquityAUMValues"/>
+          <include name="checkFundTab"/>
+          <include name="checkFundsDataInHoldings"/>
+          <include name="checkFundsTab"/>
+          <include name="checkHoldingBySectorWidget"/>
+          <include name="checkHoldingBySectorWidgetPopUpTable"/>
+          <include name="checkHoldingTab"/>
+          <include name="checkHoldingTabShowHideExcludeFilter"/>
+          <include name="checkHoldingTabShowHideExcludeFilterMulti"/>
+          <include name="checkHoldingTabShowHideIncludeFilter"/>
+          <include name="checkHoldingTabShowHideIncludeFilterMulti"/>
+          <include name="checkMoveContact"/>
+          <include name="saveAddMultipleInteractionFromServiceCTS"/>
+          <include name="verifyAddContactForAllFields"/>
+          <include name="saveAddContactAllFields"/>
+          <include name="verifyAddMultipleInteractionInActivity"/>
+          <include name="verifyAddMultipleInteractionInContactTearSheet"/>
+          <include name="verifyAddMultipleInteractionInteractionInServiceTearSheet"/>
+          <include name="verifyAddSingleInteractionInContactTearSheet"/>
+          <include name="saveAddSingleInteractionFromServiceCTS"/>
+          <include name="verifyAddSingleInteractionInteractionInServiceTearSheet"/>
+          <include name="verifyContactTearSheetHomePage"/>
+          <include name="verifyInContactHistry"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ContactTearSheet.ContactTearSheetTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

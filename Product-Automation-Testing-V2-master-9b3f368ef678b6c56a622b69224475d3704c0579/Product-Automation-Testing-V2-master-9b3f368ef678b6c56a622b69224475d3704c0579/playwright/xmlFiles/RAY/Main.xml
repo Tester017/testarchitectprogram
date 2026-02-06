@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Playwright test">
+  <suite-files>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/AccountTearSheetArchiveTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/AccountTearsheetBulkEditContactTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/AccountTearSheetTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/ActivityShowFilter.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/ActivityTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/AddContactTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/AddCorporateAccountTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/AddInteractionTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/AddInvestorAccountTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/AddNewContactTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/BulkEmploymentChangeTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/BulkMoveTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/CalendarTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/ContactRelationshipTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/ContactTearSheetHeadersVerify.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/ContactTearSheetTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/DashboardTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/GlobalSearchTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/LibraryPortalTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/MyContactsTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/MyListDynamicFiltersTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/MyListTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/NewContactTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/ReaderShipEmailModule.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/ReaderShipModule.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/ResearchLibraryModuleTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/SponserCompaniesTab.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/SuperAccountBulkEditTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/SuperAccountTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/TickerTearsheetBulkEditContactTest.xml"/>
+    <suite-file path="./xmlFiles/RAY/ModuleWiseXML/TickerTearSheetTest.xml"/>
+  </suite-files>
+</suite> <!-- Playwright test -->

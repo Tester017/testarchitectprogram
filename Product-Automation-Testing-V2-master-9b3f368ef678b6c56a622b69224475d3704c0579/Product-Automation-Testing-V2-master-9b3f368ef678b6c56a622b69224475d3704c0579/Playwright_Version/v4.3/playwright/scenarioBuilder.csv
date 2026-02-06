@@ -1,0 +1,20 @@
+Unique_ID,Depence,Group,priority,Description
+EH_TTS_CTT_CTSTBLE_S_0034_Tc_0001,,Positive,100,To check the prism application displays and clickable contacts tab
+EH_TTS_CTT_BLI_S_0040_Tc_0002,EH_TTS_CTT_CTSTBLE_S_0034_Tc_0001,Positive,200,Check whether the application allow to click the bulk log button after select contact in table
+EH_TTS_CTT_BLI_S_0040_Tc_0004,EH_TTS_CTT_BLI_S_0040_Tc_0002,Positive,300,Verify the application display ÒContactÓ field in the log interaction page
+EH_TTS_CTT_BLI_S_0040_Tc_0005,EH_TTS_CTT_BLI_S_0040_Tc_0004,Positive,400,check whether the application display contact name as mandatory field
+EH_TTS_CTT_BLI_S_0040_Tc_0006,EH_TTS_CTT_BLI_S_0040_Tc_0004,Positive,500,Check whether the application displays selected contact name as tag in contact name field
+EH_TTS_CTT_BLI_S_0040_Tc_0014,EH_TTS_CTT_BLI_S_0040_Tc_0002,Positive,600,Check the application displays log as multiple interaction selected by default
+EH_TTS_CTT_BLI_S_0040_Tc_0015,EH_TTS_CTT_BLI_S_0040_Tc_0014,Positive,700,To check the prism application displays and clickable Interaction Date field in the Log Interaction page
+EH_TTS_CTT_BLI_S_0040_Tc_0016,EH_TTS_CTT_BLI_S_0040_Tc_0014,Positive,800,Check the application displays and clickable ÒTodayÓ in date picker
+EH_TTS_CTT_BLI_S_0040_Tc_0025,EH_TTS_CTT_BLI_S_0040_Tc_0002,Positive,900,To check the prism application display Activity type with drop down field in the Log Interaction page
+EH_TTS_CTT_BLI_S_0040_Tc_0026,EH_TTS_CTT_BLI_S_0040_Tc_0025,Positive,1000,To check the prism application display Activity Type field as a mandatory
+EH_TTS_CTT_BLI_S_0040_Tc_0027,EH_TTS_CTT_BLI_S_0040_Tc_0025,Positive,1100,"To check the prism application following Type in the drop down is selectable: ÒCall InboundÓ, ÒCall OutboundÓ, ÒVMÓ, ÒEmail InboundÓ, ÒEmail OutboundÓ, ÒIMÓ, ÒExcel ModelÓ"
+EH_TTS_CTT_BLI_S_0040_Tc_003611,EH_TTS_CTT_BLI_S_0040_Tc_0002,Positive,1200,Check whether the application display ÔMeeting typeÕ field as mandatory while meeting type activity is selected
+EH_TTS_CTT_BLI_S_0040_Tc_003626,EH_TTS_CTT_BLI_S_0040_Tc_0002,Positive,1300,Check whether the application display Venue field with ÒSelect CityÓ option as default
+EH_TTS_CTT_BLI_S_0040_Tc_0063,EH_TTS_CTT_BLI_S_0040_Tc_003611,Positive,1400,Check whether the application Display Venue field as mandatory field while selecting In Person meeting type
+EH_TTS_CTT_BLI_S_0040_Tc_0077,EH_TTS_CTT_BLI_S_0040_Tc_0002,Positive,1500,To check the prism application displays and clickable Duration field in the Log Interaction page
+EH_TTS_CTT_BLI_S_0040_Tc_0102,EH_TTS_CTT_BLI_S_0040_Tc_0002,Positive,1600,Check whether the application displays ÒCommentÓ field as a mandatory for both mail panel and outlook
+EH_TTS_CTT_BLI_S_0040_Tc_0149,EH_TTS_CTT_BLI_S_0040_Tc_003611,Positive,1700,Check the application allow the user to clickable ÒSaveÓ button
+EH_TTS_ATY_AT_S_0023_Tc_014112,EH_TTS_CTT_BLI_S_0040_Tc_0149,Positive,1800,Check whether the application displays Venue-Activity->Filter Respective ContactÕs Account Name->Venue ColumnÊ
+EH_TTS_ATY_AT_S_0023_Tc_014111,EH_TTS_ATY_AT_S_0023_Tc_014112,Positive,1900,Check whether the application displays Venue->Respective Contact tearsheet->Activity tab->Venue ColumnÊ

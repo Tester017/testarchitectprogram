@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Playwright test">
+  <suite-files>
+   
+    <suite-file path="./xmlFiles/ROSENBLATT/ModuleWiseXML/BulkCallTest.xml"/>
+    <suite-file path="./xmlFiles/ROSENBLATT/ModuleWiseXML/ContactRelationshipTest.xml"/>
+    <suite-file path="./xmlFiles/ROSENBLATT/ModuleWiseXML/ContactTearSheetHeadersVerify.xml"/>
+    <suite-file path="./xmlFiles/ROSENBLATT/ModuleWiseXML/ContactTearSheetTest.xml"/>
+    <suite-file path="./xmlFiles/ROSENBLATT/ModuleWiseXML/DashboardTest.xml"/>
+    <suite-file path="./xmlFiles/ROSENBLATT/ModuleWiseXML/GlobalSearchTest.xml"/>
+    <suite-file path="./xmlFiles/ROSENBLATT/ModuleWiseXML/MyListTest.xml"/>
+    <suite-file path="./xmlFiles/ROSENBLATT/ModuleWiseXML/ReaderShipEmailModule.xml"/>
+    <suite-file path="./xmlFiles/ROSENBLATT/ModuleWiseXML/ReaderShipModule.xml"/>
+    <suite-file path="./xmlFiles/ROSENBLATT/ModuleWiseXML/ResearchLibraryModuleTest.xml"/>
+    <suite-file path="./xmlFiles/ROSENBLATT/ModuleWiseXML/SalesTraderTearSheetTest.xml"/>
+    <suite-file path="./xmlFiles/ROSENBLATT/ModuleWiseXML/ServiceAccountTest.xml"/>
+    <suite-file path="./xmlFiles/ROSENBLATT/ModuleWiseXML/SponserCompaniesTab.xml"/>
+    <suite-file path="./xmlFiles/ROSENBLATT/ModuleWiseXML/SuperAccountTest.xml"/>
+    <suite-file path="./xmlFiles/ROSENBLATT/ModuleWiseXML/TickerCoverageManagementTest.xml"/>
+    <suite-file path="./xmlFiles/ROSENBLATT/ModuleWiseXML/TickerTearSheetTest.xml"/>
+  </suite-files>
+</suite> <!-- Playwright test -->

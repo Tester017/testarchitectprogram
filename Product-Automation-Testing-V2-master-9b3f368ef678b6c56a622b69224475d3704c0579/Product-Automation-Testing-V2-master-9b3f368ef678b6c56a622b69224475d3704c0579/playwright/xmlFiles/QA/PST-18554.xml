@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="1" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3" preserve-order="true">
+    <classes>
+      <class name="com.dz.prism.test.ib.addinteraction.IBAddInteractionTest">
+        <methods>
+          <include name="checkConfidentialAsNo"/>
+          <include name="checkConfidentialFlowWithInternalAttendees"/>
+          <include name="checkConfidentialInLogInteraction"/>
+          <include name="checkEditInterationByDeletingInternalAttendee"/>
+          <include name="checkEditInterationWithInternalAttendee"/>
+          <include name="checkInteractionFlowInIBAdmin"/>
+          <include name="checkInteractionFlowInIBAdminWithInternalAttendee"/>
+          <include name="updateConfidentialToNoAndCheck"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.addinteraction.IBAddInteractionTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

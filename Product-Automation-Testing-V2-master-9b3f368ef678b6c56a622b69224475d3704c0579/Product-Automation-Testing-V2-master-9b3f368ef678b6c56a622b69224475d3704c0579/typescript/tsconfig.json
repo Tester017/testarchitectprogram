@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "paths": {
+      
+      "@prismpages/*": [
+        "pages/prism/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@prismdashboardpages/*": [
+        "pages/prism/Dashboard/*"
+      ],
+      "@prismactivitypages/*": [
+        "pages/prism/Activity/*"
+      ],
+      "@prismreadershippages/*": [
+        "pages/prism/Readership/*"
+      ],
+      "@prismrevenuepages/*": [
+        "pages/prism/Revenue/*"
+      ],
+      "@utilFiles/*": [
+        "utils/*"
+      ],
+      "@prismglobalsearchpages/*": [
+        "pages/prism/GlobalSearch/*"
+      ],
+      "@prismaccounttearsheetpages/*": [
+        "pages/prism/AccountTearSheet/*"
+      ]
+    }
+  }
+}

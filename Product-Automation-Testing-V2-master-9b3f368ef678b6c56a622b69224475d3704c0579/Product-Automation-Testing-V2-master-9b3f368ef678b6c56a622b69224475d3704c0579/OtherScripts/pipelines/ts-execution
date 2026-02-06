@@ -1,0 +1,98 @@
+pipeline {
+    agent { label "${params.slave}" }
+ 
+    environment {
+        GITLAB_TOKEN = credentials('shamilygittoken')
+        SHPWD = credentials('shpwd')
+        PEM66 = credentials('pemof66')
+    }
+ 
+    stages {
+        stage('Run Playwright Tests') {
+            steps {
+                script {
+                    def agentLabel = (['labelslave1', 'labelslave3', 'labelslave5'].contains(params.slave)) ? 'datazoic' : 'support'
+
+                    echo "printing agent label: ${agentLabel}"
+                    echo "printing slave3: ${params.slave}"
+
+                    def workspacePath = "/home/${agentLabel}/workspace/${env.JOB_NAME}"
+                    def offlinePath = "/home/${agentLabel}/daniel/playwright-offline"
+ 
+                    echo "Using agent label: ${agentLabel}"
+                    echo "Workspace Path: ${workspacePath}"
+                    echo "Offline Cache Path: ${offlinePath}"
+                     // Get IP address of current agent
+                    def ipaddress = sh(script: "hostname -I | awk '{print \$1}'", returnStdout: true).trim()
+                    echo "Detected IP address of current agent: ${ipaddress}"
+                    env.PLAYWRIGHT_REPORT_LINK = "http://${ipaddress}/testreport/playwright-ts/result${BUILD_NUMBER}/"
+
+ 
+                    sh """
+                        pwd
+                        chmod +x ${workspacePath}/OtherScripts/bash/tsexecution.sh
+                        sed -i 's/\\r\$//' ${workspacePath}/OtherScripts/bash/tsexecution.sh
+                        ${workspacePath}/OtherScripts/bash/tsexecution.sh ${offlinePath} ${BUILD_NUMBER} ${params.client} ${params.project}
+                    """
+                    // Read exit code
+                    def exitCode = readFile('typescript/exit_code.txt').trim().toInteger()
+                    echo "Playwright Test Exit Code: ${exitCode}"
+
+                    // Continue pipeline regardless of test failure
+                    if (exitCode != 0) {
+                        echo "⚠️ Some tests failed, but continuing to generate report."
+                    }
+                    // Capture the latest report folder
+                    def reportPath = sh(
+                        script: """
+                            cd typescript/playwright-report
+                            ls -td report-* | head -1
+                        """,
+                        returnStdout: true
+                    ).trim()
+
+                    echo "Latest Playwright report folder: ${reportPath}"
+                   
+                    // Set it as environment variable so we can use it in post
+                    env.PLAYWRIGHT_REPORT_PATH = "${workspacePath}/typescript/playwright-report/${reportPath}"
+
+                    sh """
+                        pwd
+                        chmod +x ${workspacePath}/OtherScripts/bash/moveReport.sh
+                        sed -i 's/\\r\$//' ${workspacePath}/OtherScripts/bash/moveReport.sh
+                        ${workspacePath}/OtherScripts/bash/moveReport.sh ${SHPWD} ${BUILD_NUMBER} ${params.client} ${workspacePath}/typescript/playwright-report/${reportPath} ${env.JOB_NAME} ${agentLabel}
+                        cd ${workspacePath}/typescript/
+                        npx ts-node utils/sendEmailReport.ts
+                    """
+
+                }
+            }
+        }
+    }
+ 
+    post {
+        success {
+            echo "✅ Tests executed successfully. Publishing report..."
+            publishHTML([
+                reportDir: "${env.PLAYWRIGHT_REPORT_PATH}",
+                reportFiles: 'index.html',
+                reportName: 'Playwright Report',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: false
+            ])
+        }
+ 
+        failure {
+            echo "❌ Playwright tests failed."
+
+            echo "Latest Playwright report folder: ${reportPath}"
+
+        }
+ 
+        cleanup {
+            echo "🧹 Cleaning up copied folders..."
+            sh 'rm -rf typescript/node_modules typescript/secure'
+        }
+    }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="1" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.EventManager.EventManagerTest">
+        <methods>
+          <include name="addAnalystEventWithCorporateAttendeeOfAnySlotType"/>
+          <include name="addEventWithCorpAttendeeVerifyInAllRoleCalendar"/>
+          <include name="checkCTSMeetingsWidget"/>
+          <include name="addEventWithFutureDateMandatoryFields"/>
+          <include name="verifyEMAlertNotifications"/>
+          <include name="deleteMulVerifyPresentorInMeetingSlotBoothTourEventWithMandatoryFields"/>
+          <include name="addMulVerifyPresentorInMeetingSlotBoothTourEventWithMandatoryFields"/>
+          <include name="verifyEventManagerExcludeShowHideFilter"/>
+          <include name="addVerifyMultipleSlotServEventFromBookMeetingInCalendar"/>
+          <include name="addAnEventandCorpTargetContactandVerifyDetails"/>
+          <include name="addEventFromAddEventReqServInCalendarandVerifytheDetails"/>
+          <include name="meetingSlotTimeZoneModify"/>
+          <include name="addVerifyPresentorInMeetingSlotBoothTourEventWithMandatoryFields"/>
+          <include name="addEntertainmentEventWithCorporateAttendeeOfAnySlotType"/>
+          <include name="addAnalystEventEditSlotDetailsVerifyInMeetingSlot"/>
+          <include name="addEventFromAddEventReqInCalendarandVerifytheDetails"/>
+          <include name="editMulCorporateContInMultipleMeetSlotandVerifyInRespectiveAreas"/>
+          <include name="addMulServiceContInSingleMeetSlotandVerifyInRespectiveAreas"/>
+          <include name="addAnEventandServTargetContactandVerifyDetails"/>
+          <include name="addEventWithMeetingandVerifyInAllRoleCalendarMandatoryFields"/>
+          <include name="doVerifyCorpLogInteractionFromBookMeetInCalendar"/>
+          <include name="addBoothTourEventWithInvestorPresenterMandatoryFields"/>
+          <include name="addEventWithIntrAttendeeAnalystasMandatoryFields"/>
+          <include name="addBoothTourEventWithServicePresenterMandatoryFields"/>
+          <include name="CredMulServiceContfromOpenRequestandVerifyImpactedAreas"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.EventManager.EventManagerTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

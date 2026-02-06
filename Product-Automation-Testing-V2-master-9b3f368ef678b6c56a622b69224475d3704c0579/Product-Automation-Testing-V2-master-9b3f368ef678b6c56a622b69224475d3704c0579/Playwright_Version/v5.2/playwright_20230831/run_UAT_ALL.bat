@@ -1,0 +1,15 @@
+cd RunFiles/CHARDAN
+call Chardan_All_UAT.bat
+cd RunFiles/RENMAC
+call Renmac_All_UAT.bat
+cd RunFiles/ROTH
+call Roth_All_UAT.bat
+cd RunFiles/CH
+call CH_All_UAT.bat
+cd RunFiles/CAPITALONE
+call CapitalOne_All_UAT.bat
+cd RunFiles/SIDOTI
+call Sidoti_All_UAT.bat
+cd RunFiles/LIBERUM
+call LIBERUM_All_UAT.bat
+cmd /k 

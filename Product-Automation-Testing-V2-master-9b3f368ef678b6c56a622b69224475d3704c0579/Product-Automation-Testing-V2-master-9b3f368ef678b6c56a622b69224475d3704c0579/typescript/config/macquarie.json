@@ -1,0 +1,12 @@
+{
+    "environment": {
+        "prismUrl": "https://macquarieuat.datazoic.com/prismst/home.html",
+        "storageStatePath": "secure/storage-state/OutlookLoginAuth_prismalert.json"
+    },
+    "Readership": {
+        "parentModule": "Research"
+    },
+    "login": {
+        "loginType": "Prism Support SSO"
+    }
+}

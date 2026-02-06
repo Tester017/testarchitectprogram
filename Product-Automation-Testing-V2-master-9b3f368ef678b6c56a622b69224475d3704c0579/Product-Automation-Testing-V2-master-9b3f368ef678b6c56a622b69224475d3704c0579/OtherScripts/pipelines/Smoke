@@ -1,0 +1,59 @@
+pipeline {
+    agent {label "${params.slave}"}
+    environment {
+        GITLAB_TOKEN = credentials('shamilygittoken')
+        SHPWD=credentials('shpwd')
+        AGENT_LABEL = 'support'
+        PEM66 = credentials('pemof66')
+    }
+    stages {
+        stage('Setup') {
+            steps {
+                script {
+                    if (env.NODE_NAME == 'slave1' || env.NODE_NAME == 'slave3' || env.NODE_NAME == 'slave5') {
+                        AGENT_LABEL = 'datazoic'
+                    }
+                    sh """
+                        pwd
+                        chmod +x OtherScripts/bash/gitbranchsetup.sh
+                        chmod +x OtherScripts/bash/mavenexecution.sh
+                        chmod +x OtherScripts/bash/sendemail.sh
+                        sed -i 's/\\r\$//' /home/${AGENT_LABEL}/workspace/${env.JOB_NAME}/OtherScripts/bash/gitbranchsetup.sh
+                        /home/${AGENT_LABEL}/workspace/${env.JOB_NAME}/OtherScripts/bash/gitbranchsetup.sh ${BUILD_NUMBER} ${params.branch} ${GITLAB_TOKEN} securesd ${AGENT_LABEL} ${PEM66}
+                    """
+                }
+            }
+        }
+        stage('smoke'){
+            steps {
+                script {
+                    if (env.NODE_NAME == 'slave1' || env.NODE_NAME == 'slave3' || env.NODE_NAME == 'slave5') {
+                        AGENT_LABEL = 'datazoic'
+                    }
+                    sh """
+                        pwd
+                        chmod +x /home/${AGENT_LABEL}/workspace/${env.JOB_NAME}/OtherScripts/bash/mavenexecution.sh
+                        sed -i 's/\\r\$//' /home/${AGENT_LABEL}/workspace/${env.JOB_NAME}/OtherScripts/bash/mavenexecution.sh
+                        /home/${AGENT_LABEL}/workspace/${env.JOB_NAME}/OtherScripts/bash/mavenexecution.sh ${SHPWD} ${BUILD_NUMBER} ${params.client} ${params.grouptype} ${params.productionmode} ${env.JOB_NAME} ${AGENT_LABEL} securesd ${params.role} ${params.EnvironmentRoles}
+                    """
+                }
+            }
+        }
+    }
+     post {
+        success {
+            sh """
+                pwd
+                sed -i 's/\\r\$//' OtherScripts/bash/sendemail.sh
+                OtherScripts/bash/sendemail.sh "Pipeline Success ${ env.JOB_NAME} ${params.client} #${BUILD_NUMBER}" "${ env.JOB_NAME}" "${BUILD_NUMBER}" "PASSED" "${currentBuild.durationString}" "${env.NODE_NAME}" "${params.email}"
+            """
+        }
+        failure {
+            sh """
+                pwd
+                sed -i 's/\\r\$//' OtherScripts/bash/sendemail.sh
+                OtherScripts/bash/sendemail.sh "Pipeline Failure ${ env.JOB_NAME} ${params.client} #${BUILD_NUMBER}" "${ env.JOB_NAME}" "${BUILD_NUMBER}" "Failed" "${currentBuild.durationString}" "${env.NODE_NAME}" "${params.email}"
+            """
+        }
+    }
+}

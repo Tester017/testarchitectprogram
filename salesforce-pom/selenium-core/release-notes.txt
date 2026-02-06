@@ -1,0 +1,39 @@
+-- 1.0.3 -- release --
+
+Features
+- Implemented Factory Design Pattern
+- Implemented Object Pool Design Pattern
+- Implemented Decorated Design Pattern
+
+Changes
+- Removed RestAssured code to follow (S)OLID principle.
+
+Bug Fixes 
+- 
+-
+-
+
+-- 1.0.2 -- release --
+
+Features
+-
+-
+-
+
+Bug Fixes 
+-
+-
+-
+
+
+-- 1.0.1 -- release --
+
+Features
+-
+-
+-
+
+Bug Fixes 
+-
+-
+-

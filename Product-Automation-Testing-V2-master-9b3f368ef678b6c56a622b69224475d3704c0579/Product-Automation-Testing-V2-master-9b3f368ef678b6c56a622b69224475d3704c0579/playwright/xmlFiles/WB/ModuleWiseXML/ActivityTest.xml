@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="1" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.activity.ActivityTest">
+        <methods>
+          <include name="checkNotUpdatedInHistory"/>
+          <include name="checkActivityTableWithYTDFilter"/>
+          <include name="checkLoggedByChangesInHistory"/>
+          <include name="checkActivityShowAndHideforExcludeFilter"/>
+          <include name="checkActivityShowAndHideforIncludeFilter"/>
+          <include name="checkActivityTableHeaders"/>
+          <include name="checkActivityTilesCount"/>
+          <include name="checkActivityColumnVisibility"/>
+          <include name="checkIncludeExcludeRadioBtn"/>
+          <include name="checkActivityStartDateNullError"/>
+          <include name="checkCustomDateFilter"/>
+          <include name="checkActivityPeriodFilterTypes"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.activity.ActivityTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

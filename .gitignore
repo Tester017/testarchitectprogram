@@ -6,3 +6,37 @@
 /factory-design-pattern/factory-design-pattern/bin/
 /factory-design-pattern/factory-design-pattern/src/.*
 /TestArchitectProgram/test-output/
+
+# OS files
+.DS_Store
+__MACOSX/
+
+# IDEs
+.classpath
+.project
+.settings/
+.idea/
+.vscode/
+
+# Build outputs
+target/
+dist/
+build/
+out/
+
+# Test reports
+test-output/
+playwright-report/
+allure-results/
+
+# Logs
+*.log
+
+# Archives
+*.zip
+*.tar
+*.gz
+
+# Excel temp files
+~$*.xlsx
+

@@ -1,0 +1,82 @@
+openapi: 3.0.0
+info:
+  title: Account API
+  version: "1.0.0"
+  description: API for creating and deleting accounts in Salesforce.
+
+servers:
+  - url: https://qeagle8-dev-ed.develop.my.salesforce.com/
+
+paths:
+  /Account:
+    post:
+      summary: Create a new account
+      operationId: createAccount
+      tags:
+        - Account
+      requestBody:
+        description: Account object that needs to be created.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AccountRequest'
+      responses:
+        '201':
+          description: Account created successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccountResponse'
+        '400':
+          description: Invalid input.
+
+  /Account/{accountId}:
+    delete:
+      summary: Delete an existing account
+      operationId: deleteAccount
+      tags:
+        - Account
+      parameters:
+        - name: accountId
+          in: path
+          required: true
+          description: ID of the account to delete
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Account deleted successfully.
+        '404':
+          description: Account not found.
+
+components:
+  schemas:
+
+    AccountRequest:
+      type: object
+      properties:
+        name:
+          type: string
+        phone:
+          type: string
+        website:
+          type: string
+        industry:
+          type: string
+      required:
+        - name
+
+    AccountResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        success:
+          type: boolean
+        errors:
+          type: array
+          items:
+            type: string
+        statusCode:
+          type: integer

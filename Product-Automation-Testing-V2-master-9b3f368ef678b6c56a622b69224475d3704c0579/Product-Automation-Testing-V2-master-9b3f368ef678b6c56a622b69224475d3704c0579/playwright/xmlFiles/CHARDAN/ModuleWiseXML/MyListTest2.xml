@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="1" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.Mylist.MyListTest">
+        <methods>
+          <include name="credOperationForSimpleListQuickAddContactsAndDeleteContact"/>
+          <include name="verifyExistingSimpleListLoads"/>
+          <include name="credOperationForSimpleList"/>
+          <include name="verifyDynamicListBulkMailSendLaterPopUpPg"/>
+          <include name="verifyMylistPanelSearchTabErrorMsg"/>
+          <include name="verifyBulkMailCCFieldforDynamic"/>
+          <include name="verifyDefaultDurationTimeSimpleList"/>
+          <include name="verifyListIsOpened"/>
+          <include name="verifyMylistHeaders"/>
+          <include name="verifyTagAsMandatory_SimpleList"/>
+          <include name="verifyExistingDynamicListLoads"/>
+          <include name="verifySimpleListCreation"/>
+          <include name="credOperationForSimpleListCopySeletdToNewAndExistingList"/>
+          <include name="checkBulkMailPageInMylistDynamicList"/>
+          <include name="credOperationForDynamicList"/>
+          <include name="checkBulkMailPageInMylistStaticList"/>
+          <include name="verifyCustomSearchListLoads"/>
+          <include name="verifyStaticListBulkMailSendLaterPopUpPg"/>
+          <include name="credOperationForDynamicListCopySeletdToNewAndExistingList"/>
+          <include name="verifyDefaultDurationTimeDynamicList"/>
+          <include name="verifyDynamicListCreation"/>
+          <include name="verifyDelivaryStatus"/>
+          <include name="verifyShareListPermissionInDynamicList"/>
+          <include name="verifyShareListPermissionInSimpleList"/>
+          <include name="verifyTagAsMandatory_DynamicList"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Mylist.MyListTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="1" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.FloatingCTS.FloatingATSTest">
+        <methods>
+          <include name="checkAccountTierInFloatingSheet"/>
+          <include name="checkFundNameFuncInFloatNewTicPosByHoldWidget"/>
+          <include name="checkFundsAndHoldingsInFloatingTearsheet"/>
+          <include name="verifyFloatingATSFromMycontact"/>
+          <include name="verifyFloatingATSInActivity"/>
+          <include name="verifyFloatingATSInCTS_ActivityTab"/>
+          <include name="verifyFloatingATSInCTS_EmailReaderShipTAb"/>
+          <include name="verifyFloatingATSInMyLisyV3"/>
+          <include name="verifyFloatingATSInReadership"/>
+          <include name="verifyFloatingATSInRevenue"/>
+          <include name="verifyFloatingATSInTTS_ActivityTab"/>
+          <include name="verifyFloatingATSInTTS_InterestListTab"/>
+          <include name="verifyFloatingATSInTTS_ReadershipTab"/>
+          <include name="verifyFloatingATSInTopClientsByCommWidget"/>
+          <include name="verifyFloatingATSInTrades"/>
+          <include name="verifyFloatingATSinAccountActivityTab"/>
+          <include name="verifyFloatingATSinAccountEmailReadershipTab"/>
+          <include name="verifyFloatingATSinAccountReadershipTab"/>
+          <include name="verifyFloatingCTSInCTS_ReadershipTab"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.FloatingCTS.FloatingATSTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

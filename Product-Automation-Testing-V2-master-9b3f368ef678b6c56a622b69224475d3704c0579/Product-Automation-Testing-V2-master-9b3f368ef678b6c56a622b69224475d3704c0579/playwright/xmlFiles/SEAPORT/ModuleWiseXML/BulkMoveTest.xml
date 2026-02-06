@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="1" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.BulkMove.BulkMoveTest">
+        <methods>
+          <include name="verifyApplySelected"/>
+          <include name="addBulkMoveFromTTS"/>
+          <include name="addBulkMoveFromServiceTS"/>
+          <include name="verifyApplyAll"/>
+          <include name="verifyMultipleAccBulkMoveFromATS"/>
+          <include name="addBulkMoveFromSuperATS"/>
+          <include name="addBulkMoveFromMyListsStatic"/>
+          <include name="addSameEmailBulkMove"/>
+          <include name="addSameAccountBulkMove"/>
+          <include name="addBulkMoveFromATS"/>
+          <include name="verifyEmailBulkMoveFromATS"/>
+          <include name="addBulkMoveFromMyContacts"/>
+          <include name="addBulkMoveFromMyListsDynamic"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.BulkMove.BulkMoveTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

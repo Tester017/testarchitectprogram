@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="1" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.ResearchSubscriptionV.ResearchSubscriptionVTest">
+        <methods>
+          <include name="addSubscriptionForAllCheckBoxInAccounTearSheet"/>
+          <include name="addSubscriptionForAllCheckBoxInMyContacts"/>
+          <include name="addSubscriptionForAllCheckBoxInMyList"/>
+          <include name="addSubscriptionForAllCheckBoxInTickerTearSheet"/>
+          <include name="addSubscriptionForSingelCheckBoxInAccounTearSheet"/>
+          <include name="addSubscriptionForSingelCheckBoxInTickerTearSheet"/>
+          <include name="checkAccountHistry"/>
+          <include name="checkAddSubscriptionSubmitErrorMsgForAccount"/>
+          <include name="checkContactSubscriptionData"/>
+          <include name="checkEditAddParticularSubscription"/>
+          <include name="checkEditSubscribeAll"/>
+          <include name="checkEditSubscriptionViaCTS"/>
+          <include name="checkEditUnScubscribeParticular"/>
+          <include name="checkEditUnSubscriptionAll"/>
+          <include name="checkRSV2SubscriptionTable"/>
+          <include name="doSectorSubscriptionWithMifidAndverify"/>
+          <include name="removeSubscriptionForAllCheckBoxInAccounTearSheet"/>
+          <include name="removeSubscriptionForAllCheckBoxInTickerTearSheet"/>
+          <include name="removeSubscriptionForSingelCheckBoxInAccounTearSheet"/>
+          <include name="removeSubscriptionForSingelCheckBoxInTickerTearSheet"/>
+          <include name="subscribeAndCheckInCTSResearchSubTab"/>
+          <include name="subscribeSectorAndCompanyVerifyInCTSResearchSubTab"/>
+          <include name="verifyContactSubscriptionWithAndWitoutMifid"/>
+          <include name="verifyContactUnSubscription"/>
+          <include name="verifyRSV2StatusInHistoryForMifidEnabledAccounts"/>
+          <include name="verifySubscribedContacts"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ResearchSubscriptionV.ResearchSubscriptionVTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="2" name="Suite" data-provider-thread-count="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" verbose="2" name="Test" parallel="methods">
+    <classes>
+      <class name="com.dz.prism.test.Dashboard.DashboardTest">
+        <methods>
+          <include name="checkCommissionTilesPopupOfAllProductsVerifyHeaders"/>
+          <include name="gotoCommissionTilePopup"/>
+          
+          <include name="checkCommissionTilesPopupOfProducts"/>
+          <include name="checkCommissionTilesPopupDeltaOfProducts"/>
+          <include name="verifyAnnualCommInTopSalesTraderTab"/>
+          <include name="checkTopClientsByCommissionTableDataForPeriods"/>
+          <include name="checkDeltaPCalculationInTopClientsByCommTab"/>
+          <include name="checkAddInteractionDataFromPlusIcon"/>
+          <include name="checkTopSalesTraderHeadersandSymbols"/>
+          <include name="checkTopResearchSalesPersonExpandTable"/>
+          <include name="checkGrossCommissionTilesPopupWithRevByAccount"/>
+          <include name="checkAddContactDataFromPlusIcon"/>
+          <include name="checkTopClientByCommissionHeadersandSymbols"/>
+          <include name="checkTopSalesTraderWithSalesTearSheet"/>
+          <include name="checkGrossCommissionTilesPopupDelta"/>
+          <include name="checkAccCovrdCountInRevByPersonTab"/>
+          <include name="checkAnnualizedCommissionTiles"/>
+          <include name="checkTopResearchSalesPersonHeadersandSymbols"/>
+          <include name="checkTopReaserchAnalystHeaders"/>
+          <include name="checkTopSalesTraderTable"/>
+          <include name="checkTopResearchSalesPersonDeltaCalculation"/>
+          <include name="verifyAnnualCommInTopResearchSalesPersonTab"/>
+          
+          <include name="checkpreviousYTDTiles"/>
+          <include name="checkAnnuCommInGrossCommTileProductPopup"/>
+          <include name="checkGrossCommissionTilesPopupHeaderValidation"/>
+          <include name="checkCommissionByProductWidgetGridHeaderVerification"/>
+          <include name="checkPreviousFullYearTiles"/>
+          <include name="verifyTopTickersByCommTab"/>
+          <include name="checkServiceAddAccountTabsDataFromPlusIcon"/>
+          <include name="checkCommissionByRegionWidget"/>
+          
+          <include name="checkWdigets"/>
+          <include name="checkTopClientsByCommWithRevByAccount"/>
+          
+          <include name="checkDashboardCommWithRevByAccTable"/>
+          <include name="checkTopClientsByCommTabWithATS"/>
+          <include name="verifyTopResearchSalesAcctsCoveredData"/>
+          <include name="checkCorporateAddAccountTabsDataFromPlusIcon"/>
+          <include name="verifyAnnualCommInGrossCommPopUpTable"/>
+          <include name="checkGrossCommissionasofPreviousDayTiles"/>
+          <include name="checkInvestorAddAccountTabsDataFromPlusIcon"/>
+          <include name="checkCommissionBySectorInDashboard"/>
+          <include name="verifyAnnualCommInTopTickerByCommTab"/>
+          <include name="checkTopTickersByCommHeadersandSymbols"/>
+          <include name="checkCommissionByRegionWidgetGridHeaderVerification"/>
+          <include name="checkTopResearchSalesPersonTable"/>
+          <include name="checkCommissionBySectorWidgetGridHeaderVerification"/>
+          <include name="checkGrossCommissionTilesPopup"/>
+          
+          <include name="checkTopSalesTraderDeltaCalculation"/>
+          <include name="checkTopResearchBySalesPersonTable"/>
+          
+          <include name="checkCommissionByProductWidget"/>
+          <include name="checkTabsInDashboard"/>
+          <include name="verifyAnnualCommInTopclientByCommTab"/>
+          <include name="checkQuickActionAddAccountContent"/>
+          <include name="checkDashboardTiles"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Dashboard.DashboardTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

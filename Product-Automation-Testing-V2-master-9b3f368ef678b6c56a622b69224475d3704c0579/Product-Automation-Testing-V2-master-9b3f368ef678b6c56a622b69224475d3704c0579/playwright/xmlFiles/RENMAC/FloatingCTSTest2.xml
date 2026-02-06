@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="2" name="Suite" data-provider-thread-count="1">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" verbose="2" name="Test" parallel="methods">
+    <classes>
+      <class name="com.dz.prism.test.FloatingCTS.FloatingCTSTest">
+        <methods>
+          <include name="verifyContactBioInFloatingsFunds"/>
+          <include name="verifyFloatingCTSInCTS_ReadershipTab"/>
+          <include name="verifyFloatingCTSInTTS_ContactTab"/>
+          <include name="verifyFloatingCTSInTTS_InterestListTab"/>
+          <include name="verifyFloatingCTSInATS_ReadershipTab"/>
+          <include name="checkFundsAndHoldingsInFLoatingTearsheet"/>
+          <include name="checkQuickTearSheetHoldingsTab"/>
+          <include name="verifyFloatingCTSInCTS_EmailReadershipTab"/>
+          <include name="verifyFloatingCTSInATS_ActivityTab"/>
+          <include name="verifyFloatingCTSInCTS_ActivityTab"/>
+          <include name="verifyFloatingCTSCoverageWidget"/>
+          <include name="editContactAndVerifyInImpacts"/>
+          <include name="verifyFloatingCTSInATS_ContactsTab"/>
+          <include name="verifyFloatingCTSInMyLisyV3"/>
+          <include name="verifyFloatingCTSInActivity"/>
+          <include name="verifyFloatingCTSInReadership"/>
+          <include name="verifyFloatingCTSFromBulkEmpChange"/>
+          <include name="checkAccountTierInFloatingSheet"/>
+          <include name="verifyFloatingCTSInTTS_ActivityTab"/>
+          <include name="verifyFloatingCTSInTTS_ReadershipTab"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.FloatingCTS.FloatingCTSTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

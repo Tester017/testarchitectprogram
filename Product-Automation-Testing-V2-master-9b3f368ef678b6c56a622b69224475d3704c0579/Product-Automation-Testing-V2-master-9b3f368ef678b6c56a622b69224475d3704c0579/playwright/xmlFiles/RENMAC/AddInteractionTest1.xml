@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="2" name="Suite" data-provider-thread-count="1">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" verbose="2" name="Test" parallel="methods">
+    <classes>
+      <class name="com.dz.prism.test.addInteraction.AddInteractionTest">
+        <methods>
+          <include name="verifyInActivityModule"/>
+          <include name="saveAddInteractionUsingDateandTime"/>
+          <include name="verifyAddSingleInteractionInContactTearSheet"/>
+          <include name="saveAddSingleInteractionFromServiceCTS"/>
+          <include name="verifyAddAnotherInteractionInContactTearSheet"/>
+          <include name="saveAddInteractionWithAddAnother"/>
+          <include name="verifyInActivity"/>
+          <include name="saveAddInteraction"/>
+          <include name="verifyAddAnotherInterInRespectiveTearSheet"/>
+          <include name="verifySingleInteractionInServiceTearSheet"/>
+          <include name="saveBulkLogSingleInteractionFromMylist"/>
+          <include name="checkEditedInterationForMultipleInActivityTable"/>
+          <include name="checkEditInterationForMultiple"/>
+          <include name="editSearchAddressInActivity"/>
+          <include name="saveAddInteractionUsingSearchAddress"/>
+          <include name="verifyAddMultipleInteractionInContactTearSheet"/>
+          <include name="saveAddMultipleInteractionFromServiceCTS"/>
+          <include name="verifySingleInteractionInContactTearSheetMylist"/>
+          <include name="verifySingleInteractionInActivity"/>
+          <include name="verifyInAccountTSActivityTab"/>
+          <include name="saveAddInteractionFromATS"/>
+          <include name="verifyInCTSActivityTab"/>
+          <include name="verifyAddSingleInteractionInServiceTearSheet"/>
+          <include name="verifyDynamInteracInActivity"/>
+          <include name="saveAddInteractionFromDynamicListUsingIntrDateTime"/>
+          <include name="verifySingleInteractionInContactTearSheet"/>
+          <include name="saveAddAsSingleInteraction"/>
+          <include name="checkEditedInterationForSingleInActivityTable"/>
+          <include name="checkEditInterationForSingle"/>
+          <include name="verifyAddMultipleInteractionInteractionInServiceTearSheet"/>
+          <include name="editSuggAddressInActivity"/>
+          <include name="saveAddInteractionUsingSuggAddress"/>
+          <include name="verifyInTTSActivityTab"/>
+          <include name="verifyMultipleInteractionInContactTearSheet"/>
+          <include name="saveAddAsMultipleInteraction"/>
+          <include name="verifyInteracInActivity"/>
+          <include name="saveAddInteractionFromStaticListUsingIntrDateTime"/>
+          <include name="editInteractionFromInteractionDetailsPopup"/>
+          <include name="saveAddInteractionWithLoggedBy"/>
+          <include name="verifyEditedInteractionInRespectiveTearSheet"/>
+          <include name="verifyAddInteracDateTimeInRespectiveTearSheet"/>
+          <include name="verifyAddMultipleInteractionInActivity"/>
+          <include name="verifyInContactTearSheet"/>
+          <include name="verifyAddSingleInteractionInActivity"/>
+          <include name="verifyMultipleInteractionEditInContactTearSheet"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.addInteraction.AddInteractionTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

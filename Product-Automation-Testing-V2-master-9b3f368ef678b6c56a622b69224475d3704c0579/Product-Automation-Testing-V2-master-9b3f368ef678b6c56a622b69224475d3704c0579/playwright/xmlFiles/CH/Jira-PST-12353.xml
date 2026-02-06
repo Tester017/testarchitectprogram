@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="2" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.researchsalestearsheet.ResearchSalesPeronTearsheet">
+        <methods>
+          <include name="checkTradeDrillDownForDateFilter"/>
+          <include name="checkTradeDrillDownForCustomRange"/>
+          <include name="checkTradeDrillDown"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.researchsalestearsheet.ResearchSalesPeronTearsheet -->
+      <class name="com.dz.prism.test.Revenue.RevenueTest">
+        <methods>
+          <include name="checkTradeDrillDownForDateFilter"/>
+          <include name="checkTradeDrillDownColVisibility"/>
+          <include name="checkTradeDrillDown"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Revenue.RevenueTest -->
+      <class name="com.dz.prism.test.SalesTaderTearSheet.SalesTraderTearSheetTest">
+        <methods>
+          <include name="checkTradeDrillDownForDateFilter"/>
+          <include name="checkTradeDrillDownForCustomRange"/>
+          <include name="checkTradeDrillDown"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.SalesTaderTearSheet.SalesTraderTearSheetTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

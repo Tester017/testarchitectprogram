@@ -1,0 +1,101 @@
+pipeline {
+    agent { label "${params.slave}" }
+    environment {
+        GITLAB_TOKEN = credentials('shamilygittoken')
+        SHPWD = credentials('shpwd')
+        PEM66 = credentials('pemof66')
+    }
+    stages {
+        stage('Setup') {
+            steps {
+                script {
+                    def agentLabel = (['slave1', 'slave3', 'slave5'].contains(env.NODE_NAME)) ? 'datazoic' : 'support'
+                    def workspacePath = "/home/${agentLabel}/workspace/${env.JOB_NAME}"
+
+                    echo "Using agent label: ${agentLabel}"
+                    
+                    sh """
+                        pwd
+                        chmod +x ${workspacePath}/OtherScripts/bash/gitbranchsetup.sh
+                        sed -i 's/\\r\$//' ${workspacePath}/OtherScripts/bash/gitbranchsetup.sh
+                        ${workspacePath}/OtherScripts/bash/gitbranchsetup.sh ${BUILD_NUMBER} ${params.branch} ${GITLAB_TOKEN} secureqa ${agentLabel} ${PEM66}
+                    """
+                }
+            }
+        }
+
+        stage('XML Setup') {
+            steps {
+                script {
+                    def agentLabel = (['slave1', 'slave3', 'slave5'].contains(env.NODE_NAME)) ? 'datazoic' : 'support'
+                    def workspacePath = "/home/${agentLabel}/workspace/${env.JOB_NAME}"
+                    
+                    echo "Execution mode: ${params.executionmode}"
+
+                    if (params.executionmode == 'JiraID') {
+                        sh """
+                            pwd
+                            chmod +x ${workspacePath}/OtherScripts/bash/xmlsetup.sh
+                            sed -i 's/\\r\$//' ${workspacePath}/OtherScripts/bash/xmlsetup.sh
+                            ${workspacePath}/OtherScripts/bash/xmlsetup.sh ${BUILD_NUMBER} ${params.client} ${params.executionmode} NA ${params.JiraIDorGroupType} ${env.JOB_NAME} ${agentLabel}
+                        """
+                    } else if (['Version', 'ModuleWise'].contains(params.executionmode)) {
+                        sh """
+                            pwd
+                            chmod +x ${workspacePath}/OtherScripts/bash/xmlsetup.sh
+                            sed -i 's/\\r\$//' ${workspacePath}/OtherScripts/bash/xmlsetup.sh
+                            ${workspacePath}/OtherScripts/bash/xmlsetup.sh ${BUILD_NUMBER} ${params.client} ${params.executionmode} ${params.executionmodevalue} NA ${env.JOB_NAME} ${agentLabel}
+                        """
+                    } else if (params.executionmode == 'Auto') {
+                        echo "XML generation is skipped for Auto mode"
+                    } else {
+                        error("Invalid value for params.executionmode: ${params.executionmode}")
+                    }
+                }
+            }
+        }
+
+        stage('Local Execution') {
+            steps {
+                script {
+                    def agentLabel = (['slave1', 'slave3', 'slave5'].contains(env.NODE_NAME)) ? 'datazoic' : 'support'
+                    def workspacePath = "/home/${agentLabel}/workspace/${env.JOB_NAME}"
+
+                    sh """
+                        pwd
+                        chmod +x ${workspacePath}/OtherScripts/bash/mavenexecutionnew.sh
+                        sed -i 's/\\r\$//' ${workspacePath}/OtherScripts/bash/mavenexecutionnew.sh
+                        ${workspacePath}/OtherScripts/bash/mavenexecutionnew.sh ${SHPWD} ${BUILD_NUMBER} ${params.client} ${params.JiraIDorGroupType} ${params.productionmode} ${env.JOB_NAME} ${agentLabel} secureqa ${params.role} ${params.executionmode} ${params.EnvironmentRoles} ${params.executionmodevalue}
+                    """
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            script {
+                echo "Pipeline succeeded. Sending success email..."
+                def agentLabel = (['slave1', 'slave3', 'slave5'].contains(env.NODE_NAME)) ? 'datazoic' : 'support'
+                def workspacePath = "/home/${agentLabel}/workspace/${env.JOB_NAME}"
+                sh """
+                    chmod +x ${workspacePath}/OtherScripts/bash/sendemail.sh
+                    sed -i 's/\\r\$//' OtherScripts/bash/sendemail.sh
+                    ${workspacePath}/OtherScripts/bash/sendemail.sh "Pipeline Success ${env.JOB_NAME} ${params.client} #${BUILD_NUMBER}" "${env.JOB_NAME}" "${BUILD_NUMBER}" "PASSED" "${currentBuild.durationString}" "${env.NODE_NAME}" "${params.email}"
+                """
+            }
+        }
+        failure {
+            script {
+                echo "Pipeline failed. Sending failure email..."
+                def agentLabel = (['slave1', 'slave3', 'slave5'].contains(env.NODE_NAME)) ? 'datazoic' : 'support'
+                def workspacePath = "/home/${agentLabel}/workspace/${env.JOB_NAME}"
+                sh """
+                    chmod +x ${workspacePath}/OtherScripts/bash/sendemail.sh
+                    sed -i 's/\\r\$//' OtherScripts/bash/sendemail.sh
+                    ${workspacePath}/OtherScripts/bash/sendemail.sh "Pipeline Failure ${env.JOB_NAME} ${params.client} #${BUILD_NUMBER}" "${env.JOB_NAME}" "${BUILD_NUMBER}" "Failed" "${currentBuild.durationString}" "${env.NODE_NAME}" "${params.email}"
+                """
+            }
+        }
+    }
+}

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="2" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.TickerTearSheet.TickerTearSheetTest">
+        <methods>
+          <include name="checkSubscriptionManagementInTTSInterestListTable"/>
+          <include name="saveAddInterestListInTTS"/>
+          <include name="verifyAddedInterestInATSInterestListTable"/>
+          <include name="verifyAddedInterestInCTSInterestListTable"/>
+          <include name="verifyAddMultipleSubscriptionInterestList"/>
+          <include name="verifyAddSubscriptionInterestList"/>
+          <include name="verifyDeleteMultSubscriptionInterestList"/>
+          <include name="verifyDeleteSubscriptionInterestList"/>
+          <include name="verifyMultipleInterestList"/>
+          <include name="verifyMultipleSubscInRSV2andTS"/>
+          <include name="unSubscribeVerifyMultipleUnSubscriptionData"/>
+          <include name="verifyMultipleSubscInMyContAndList"/>
+          <include name="verifyMultipleUnSubscInRSV2andTS"/>
+          <include name="verifyAddMultSingleInterestList"/>
+          <include name="verifyMultipleUnSubscInMyContAndList"/>
+          <include name="verifySingleAddSubscrTicContInterestList"/>
+          <include name="verifySingleInterestListusingTickerConts"/>
+          <include name="addVerifyMultipleSubscription"/>
+          <include name="verifyInheritedSubInterestList"/>
+          <include name="verifyAddSubContInterestList"/>
+          <include name="verifyDeleteSubscriptionIntListUsingTicCont"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.TickerTearSheet.TickerTearSheetTest -->
+      <class name="com.dz.prism.test.Dashboard.DashboardTest">
+        <methods>
+          <include name="checkThirdPartyAppsGrid"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Dashboard.DashboardTest -->
+      <class name="com.dz.prism.test.researchsalestearsheet.ResearchSalesPeronTearsheet">
+        <methods>
+          <include name="checkTradeDrillDown"/>
+          <include name="checkTradeDrillDownForDateFilter"/>
+          <include name="checkTradeDrillDownForCustomRange"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.researchsalestearsheet.ResearchSalesPeronTearsheet -->
+      <class name="com.dz.prism.test.Revenue.RevenueTest">
+        <methods>
+          <include name="checkTradeDrillDown"/>
+          <include name="checkTradeDrillDownForDateFilter"/>
+          <include name="checkTradeDrillDownColVisibility"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Revenue.RevenueTest -->
+      <class name="com.dz.prism.test.ContactTearSheet.ContactTearSheetTest">
+        <methods>
+          <include name="saveAddInterestListInCTS"/>
+          <include name="verifyAddSubscriptionInterestList"/>
+          <include name="verifyDeleteSubscriptionInterestList"/>
+          <include name="verifyMultipleInterestList"/>
+          <include name="verifyMultipleSubscriptionInterestList"/>
+          <include name="verifyMultipleSubscriptionInRSV2AndTS"/>
+          <include name="verifyAddBulkInterestList"/>
+          <include name="verifySingleAddSubscriptionInterestList"/>
+          <include name="verifyAddMultipleSubscriptionInCTS"/>
+          <include name="verifyDeleteSingleSubscriptionInterestList"/>
+          <include name="VerifyMultipleUnSubscriptionData"/>
+          <include name="verifyMultipleSubscriptionInMycontactsAndMylist"/>
+          <include name="verifyMultipleUnSubscInRSV2AndTS"/>
+          <include name="verifyMultipleUnSubscInMyContAndList"/>
+          <include name="VerifyMultipleUnSubscription"/>
+          <include name="checkModifyBtnForSubscribedContact"/>
+          <include name="verifyAddSingleInterestListBySector"/>
+          <include name="addVerifySingleSectorSubscription"/>
+          <include name="verifyDeleteMulSubscriptionInterestList"/>
+          <include name="verifyAddMultipleSectorInterestList"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ContactTearSheet.ContactTearSheetTest -->
+      <class name="com.dz.prism.test.Mylist.MyListTest">
+        <methods>
+          <include name="verifyLastUsedDateColumAddedInTemplateTable"/>
+          <include name="verifySentCountInBulkMailLogPage"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Mylist.MyListTest -->
+      <class name="com.dz.prism.test.addInteraction.AddInteractionTest">
+        <methods>
+          <include name="checkLoggedByFieldDisplayed"/>
+          <include name="saveAddInteractionWithLoggedBy"/>
+          <include name="verifyLoggedByAddedInContactTearSheet"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.addInteraction.AddInteractionTest -->
+      <class name="com.dz.prism.test.SalesTaderTearSheet.SalesTraderTearSheetTest">
+        <methods>
+          <include name="checkTradeDrillDown"/>
+          <include name="checkTradeDrillDownForDateFilter"/>
+          <include name="checkTradeDrillDownForCustomRange"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.SalesTaderTearSheet.SalesTraderTearSheetTest -->
+      <class name="com.dz.prism.test.accounttearsheet.AccountTearSheetTest">
+        <methods>
+          <include name="addVerifyBulkSubscription"/>
+          <include name="verifyDeleteSubscriptionInterestList"/>
+          <include name="verifyDeleteMulSubscriptionInterestList"/>
+          <include name="verifyMultipleUnSubscription"/>
+          <include name="verifyAddSectorSingleInterestList"/>
+          <include name="verifyAddBulkInterestList"/>
+          <include name="verifyAddSubContInterestList"/>
+          <include name="verifyAddMultipleInterestList"/>
+          <include name="verifyAddMultipleSectorInterestList"/>
+          <include name="verifyDeleteSectorSubscrInterestList"/>
+          <include name="verifyAddInterestList"/>
+          <include name="verifyDeleteBulkSubscriptionInterestList"/>
+          <include name="verifyAddMifidSingleInterestList"/>
+          <include name="verifyBulkUnSubscInRSTS"/>
+          <include name="addVerifyMultipleSectorSubscription"/>
+          <include name="verifyBulkUnSubscInMyContAndList"/>
+          <include name="verifyDeleteMulSecSubscriptionInterestList"/>
+          <include name="verifyBulkSubscInMyContAndMyList"/>
+          <include name="verifyBulkSubscInRSV2AndTS"/>
+          <include name="verifyAddSubscriptionInterestList"/>
+          <include name="addVerifyMultipleSubscription"/>
+          <include name="verifyAddSimpleInterestList"/>
+          <include name="VerifyBulkUnSubscription"/>
+          <include name="addVerifySingleSectorSubscription"/>
+          <include name="verifyInheritedSubInterestList"/>
+          <include name="verifyAddMifidSectorSingleInterestList"/>
+          <include name="verifyAddSubSecContInterestList"/>
+          <include name="verifyInheritedSubSecInterestList"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.accounttearsheet.AccountTearSheetTest -->
+      <class name="com.dz.prism.test.MAR.AddRecommendationTest">
+        <methods>
+          <include name="editRecommendationAfterChangingUser"/>
+          <include name="changePrismUser"/>
+          <include name="verifyRecommendationInTickerTearSheet"/>
+          <include name="verifyRecommendationInContactTearSheet"/>
+          <include name="addRecommendationFromAddInterationPageWithTags"/>
+          <include name="addRecommendationFromAddInterationPage"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.MAR.AddRecommendationTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="1" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.ib.activity.IBActivityTest">
+        <methods>
+          <include name="checkActivityTable"/>
+          <include name="checkSTActivityTable"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.activity.IBActivityTest -->
+      <class name="com.dz.prism.test.ib.coverage.IBCoverageTest">
+        <methods>
+          <include name="accountProductSmokeCoverageCheckbox"/>
+          <include name="verifyATSAddAccountCoverage"/>
+          <include name="verifyATSDeactivateAccountCoverage"/>
+          <include name="verifyATSEditedAccountCoverage"/>
+          <include name="verifyAddCoverageFromATS"/>
+          <include name="verifyAddCoverageFromATSToTTS"/>
+          <include name="verifyAddCoverageFromServTSToATS"/>
+          <include name="verifyAddCoverageFromServiceTS"/>
+          <include name="verifyAddCoverageFromTTS"/>
+          <include name="verifyAddCoverageFromTTSToServiceTS"/>
+          <include name="verifyAddSingleProductCoverage"/>
+          <include name="verifyCoverageTabsSearchFilter"/>
+          <include name="verifyDeactCoverageFromATS"/>
+          <include name="verifyEditCoverageFromATS"/>
+          <include name="verifyDeactCoverageFromServiceTS"/>
+          <include name="verifyEditCoverageFromServiceTS"/>
+          <include name="verifyDeactCoverageFromTTS"/>
+          <include name="verifyEditCoverageFromTTS"/>
+          <include name="verifyDeactivateProductCoverage"/>
+          <include name="verifyEditProductCoverage"/>
+          <include name="verifyInvestorUpdatedCommentsInCoverage"/>
+          <include name="verifyServiceTSAddAccountCoverage"/>
+          <include name="verifyServiceTSDeactivateAccountCoverage"/>
+          <include name="verifyServiceTSEditedAccountCoverage"/>
+          <include name="verifyServiceUpdatedCommentsInCoverage"/>
+          <include name="verifyTTSAddAccountCoverage"/>
+          <include name="verifyTTSDeactivateAccountCoverage"/>
+          <include name="verifyTTSEditedAccountCoverage"/>
+          <include name="verifyTickerUpdatedCommentsInCoverage"/>
+          <include name="verifyUpdatedCommentsFromATSCoverage"/>
+          <include name="verifyUpdatedCommentsFromSTSCoverage"/>
+          <include name="verifyUpdatedCommentsFromTTSCoverage"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.coverage.IBCoverageTest -->
+      <class name="com.dz.prism.test.ib.serviceaccounttearsheet.IBServiceAccTSTest">
+        <methods>
+          <include name="checkServiceATSDealListV2TabDatawithIBandSTClosedDealsData"/>
+          <include name="checkServiceTSDealListV2TabEditNewFieldsDatawithIBandSTClosedDealsData"/>
+          <include name="checkServiceTSDealListV2TabNewFieldsDatawithIBandSTClosedDealsData"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.serviceaccounttearsheet.IBServiceAccTSTest -->
+      <class name="com.dz.prism.test.ib.addinteraction.IBAddInteractionTest">
+        <methods>
+          <include name="addBulkInteractionViaDealTearsheet"/>
+          <include name="addInteractionViaAccountTearsheet"/>
+          <include name="addBulkInteractionViaRightClickMyListContacts"/>
+          <include name="addDealWithInvAccountDoLogIntrFromDealTSandVerifyImpactAreas"/>
+          <include name="addInteractionFromFloatingATS"/>
+          <include name="addInteractionViaActivityModule"/>
+          <include name="addInteractionViaContactTearsheet"/>
+          <include name="addInteractionViaContactTearsheetUsingClosingQuatorInDealField"/>
+          <include name="addInteractionViaDealDropdwn"/>
+          <include name="addInteractionViaServiceTearsheet"/>
+          <include name="addInteractionViaTickerTearsheet"/>
+          <include name="checkAlertMailByAddInteraction"/>
+          <include name="checkConfidentialAsNo"/>
+          <include name="checkConfidentialFlowWithInternalAttendees"/>
+          <include name="checkConfidentialInLogInteraction"/>
+          <include name="checkEditInterationByDeletingInternalAttendee"/>
+          <include name="checkEditInterationWithInternalAttendee"/>
+          <include name="checkInteractionFlowInIBAdmin"/>
+          <include name="checkInteractionFlowInIBAdminWithInternalAttendee"/>
+          <include name="checkWithDifferentFileType"/>
+          <include name="deleteEditedInteraction"/>
+          <include name="editAddedInteraction"/>
+          <include name="editInteractionFromInteractionPopup"/>
+          <include name="saveAddInteractionForSaveAddAnother"/>
+          <include name="saveAddInteractionViaQuickAction1"/>
+          <include name="saveAddMeetingForStartEndTime"/>
+          <include name="updateConfidentialToNoAndCheck"/>
+          <include name="updateInteractionInToMeeting"/>
+          <include name="updateInteractionWithoutChanges"/>
+          <include name="updateMeetingInToInteraction"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.addinteraction.IBAddInteractionTest -->
+      <class name="com.dz.prism.test.ib.mylist.MyListTest">
+        <methods>
+          <include name="saveBulkLogSingleInteractionFromMylist"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.mylist.MyListTest -->
+      <class name="com.dz.prism.test.ib.accounttearsheet.IBAccountTearSheetTest">
+        <methods>
+          <include name="checkATSDealListV2TabDatawithIBandSTClosedDealsData"/>
+          <include name="checkATSDealListV2TabEditNewFieldsDatawithIBandSTClosedDealsData"/>
+          <include name="checkATSDealListV2TabNewFieldsDatawithIBandSTClosedDealsData"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.accounttearsheet.IBAccountTearSheetTest -->
+      <class name="com.dz.prism.test.ib.readership.IBReadershipTest">
+        <methods>
+          <include name="checkReaderShipTable"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.readership.IBReadershipTest -->
+      <class name="com.dz.prism.test.ib.ibdeallist.DealListTest">
+        <methods>
+          <include name="checkDealListTable"/>
+          <include name="checkDealListsClosedAllTable"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.ibdeallist.DealListTest -->
+      <class name="com.dz.prism.test.ib.tickertearsheet.IBTickerTearSheetTest">
+        <methods>
+          <include name="checkTTSDealListTabIssue"/>
+          <include name="checkTTSDealListV2TabDatawithIBandSTClosedDealsData"/>
+          <include name="checkTTSDealListV2TabEditNewFieldsDatawithIBandSTClosedDealsData"/>
+          <include name="checkTTSDealListV2TabNewFieldsDatawithIBandSTClosedDealsData"/>
+          <include name="checkTickerTearSheetTabs"/>
+          <include name="verifyCoverageInBannerFromTTS"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.tickertearsheet.IBTickerTearSheetTest -->
+      <class name="com.dz.prism.test.ib.ibdeallist.DealListV2Test">
+        <methods>
+          <include name="addManageInvoiceandVerifyOnImpactAreas"/>
+          <include name="addNewDealWithMandatoryFields"/>
+          <include name="checkClosedDealsDataInSTandIB"/>
+          <include name="checkGrossFeeValue"/>
+          <include name="checkShowHideFilter"/>
+          <include name="createDealWithCorporateAccount"/>
+          <include name="createDealWithCustomFieldsUsingCorporateAccount"/>
+          <include name="createDealWithServiceAccount"/>
+          <include name="editDealwithNewFieldsandVerifyInSTandIBClosedDeals"/>
+          <include name="verifyDealValuesDecimal"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.ibdeallist.DealListV2Test -->
+      <class name="com.dz.prism.test.ib.contacttearsheet.IBContactTearsheetTest">
+        <methods>
+          <include name="checkIBContactTearSheetTabs"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.contacttearsheet.IBContactTearsheetTest -->
+      <class name="com.dz.prism.test.ib.Reports.IBReportsTest">
+        <methods>
+          <include name="checkReportsModule"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.Reports.IBReportsTest -->
+      <class name="com.dz.prism.test.ib.summary.IBSummaryTest">
+        <methods>
+          <include name="verifySummaryWidgets"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.summary.IBSummaryTest -->
+      <class name="com.dz.prism.test.ib.researchLibrary.IBResearchLibraryTest">
+        <methods>
+          <include name="checkResearchLibraryTable"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.researchLibrary.IBResearchLibraryTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

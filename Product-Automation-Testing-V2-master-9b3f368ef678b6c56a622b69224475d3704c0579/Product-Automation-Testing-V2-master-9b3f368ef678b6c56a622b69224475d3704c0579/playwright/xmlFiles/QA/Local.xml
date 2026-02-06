@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="2" name="Suite" verbose="3">
+	<listeners>
+		<listener
+			class-name="com.dz.core.testng.listeners.DriverListener2" />
+	</listeners>
+	<test thread-count="1" parallel="methods" name="Test" verbose="3"
+		preserve-order="true">
+		<classes>	
+			<!-- <class name="com.dz.prism.test.Calendar.CalendarTest">
+        <methods>
+          <include name="enableDisableHideMeetStatusConfigVerifyAllRolesCalMeetStatus"/>
+        </methods>
+      </class> -->
+      <class name="com.dz.prism.test.ib.ibdeallist.DealListV2Test">
+        <methods>
+          <include name="checkDealV2TableHyperlinkandIntrMemberAlert"/>
+        </methods>
+      </class> 
+       <!-- com.dz.prism.test.Readership.ReaderShipModule -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

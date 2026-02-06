@@ -1,0 +1,85 @@
+openapi: 3.0.0
+info:
+  title: Opportunity API
+  version: "1.0.0"
+  description: API for creating and deleting opportunities in Salesforce.
+
+servers:
+  - url: https://qeagle8-dev-ed.develop.my.salesforce.com/
+
+paths:
+  /Opportunity:
+    post:
+      summary: Create a new opportunity
+      operationId: createOpportunity
+      tags:
+        - Opportunity
+      requestBody:
+        description: Opportunity object that needs to be created.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpportunityRequest'
+      responses:
+        '201':
+          description: Opportunity created successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpportunityResponse'
+        '400':
+          description: Invalid input.
+
+  /Opportunity/{opportunityId}:
+    delete:
+      summary: Delete an existing opportunity
+      operationId: deleteOpportunity
+      tags:
+        - Opportunity
+      parameters:
+        - name: opportunityId
+          in: path
+          required: true
+          description: ID of the opportunity to delete
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Opportunity deleted successfully.
+        '404':
+          description: Opportunity not found.
+
+components:
+  schemas:
+
+    OpportunityRequest:
+      type: object
+      properties:
+        name:
+          type: string
+        closeDate:
+          type: string
+          format: date
+        amount:
+          type: number
+        stageName:
+          type: string
+      required:
+        - name
+        - closeDate
+        - stageName
+
+    OpportunityResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        success:
+          type: boolean
+        errors:
+          type: array
+          items:
+            type: string
+        statusCode:
+          type: integer

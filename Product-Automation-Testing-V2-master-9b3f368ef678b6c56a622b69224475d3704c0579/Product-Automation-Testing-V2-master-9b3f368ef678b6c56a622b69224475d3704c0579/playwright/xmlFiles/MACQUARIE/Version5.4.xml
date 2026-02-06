@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="2" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.accounttearsheet.AccountTearSheetTest">
+        <methods>
+          <include name="verifyAddInterestList"/>
+          <include name="verifyMultipleInterestList"/>
+          <include name="verifyAddSubscriptionInterestList"/>
+          <include name="verifyDeleteSubscriptionInterestList"/>
+          <include name="verifyDeleteMultSubscriptionInterestList"/>
+          <include name="verifyAddSimpleInterestList"/>
+          <include name="verifyMultipleSubscriptionInterestList"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.accounttearsheet.AccountTearSheetTest -->
+      <class name="com.dz.prism.test.ContactTearSheet.ContactTearSheetTest">
+        <methods>
+          <include name="saveAddInterestListInCTS"/>
+          <include name="verifyMultipleInterestList"/>
+          <include name="verifyMultipleSubscriptionInterestList"/>
+          <include name="verifyAddSubscriptionInterestList"/>
+          <include name="verifyDeleteSubscriptionInterestList"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ContactTearSheet.ContactTearSheetTest -->
+      <class name="com.dz.prism.test.Dashboard.DashboardTest">
+        <methods>
+          <include name="checkThirdPartyAppsGrid"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Dashboard.DashboardTest -->
+      <class name="com.dz.prism.test.MAR.AddRecommendationTest">
+        <methods>
+          <include name="saveAddRecommendationsFromLogInteractionbyEnteringDateTime"/>
+          <include name="verifyNewRecommendationbyEnteringDateTimeInMAR"/>
+          <include name="verifyRecommendationbyEnteringDateTimeInActivity"/>
+          <include name="addRecommendationbyEditingDateandTime"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.MAR.AddRecommendationTest -->
+      <class name="com.dz.prism.test.Mylist.MyListTest">
+        <methods>
+          <include name="verifyLastUsedDateColumAddedInTemplateTable"/>
+          <include name="verifySentCountInBulkMailLogPage"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Mylist.MyListTest -->
+      <class name="com.dz.prism.test.TickerTearSheet.TickerTearSheetTest">
+        <methods>
+          <include name="saveAddInterestListInTTS"/>
+          <include name="checkSubscriptionManagementInTTSInterestListTable"/>
+          <include name="verifyAddedInterestInATSInterestListTable"/>
+          <include name="verifyAddedInterestInCTSInterestListTable"/>
+          <include name="verifyDeleteSubscriptionInterestList"/>
+          <include name="verifyAddMultipleSubscriptionInterestList"/>
+          <include name="verifyDeleteMultSubscriptionInterestList"/>
+          <include name="verifyMultipleInterestList"/>
+          <include name="verifyAddSubscriptionInterestList"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.TickerTearSheet.TickerTearSheetTest -->
+      <class name="com.dz.prism.test.addInteraction.AddInteractionTest">
+        <methods>
+          <include name="che"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.addInteraction.AddInteractionTest -->
+      <class name="com.dz.prism.test.researchsalestearsheet.ResearchSalesPeronTearsheet">
+        <methods>
+          <include name="checkTradeDrillDownForDateFilter"/>
+          <include name="checkTradeDrillDown"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.researchsalestearsheet.ResearchSalesPeronTearsheet -->
+      <class name="com.dz.prism.test.Revenue.RevenueTest">
+        <methods>
+          <include name="checkTradeDrillDownForDateFilter"/>
+          <include name="checkTradeDrillDown"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Revenue.RevenueTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

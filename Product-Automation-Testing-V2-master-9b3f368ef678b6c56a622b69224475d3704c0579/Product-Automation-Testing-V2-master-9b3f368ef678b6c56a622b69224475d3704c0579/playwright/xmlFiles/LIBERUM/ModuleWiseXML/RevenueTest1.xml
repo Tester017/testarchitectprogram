@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="2" name="Suite" data-provider-thread-count="1">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" verbose="2" name="Test" parallel="methods">
+    <classes>
+      <class name="com.dz.prism.test.Revenue.RevenueTest">
+        <methods>
+          <include name="verifyAnnCommInResearchSalesPersonTab"/>
+          <include name="checkYOYComparisonRenamedHeadersInSuperAccTable"/>
+          <include name="verifyRevByAccountHyperlinkColumn"/>
+          <include name="checkROIolumnsInRevByAccTable"/>
+          <include name="checkFiscalYearFilters"/>
+          <include name="verifyRevByRegionWithDashboardCommByRegionWidget"/>
+          <include name="checkTradeDrillDown"/>
+          <include name="verifyAnnuCommInSuperAccountTable"/>
+          <include name="verifyRegionNameInATSBanner"/>
+          <include name="checkTradeDrillDownForDateFilter"/>
+          <include name="checkYOYComparisonRenamedHeadersInSuperAccPopup"/>
+          <include name="verifyAnnCommvsPrevFullYrCommOfEachProduct"/>
+          <include name="checkTradeDrillDownColVisibility"/>
+          <include name="checkCommInRevByAccAndRevByPersonTableWithDashboard"/>
+          <include name="verifyAnnCommInSalesTraderTab"/>
+          <include name="checkTabsInRevenue"/>
+          <include name="checkYOYComparisonRenamedHeadersInRevByPerson"/>
+          <include name="verifyAnnCommInRegionTab"/>
+          <include name="verifyRevByAccountLeapYear"/>
+          <include name="verifyRevByAccTotalGrossCommWithATSTileComm"/>
+          <include name="verifyAnnualCommInATSRevbyProduct"/>
+          <include name="verifyRevByPersonAccCoveredColumn"/>
+          <include name="verifyRevByAccOverallSubProductsComm"/>
+          <include name="verifyRevByAccountAnnualizedCommDelta"/>
+          <include name="verifyRevByRegionCommCalculation"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Revenue.RevenueTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

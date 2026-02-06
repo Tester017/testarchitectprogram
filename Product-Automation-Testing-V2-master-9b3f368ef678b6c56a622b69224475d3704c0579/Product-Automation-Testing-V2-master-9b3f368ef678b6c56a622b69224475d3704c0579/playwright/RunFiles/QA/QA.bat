@@ -1,0 +1,4 @@
+cd../../
+set PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
+mvn test -DClient=QA -Dtype=ModuleWiseXML/DashboardTest -DProductionMode=false
+mvn test -DClient=QA -Dtype=ModuleWiseXML/AccountEmailReadership -DProductionMode=false

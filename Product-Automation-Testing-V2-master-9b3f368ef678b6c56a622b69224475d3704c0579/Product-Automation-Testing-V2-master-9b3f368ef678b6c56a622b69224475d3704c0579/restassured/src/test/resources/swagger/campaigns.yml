@@ -1,0 +1,115 @@
+openapi: 3.0.0
+info:
+  title: Campaign API
+  version: "1.0.0"
+  description: API for creating and deleting campaigns in Salesforce.
+
+servers:
+  - url: https://qeagle8-dev-ed.develop.my.salesforce.com/services/data/v58.0/sobjects/
+
+paths:
+  /Campaign:
+    post:
+      summary: Create a new campaign
+      operationId: createCampaign
+      tags:
+        - Campaign
+      requestBody:
+        description: Campaign object that needs to be created.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CampaignRequest'
+      responses:
+        '201':
+          description: Campaign created successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CampaignResponse'
+        '400':
+          description: Invalid input.
+
+  /Campaign/{campaignId}:
+    delete:
+      summary: Delete an existing campaign
+      operationId: deleteCampaign
+      tags:
+        - Campaign
+      parameters:
+        - name: campaignId
+          in: path
+          required: true
+          description: ID of the campaign to delete
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Campaign deleted successfully.
+        '404':
+          description: Campaign not found.
+
+components:
+  schemas:
+
+    CampaignRequest:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Name of the campaign.
+          example: New Year Promotion
+        status:
+          type: string
+          description: Status of the campaign.
+          example: Planned
+        type:
+          type: string
+          description: Type of the campaign.
+          example: Email
+        startDate:
+          type: string
+          format: date
+          description: Start date of the campaign (YYYY-MM-DD).
+          example: 2025-01-01
+        endDate:
+          type: string
+          format: date
+          description: End date of the campaign (YYYY-MM-DD).
+          example: 2025-01-31
+        expectedRevenue:
+          type: number
+          format: double
+          description: Expected revenue from the campaign.
+          example: 10000.00
+        budgetedCost:
+          type: number
+          format: double
+          description: Budgeted cost for the campaign.
+          example: 5000.00
+        description:
+          type: string
+          description: Description of the campaign.
+          example: "Campaign for New Year promotional offers."
+      required:
+        - name
+        - status
+
+    CampaignResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier of the newly created campaign.
+          example: 7017F00000ABCDEQ
+        success:
+          type: boolean
+          example: true
+        errors:
+          type: array
+          items:
+            type: string
+        statusCode:
+          type: integer
+          example: 201

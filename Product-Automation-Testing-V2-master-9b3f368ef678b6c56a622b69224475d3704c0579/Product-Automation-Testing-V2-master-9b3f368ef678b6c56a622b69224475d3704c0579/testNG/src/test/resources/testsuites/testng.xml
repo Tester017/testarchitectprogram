@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" verbose="3">
+	<listeners>
+		<listener
+			class-name="com.dz.core.testng.listeners.DriverListener">
+		</listener>
+	</listeners>
+	<test thread-count="2" name="Test">
+		<classes>
+	      
+
+	      <class name="com.dz.prism.test.Activity"/> 
+		 <!--  <class name="com.dz.prism.test.MyList"/> 
+		  <class name="com.dz.prism.test.MyListPartTwo"/>
+		  <class name="com.dz.prism.test.AccountTearSheet"/>
+		  <class name="com.dz.prism.test.TickerTearSheet" /> 
+		  <class name="com.dz.prism.test.ReaderShip"/>
+	      <class name="com.dz.prism.test.ContactTearSheet"/> 
+	      <class name="com.dz.prism.test.Dashboard"/> -->
+	      
+	      
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

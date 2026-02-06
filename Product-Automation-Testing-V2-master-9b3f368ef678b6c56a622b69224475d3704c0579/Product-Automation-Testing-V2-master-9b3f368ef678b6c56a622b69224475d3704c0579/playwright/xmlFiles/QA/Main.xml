@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Playwright test">
+  <suite-files>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/AccountTearsheetBulkAddContactTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/AccountTearsheetBulkEditContactTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/ActivityTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/AddCorporateAccountTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/AddInteractionTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/AddInvestorAccountTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/AddServiceAccountTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/BulkAddContactsTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/BulkAddContactsTest1.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/BulkAddContactsTest2.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/BulkAddContactsTest3.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/BulkAddContactsTest4.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/ContactTearSheetTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/DashboardTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/EventManagerTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/FloatingCTSTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/ProspectTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/QuickLookBulkAddContactsTest1.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/QuickLookBulkAddContactsTest2.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/QuickLookBulkAddContactsTest3.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/ResearchSalesPeronTearsheet.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/RevenueTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/RoleNavigationTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/SalesTraderTearSheetTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/ServiceAccountTearsheetBulkAddContactTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/ServiceAccountTearsheetBulkEditTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/SuperAccountBulkEditTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/SuperAccountTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/TickerTearsheetBulkAddContactTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/TickerTearsheetBulkEditContactTest.xml"/>
+    <suite-file path="./xmlFiles/QA/JiraIDWiseXML/TickerTearSheetTest.xml"/>
+  </suite-files>
+</suite> <!-- Playwright test -->

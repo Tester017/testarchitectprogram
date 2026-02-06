@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="1" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.Readership.ReaderShipModule">
+        <methods>
+          <include name="checkReadershipShowHideIncludeFilterMulti"/>
+          <include name="checkShowHideFilterIncludeExcludeDefaultOption"/>
+          <include name="checkSummaryTilesCountMatchedWithTableCount"/>
+          <include name="verifyTableHeaders"/>
+          <include name="checkReadershipIncludeFilter"/>
+          <include name="checkReadershipShowHideExcludeFilterMulti"/>
+          <include name="checkReadershipTableWithATSReadershipTab"/>
+          <include name="checkReadershipExcludeFilter"/>
+          <include name="checkReaderShipTable"/>
+          <include name="checkReadershipTableWithTTSReadershipTab"/>
+          <include name="checkReadershipTableWithCTSReadershipTab"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Readership.ReaderShipModule -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

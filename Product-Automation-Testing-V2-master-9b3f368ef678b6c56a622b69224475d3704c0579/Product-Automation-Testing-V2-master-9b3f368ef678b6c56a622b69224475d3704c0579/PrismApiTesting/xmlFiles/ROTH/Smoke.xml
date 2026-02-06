@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="3" data-provider-thread-count="1">
+	<listeners>
+		<listener
+			class-name="com.dz.core.testng.listeners.DriverListener2">
+		</listener>
+		<listener
+			class-name="com.dz.core.testng.listeners.AnnotationTransformer">
+		</listener>
+	</listeners>
+	
+	<test name="test" parallel="methods" thread-count="2">
+	
+		<groups>  
+			<run>  
+				<include name="Smoke"/>  
+			</run>  
+		</groups>
+		<classes>
+			<!-- <class name="com.dz.prism.test.adminConsole.ProcedureSummaryTest" /> -->
+			<class name="com.dz.prism.test.Dashboard.DashboardTest" />
+			<class name="com.dz.prism.test.Revenue.RevenueTest" />
+			<class name="com.dz.prism.test.activity.ActivityTest" />
+			<class name="com.dz.prism.test.Mylist.MyListTest" />
+			<class name="com.dz.prism.test.TickerTearSheet.TickerTearSheetTest" />
+			<class name = "com.dz.prism.test.accounttearsheet.AccountTearSheetTest"/>
+			<class name="com.dz.prism.test.ROI.ROITest"/> 
+			<class name="com.dz.prism.test.ContactTearSheet.ContactTearSheetTest"/>
+			<class name="com.dz.prism.test.Prospect.ProspectTest"/>
+			<class name="com.dz.prism.test.Readership.ReaderShipModule"/>
+			<class name="com.dz.prism.test.ResearchLibrary.ResearchLibraryModuleTest"/>
+			<class name="com.dz.prism.test.Trades.TradesModule"/>
+			
+	     </classes> 
+
+       </test>
+</suite>

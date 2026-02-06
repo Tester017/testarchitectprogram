@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="3" data-provider-thread-count="2">
+	<listeners>
+		<listener
+			class-name="com.dz.core.testng.listeners.DriverListener2">
+		</listener>
+
+		<listener
+			class-name="com.dz.core.testng.listeners.AnnotationTransformer">
+		</listener>
+	</listeners>
+	<test name="test" parallel="methods" thread-count="1">
+	    <classes>
+		      <!-- <class name="com.dz.prism.test.researchsalestearsheet.VerifyGrossCommisionPopUpPage"/>
+		      <class name="com.dz.prism.test.accounttearsheet.AccountEmailReadership"/>
+		      <class name="com.dz.prism.test.Revenue.RevenueModule"/>
+		       <class name="com.dz.prism.test.Trades.TradesModule"/>
+		      <class name="com.dz.prism.test.accounttearsheet.ReaderShipTabShowHideFilter"/>
+		      <class name="com.dz.prism.test.ReaderShipEmail.ReaderShipEmailModule"/>
+		      <class name="com.dz.prism.test.RevenueAdvance.RevenueAdvancedAllTableHeaders"/>
+		      <class name="com.dz.prism.test.activity.ActivityShowFilter"/>
+		      <class name="com.dz.prism.test.accounttearsheet.AccountTradeSummaryTab"/>
+		      <class name="com.dz.prism.test.accounttearsheet.AccountRevenueByPerson"/>  
+		      <class name="com.dz.prism.test.accounttearsheet.AccountTearSheetHeaderVerify"/>
+		      <class name="com.dz.prism.test.addcontactpage.AddContactTest"/>
+		      <class name="com.dz.prism.test.productionBugs.TopSalesTradersGrossComm"/> 
+		      <class name="com.dz.prism.test.accounttearsheet.AccountTearSheetTest"/>
+		      <class name="com.dz.prism.test.Readership.ReaderShipModule"/>
+		      <class name="com.dz.prism.test.ResearchLibrary.ResearchLibraryTableHeader"/>
+		      <class name="com.dz.prism.test.accounttearsheet.AccountFIFundsTab"/>
+		      <class name="com.dz.prism.test.Dashboard.DashboardTest"/>
+		      <class name="com.dz.prism.test.accounttearsheet.AccountMclaganTab"/>
+		      <class name="com.dz.prism.test.addInteraction.AddInteractionTest"/>
+		      <class name="com.dz.prism.test.ResearchLibrary.ResearchLibraryModule"/>
+		      <class name="com.dz.prism.test.researchsalestearsheet.verifyGrossCommWithRevenueModule"/>
+		      <class name="com.dz.prism.test.ContactTearSheet.ContactTearSheetHeadersVerify"/>
+		      <class name="com.dz.prism.test.ContactTearSheet.ShowHideFilterForEmailReaderShipAndReadershipTab"/>
+		      <class name="com.dz.prism.test.productionBugs.TopResearchSalesPerson"/>
+		      <class name="com.dz.prism.test.accounttearsheet.AccountReveneByProduct"/>
+		      <class name="com.dz.prism.test.Mylist.MylistPublishedDateCR_7900"/>
+		      <class name="com.dz.prism.test.accounttearsheet.AccountFundsTab"/>
+		      <class name="com.dz.prism.test.Trades.TradesModule"/>
+		      <class name="com.dz.prism.test.Mylist.MylistPublishedDateAnalystCR_7900"/>
+		      <class name="com.dz.prism.test.addInteraction.AddInteractionTest"/>
+		      <class name="com.dz.prism.test.Mylist.MylistPublishedDateAnalystCR_7900"/>
+		      <class name="com.dz.prism.test.researchsalestearsheet.VerifySplitCommBasedOnSalesPerson"/>
+		      <class name="com.dz.prism.test.TickerTearSheet.TickerTearSheetTest"/> 
+
+		 	  <class name="com.dz.prism.test.addAccountpage.AddInvestorAccountTest"/>
+		      <class name="com.dz.prism.test.TickerTearSheet.TickerTearSheetTest"/> 
+		 	  <class name="com.dz.productionBugs.PB_MIZ_1332"/> 
+		 	  <class name="com.dz.prism.test.addAccountpage.AddCorporateAccountTest" />
+		      <class name="com.dz.prism.test.researchsalestearsheet.VerifySplitCommBasedOnSalesPerson"/>
+
+		      <class name="com.dz.prism.test.TickerTearSheet.TickerTearSheetTest"/>  
+          	  <class name="com.dz.productionBugs.Mizuho_1448"/>
+              <class name="com.dz.prism.test.addAccountpage.AddAccountTest"/>
+             <class name="com.dz.prism.test.addInteraction.AddInteractionTest"/>
+                <class name="com.dz.test.pst7989.CheckDateFormat"/>-->
+                 <class name="com.dz.prism.test.Mylist.MylistPublishedDateCR_7900"/>
+          </classes>
+       </test>
+</suite>

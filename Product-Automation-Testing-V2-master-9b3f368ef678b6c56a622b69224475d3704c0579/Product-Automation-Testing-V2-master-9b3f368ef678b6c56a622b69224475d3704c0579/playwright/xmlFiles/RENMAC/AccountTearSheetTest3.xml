@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="2" name="Suite" data-provider-thread-count="1">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" verbose="2" name="Test" parallel="methods">
+    <classes>
+      <class name="com.dz.prism.test.accounttearsheet.AccountTearSheetTest">
+        <methods>
+          <include name="verifyBulkMailLogFromBulkMailInATSContacts"/>
+          <include name="verifyRelationshipInMyListFromATSContTab"/>
+          <include name="checkHoldingTabShowHideExcludeFilter"/>
+          <include name="checkHoldingBySectorWidget"/>
+          <include name="verifyCleanUpPrefForInvalidLinkFromATS"/>
+          <include name="checkAccHistoryWithoutEditUpdate"/>
+          <include name="checkFundsTab"/>
+          <include name="checkHoldingsTab"/>
+          <include name="checkAbletoAddAttachments"/>
+          <include name="checkBulkMailDocumentLinkHasRestrictedData"/>
+          <include name="checkActivityShowAndHideforIncludeFilter"/>
+          <include name="checkInvestorEditAccountTabsData"/>
+          <include name="verifyTagAsMandATSContactTabLogInteractionPage"/>
+          <include name="verifyInATSActivityTabforExclude"/>
+          <include name="verifyColumnVisiblityInAnotherATS"/>
+          <include name="verifyExcludedBulkMailLogFromBulkMailInATSContacts"/>
+          <include name="checkTable"/>
+          <include name="checkATSFundsTabShowAndHideforExcludeFilter"/>
+          <include name="checkBulkMailCovAccountsOnlyConfigsfromATSIntrList"/>
+          <include name="checkFundNameFuncInNewTicPosByHoldWidget"/>
+          <include name="checkFundNameFuncInEquityHoldingsWidget"/>
+          <include name="checkLoggedByFieldDisplaInAccTSLogInterPage"/>
+          <include name="checkResearchAgreeInCustomWidget"/>
+          <include name="verifyInteractionCountInVotesTab"/>
+          <include name="checkATSHoldingsTabShowHideIncludeExcludeDefaultCheck"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.accounttearsheet.AccountTearSheetTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

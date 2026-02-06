@@ -1,0 +1,6 @@
+{
+    "environment": {
+        "prismUrl": "https://craighallumuat.datazoic.com/chprismst/home.html",
+        "storageStatePath": "secure/storage-state/PrismLoginAuth_ch.json"
+    }
+}

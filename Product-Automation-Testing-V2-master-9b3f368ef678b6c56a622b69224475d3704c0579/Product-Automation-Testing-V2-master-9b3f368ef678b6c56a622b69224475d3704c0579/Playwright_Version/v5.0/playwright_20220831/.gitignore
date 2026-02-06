@@ -1,0 +1,8 @@
+/target/
+/test-output/
+/.settings
+/reports
+/src/test/resources/AutoLogin/
+.classpath
+PlayWrightTestGenerator.bat
+.project

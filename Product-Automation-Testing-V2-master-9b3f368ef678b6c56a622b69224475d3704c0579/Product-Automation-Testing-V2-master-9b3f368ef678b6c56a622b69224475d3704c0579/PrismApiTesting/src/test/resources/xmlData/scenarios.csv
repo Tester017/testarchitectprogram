@@ -1,0 +1,140 @@
+Ctrl,Modules,Scenarios,Method,Resources,Version,JiraID,QA,DEV,Capital_One,RenMac,Mizuho,Stephens,Cantor,Craighallum,Piper,Sidoti,WB
+Y,AccountTearSheet,com.dz.prism.test.accounttearsheet.CAP_613,,Bhuvaneswaran,4.2,CAP-613,P,,,Y,Y,,N,,Y,,Y
+Y,AccountTearSheet,com.dz.prism.test.accounttearsheet.EH_AT_AC_PGN_S_0070,,Gopirajan,4.2,PSC-165,P,,,Y,N,,N,,,,Y
+Y,AccountTearSheet,com.dz.prism.test.accounttearsheet.EH_AT_AC_PGN_S_0071,,Gopirajan,4.2,PSC-165,P,,,Y,N,,N,,,,Y
+Y,AccountTearSheet,com.dz.prism.test.accounttearsheet.EH_AT_CT_AC_S_0085,,Shamily,4.2,PST-7339,F,,,Y,Y,,Y,,Y,,
+Y,AccountTearSheet,com.dz.prism.test.accounttearsheet.EH_AT_R_SE_S_0087,,Gopirajan,4.2,PST-6831,F,,,Y,Y,,N,,Y,,Y
+Y,AccountTearSheet,com.dz.prism.test.accounttearsheet.EH_AT_RT_VDSFV_S_0079,,Bhuvaneswaran,4.2,CAP-613,P,,,Y,Y,,N,,Y,,Y
+Y,AccountTearSheet,com.dz.prism.test.accounttearsheet.EH_AT_RVT_RPN_S_0093,,Kowsalya,4.2,PST-6318,InProgress,,,Y,N,,N,,,,Y
+Y,AccountTearSheet,com.dz.prism.test.accounttearsheet.EH_AT_TST_SNSTNF_S_0065,,Shamily,4.2,CST-2347,AdminConsole and verify,,,Y,Y,,Y,,Y,,
+Y,AccountTearSheet,com.dz.prism.test.accounttearsheet.EH_AT_TST_STNF_S_0063,,Shamily,4.2,CST-2347,P,,,Y,Y,,Y,,Y,,
+Y,AccountTearSheet,com.dz.prism.test.accounttearsheet.EH_AT_TST_TRVOTNF_S_0064,,Shamily,4.2,CST-2347,P,,,Y,Y,,Y,,Y,,
+Y,AccountTearSheet,com.dz.prism.test.accounttearsheet.EH_AT_TST_TRVOTNF_S_0066,,Shamily,4.2,CST-2347,AdminConsole and verify,,,Y,Y,,Y,,Y,,
+Y,AccountTearSheet,com.dz.prism.test.accounttearsheet.EH_AT_CT_AC_S_0085,,Shamily,4.2,PST-7339,,,,Y,Y,,Y,,Y,,
+N,Add Contact,com.dz.prism.test.addcontactpage.EQ_CM_CI_ECT_S_0002,,Hussain,4.2,PST-1630,F,,,N,N,,Y,,,,
+Y,ContactTearSheet,com.dz.prism.test.ContactTearSheet.EH_CT_R_SE_S_0087,,Gopirajan,4.2,PST-6831,F,,,Y,Y,,N,,Y,,Y
+Y,ContactTearSheet,com.dz.prism.test.ContactTearSheet.EH_CT_RT_RACSF_S_0082,,Lakshmi,4.2,CAP-613,P,,,Y,Y,,N,,Y,,Y
+Y,ContactTearSheet,com.dz.prism.test.ContactTearSheet.EH_CT_RT_EDSFV_S_0080,,Lakshmi,4.2,CAP-613,P,,,Y,Y,,N,,Y,,Y
+Y,ContactTearSheet,com.dz.prism.test.ContactTearSheet.EH_CT_RT_RACSF_S_0082,,Lakshmi,4.2,CAP-613,P,,,Y,Y,,N,,Y,,Y
+Y,ContactTearSheet,com.dz.prism.test.ContactTearSheet.EH_CT_RT_VDSFV_S_0079,,Lakshmi,4.2,CAP-613,P,,,Y,Y,,N,,Y,,Y
+Y,Dashboard,com.dz.prism.test.Dashboard.EH_AT_GS_SOAT_S_0001,,Elavarasan,,,P,,,Y,,,,,,,
+Y,Dashboard,com.dz.prism.test.Dashboard.EH_D_DT_D_S_0001,,Kowsalya,,PST-7613,P,,,Y,Y,,,,Y,,
+N,MyContacts,com.dz.prism.test.mycontacts.EH_MC_MCT_AC_S_0123,,Shamily,4.2,PST-7339,F,,,N,Y,,Y,,Y,,
+N,MyContacts,com.dz.prism.test.mycontacts.EH_MC_MC_STAVICTRST_S_0002,,Lakshmi,,PST-7317,,,,N,,,Y,,Y,,Y
+N,MyContacts,com.dz.prism.test.mycontacts.EH_MC_MC_STAVIH_S_0001,,Lakshmi,,PST-7317,,,,N,,,Y,,Y,,Y
+N,MyContacts,com.dz.prism.test.mycontacts.EH_MC_MC_STAVIMC_S_0007,,Lakshmi,,PST-7317,,,,N,,,Y,,Y,,Y
+N,MyContacts,com.dz.prism.test.mycontacts.EH_MC_MC_STAVIMLS_S_0003,,Lakshmi,,PST-7317,,,,N,,,Y,,Y,,Y
+N,MyContacts,com.dz.prism.test.mycontacts.EH_MC_MC_UTAVICTRST_S_0023,,Lakshmi,,PST-7317,,,,N,,,Y,,Y,,Y
+N,MyContacts,com.dz.prism.test.mycontacts.EH_MC_MC_UTAVIH_S_0022,,Lakshmi,,PST-7317,,,,N,,,Y,,Y,,Y
+N,MyContacts,com.dz.prism.test.mycontacts.EH_MC_MC_UTAVIMC_S_0028,,Lakshmi,,PST-7317,,,,N,,,Y,,Y,,Y
+N,MyContacts,com.dz.prism.test.mycontacts.EH_MC_MC_UTAVIMLS_S_0024,,Lakshmi,,PST-7317,,,,N,,,Y,,Y,,Y
+Y,MyList,com.dz.prism.test.Mylist.EH_ML_DYNLST_CTCS_S_91,,Gopirajan,,CST-2324,P,,,Y,,,,,,,Y
+Y,MyList,com.dz.prism.test.Mylist.EH_ML_STLST_BM_S_14,,Lakshmi,V4.1.3,PST-7566,P,,,Y,,,,,,,
+Y,MyList,com.dz.prism.test.Mylist.EH_ML_SL_ESL_S_0001,,Lakshmi,,PST-7317,,,,Y,,,Y,,Y,,Y
+Y,MyList,com.dz.prism.test.Mylist.EH_ML_SL_ESL_S_0002,,Lakshmi,,PST-7317,,,,Y,,,Y,,Y,,Y
+Y,MyList,com.dz.prism.test.Mylist.EH_ML_SL_VRSV2PNS_S_0149,,Gopirajan,4.2,PST-7317,,,,Y,N,,Y,,Y,,Y
+Y,MyList,com.dz.prism.test.Mylist.EQ_MYL_SL_STVCT_S_0001,,Lakshmi,4.2.1,PST-7919,,,,Y,,,,,,,
+Y,MyList,com.dz.prism.test.Mylist.EH_ML_SL_ESL_S_0003,,Lakshmi,,,,,,Y,,,,,,,
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EH_PLP_AC_PEL_SC_0001,,Bhuvaneswaran,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EH_PLP_PL_PAT_SC_0003,,Elavarasan,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EH_PLP_PL_PAT_SC_0014,,Elavarasan,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PL_AC_EP_S_0007,,Bhuvaneswaran,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PL_AC_FL_S_0005,,Bhuvaneswaran,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PL_AC_PAT_S_0016,,Bhuvaneswaran,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PL_AC_PEL_S_0011,,Bhuvaneswaran,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PL_AC_PEL_S_0015,,Bhuvaneswaran,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PL_PL_LUP_S_0004,,Bhuvaneswaran,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PLP_AC_FL_SC_0006,,Kowsalya,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PLP_AC_FL_SC_0028,,Kowsalya,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PLP_AC_PAT_SC_0002,,Bhuvaneswaran,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PLP_AC_PAT_SC_0017,,Gopirajan,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PLP_AC_PAT_SC_0025,,Kowsalya,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PLP_AC_PEL_SC_0012,,Gopirajan,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PLP_AC_PEL_SC_0016,,Gopirajan,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PLP_AC_PEL_SC_0034,,Kowsalya,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PLP_PL_LUP_SC_0004,,Kowsalya,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PLP_PL_LUP_SC_0005,,Kowsalya,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PLP_PL_LUP_SC_0027,,Kowsalya,,,,,,Y,Y,,,,Y,,N
+Y,PrismLogin,com.dz.prism.test.Prism_Login.EQ_PLP_PL_PAT_SC_0026,,Kowsalya,,,,,,Y,Y,,,,Y,,
+Y,Readership,com.dz.prism.test.Readership.EH_RSP_RT_AMTOF_S_0015,,Lakshmi,4.2,CAP-613,F,,,Y,Y,,N,,Y,,Y
+Y,Readership,com.dz.prism.test.Readership.EH_RSP_RT_EDSFV_S_0014,,Lakshmi,4.2,CAP-613,,,,Y,Y,,N,,Y,,Y
+Y,Readership,com.dz.prism.test.Readership.EH_RSP_RT_RACSF_S_0016,,Lakshmi,4.2,CAP-613,,,,Y,Y,,N,,Y,,Y
+Y,Readership,com.dz.prism.test.Readership.EH_RSP_RT_VDSFV_S_0013,,Lakshmi,4.2,CAP-613,,,,Y,Y,,N,,Y,,Y
+Y,Readership,com.dz.prism.test.Readership.EH_RSP_RTBL_SE_S_0020,,Gopirajan,4.2,PST-6831,,,,Y,Y,,N,,Y,,Y
+N,Revenue Advanced,com.dz.prism.test.RevenueAdvance.EH_RA_R_AE_S_0003,,Lakshmi,4.2,PST-7627,,,,N,N,,N,,,,Y
+N,Revenue Advanced,com.dz.prism.test.RevenueAdvance.EH_RA_RPN_NP_S_0009,,Bhuvaneswaran,4.2,PST-6318,,,,N,N,,N,,,,Y
+N,Revenue Advanced,com.dz.prism.test.RevenueAdvance.EH_RA_RS_RSC_S_0001,,Lakshmi,4.2,PST-7627,,,,N,N,,N,,,,Y
+Y,ServiceAccountTearSheet,com.dz.prism.test.ServiceAccountTearSheet.EH_SAT_CT_AC_S_0022,,Hussain,4.2,PST-7339,,,,Y,Y,,Y,,Y,,
+Y,ServiceAccountTearSheet,com.dz.prism.test.ServiceAccountTearSheet.EH_SAT_SAT_STAVIH_S_0001,,Lakshmi,4.2,PST-7317,,,,Y,N,,Y,,Y,,Y
+Y,ServiceAccountTearSheet,com.dz.prism.test.ServiceAccountTearSheet.EH_SAT_SAT_STAVISATCT_S_0005,,Lakshmi,4.2,PST-7317,,,,Y,N,,Y,,Y,,Y
+Y,ServiceAccountTearSheet,com.dz.prism.test.ServiceAccountTearSheet.EH_SAT_SAT_UTAVIH_S_0022,,Lakshmi,4.2,PST-7317,,,,Y,N,,Y,,Y,,Y
+Y,TickerTearSheet,com.dz.prism.test.TickerTearSheet.EH_TT_RT_AMTOF_S_0081,,Lakshmi,4.2,CAP-613,,,,Y,Y,,N,,Y,,Y
+Y,TickerTearSheet,com.dz.prism.test.TickerTearSheet.EH_TT_RT_EDSFV_S_0080,,Lakshmi,4.2,CAP-613,,,,Y,Y,,N,,Y,,Y
+Y,TickerTearSheet,com.dz.prism.test.TickerTearSheet.EH_TT_RT_RACSF_S_0082,,Lakshmi,4.2,CAP-613,,,,Y,Y,,N,,Y,,Y
+Y,TickerTearSheet,com.dz.prism.test.TickerTearSheet.EH_TT_RT_VDSFV_S_0079,,Lakshmi,4.2,CAP-613,,,,Y,Y,,N,,Y,,Y
+Y,TickerTearSheet,com.dz.prism.test.TickerTearSheet.EH_TTS_CTT_AC_S_0085,,Hussain,4.2,PST-7339,,,,Y,Y,,Y,,Y,,
+Y,TickerTearSheet,com.dz.prism.test.TickerTearSheet.EH_TTS_R_HE_S_0090,,Gopirajan,4.2,PST-6831,,,,Y,Y,,N,,Y,,Y
+Y,TickerTearSheet,com.dz.prism.test.TickerTearSheet.EH_CAT_CAT_STAVICATCT_S_0006,,Lakshmi,4.2,PST-7317,,,,Y,N,,Y,,Y,,Y
+Y,TickerTearSheet,com.dz.prism.test.TickerTearSheet.EH_CAT_CAT_STAVIH_S_0001,,Lakshmi,4.2,PST-7317,,,,Y,N,,Y,,Y,,Y
+Y,TickerTearSheet,com.dz.prism.test.TickerTearSheet.EH_CAT_CAT_UTAVICATCT_S_0027,,Lakshmi,4.2,PST-7317,,,,Y,N,,Y,,Y,,Y
+Y,TickerTearSheet,com.dz.prism.test.TickerTearSheet.EH_TTS_CTT_AC_S_0085,,Hussain,4.2,PST-7339,,,,Y,Y,,Y,,Y,,
+Y,TickerTearSheet,com.dz.prism.test.TickerTearSheet.EH_CAT_CAT_UTAVIH_S_0022,,Lakshmi,4.2,PST-7317,,,,Y,N,,Y,,Y,,Y
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChanges.EH_DM_SECT_DECTNPA_S_0015,,Gopirajan,4.2,PST-7317,,,,N,N,,Y,,Y,,Y
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_SECT_ECFCTTOA_S_0016,,Shamily,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_DMM_ECFOCAVIH_S_0001,,Shamily,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_SECT_CNAADEC_S_0014,,Shamily,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_SECT_EXFMTOCAV_S_0002,,Shamily,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_SECT_IMTOC_S_0007,,Hussain,4.2,PST-7138,,,,N,N,,,,,,
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_SECT_ICFCTADE_S_0012,,Hussain,4.2,PST-7139,,,,N,N,,,,,,
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_SECT_IOC_S_0006,,Hussain,4.2,PST-7140,,,,N,N,,,,,,
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_NCT_AMTOCTP_S_0009,,Shamily,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_ACT_VRACE_S_0022,,Gopirajan,����������� 4.2.1,PST-7929,,,,N,,,,,,,
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_ACT_VRICE_S_0023,,Gopirajan,����������� 4.2.1,PST-7929,,,,N,,,,,,,
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_SECT_ICFCTADE_S_0014,,***,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,Research Subsscription V2,com.dz.prism.test.ResearchSubsV2.EH_RS_RSC_USCT_S_0338,,Shamily,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,Research Subsscription V2,com.dz.prism.test.ResearchSubsV2.EH_RS_RSC_USCT_S_0337,,Shamily,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,Sponsors,com.dz.prism.test.Sponsors.EH_SPS_SP_CE_S_0004,,Hussain,4.2,WBS-2812,,,,N,N,,Y,,Y,,
+N,BulkSubscription,com.dz.prism.test.BulkSubscription.EH_IAT_IAT_STAVICTRST_S_0002,,Hussain,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,BulkSubscription,com.dz.prism.test.BulkSubscription.EH_IAT_IAT_STAVIH_S_0001,,Elavarasan,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,BulkSubscription,com.dz.prism.test.BulkSubscription.EH_IAT_IAT_STAVIMLS_S_0003,,Hussain,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+Y,BulkSubscription,com.dz.prism.test.BulkSubscription.EH_IAT_IAT_UTAVICTRST_S_0023,,Hussain,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,BulkSubscription,com.dz.prism.test.BulkSubscription.EH_IAT_IAT_UTAVIH_S_0022,,Hussain,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,BulkSubscription,com.dz.prism.test.BulkSubscription.EH_IAT_IAT_UTAVIMLS_S_0024,,Hussain,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+Y,ContactTearSheet,com.dz.prism.test.ContactTearSheet.EH_CT_CTCT_EAVI_S_0083,,Elavarasan,,missing jira id,,,,Y,,,,,,,
+Y,MyList,com.dz.prism.test.Mylist.EH_ML_SL_ECT_S_0009,,***,,missing jira id,,,,Y,,,,,,,
+Y,MyList,com.dz.prism.test.Mylist.EH_ML_SL_ECT_S_0010,,Lakshmi,,missing jira id,,,,Y,,,,,,,
+Y,MyList,com.dz.prism.test.Mylist.EH_ML_SL_SSCT_S_0008,,Lakshmi,,missing jira id,,,,Y,,,,,,,
+N,Revenue Advanced,com.dz.prism.test.RevenueAdvance.EH_RA_RPN_NP_S_0009,,Bhuvaneswaran,4.2,PST-6318,,,,N,N,,N,,,,Y
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.DM_NCT_SC_0008,,Bhuvaneswaran,,missing jira id,,,,N,,,,,,,
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_NCT_IMTOC_S_0011,,Kowsalya,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_NCT_IOC_S_0010,,Kowsalya,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_SECT_DMTOC_S_0005,,Hussain,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_SECT_DOC_S_0004,,Hussain,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.S_03_TC_01,,Lakshmi,,missing jira id,,,,N,,,,,,,
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EQ_BECNC_EC_VRECE_S_0003,,Lakshmi,4.2.1,PST-7929,,,,N,,,,,,,
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.S_05_TC_01,,Lakshmi,,missing jira id,,,,N,,,,,,,
+N,Research Subsscription V2,com.dz.prism.test.ResearchSubsV2.EH_RS_RSC_SSCT_S_0001,,Kowsalya,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,Research Subsscription V2,com.dz.prism.test.ResearchSubsV2.EH_RS_RSC_SSCT_S_0003,,Gopirajan,4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,Research Subsscription V2,com.dz.prism.test.ResearchSubsV2.EQ_RSV2_RSV2C_SUSCT_S_0001,,Hussain,v4.2,PST-7137,,,,Y,Y,,Y,,Y,,Y
+Y,AccountTearSheet,com.dz.prism.test.accounttearsheet.EH_AT_AC_VMCTIA_S_0095,,Shamily,4.2.1,PST-7950,,,,Y,,,,,,,
+Y,AccountTearSheet,com.dz.prism.test.accounttearsheet.EH_AT_AC_VMCTIA_S_0096,,Shamily,4.2.1,PST-7950,,,,Y,,,,,,,
+Y,Add Interaction,com.dz.prism.test.addInteraction.EH_LI_AIP_AI_S_0001,,Shamily,4.2.1,PST-7984,,,,Y,,,,,,,
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_EC_VRECE_S_0024,,Lakshmi,4.2.1,PST-7929,,,,N,,,,,,,
+Y,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_NCT_ACTP_S_0008,,Bhuvaneswaran,4.2.1,PST-7137,,,,N,,,Y,,Y,,Y
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EH_DM_SECT_DECTNPA_S_0015,,Gopirajan,v4.2,PST-7137,,,,N,Y,,Y,,Y,,Y
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EQ_BECNC_ACT_VRACE_S_0001,,Gopirajan,4.2.1,PST-7929,,,,N,,,,,,,
+N,Bulk Employment change,com.dz.prism.test.BulkEmploymentChange.EQ_BECNC_ACT_VRICE_S_0002,,Gopirajan,4.2.1,PST-7929,,,,N,,,,,,,
+Y,ContactTearSheet,com.dz.prism.test.ContactTearSheet.EH_CT_RT_AMTOF_S_0081,,Lakshmi,v4.2,CAP-613,,,,Y,Y,,N,,Y,,Y
+N,MyContacts,com.dz.prism.test.mycontacts.EH_MC_AC_VMCTMYC_S_0125,,Shamily,4.2.1,PST-7950,,,,N,,,,,,,
+N,MyContacts,com.dz.prism.test.mycontacts.EH_MC_AC_VMCTMYC_S_0126,,Shamily,4.2.1,PST-7950,,,,Y,,,,,,,
+Y,MyList,com.dz.prism.test.Mylist.EH_ML_DL_CDLA_S_0080,,Hussain,v4.2.1,PST - 7900,,,,Y,,,,,,,
+Y,MyList,com.dz.prism.test.Mylist.EH_ML_DL_CDR_S_0061,,Kowsalya,,missing jira id,,,,Y,,,,,,,
+Y,MyList,com.dz.prism.test.Mylist.EH_ML_DYNLST_EDCS_S_91,,Hussain,v4.2.1,PST-7795,,,,Y,,,,,,,
+Y,MyList,com.dz.prism.test.Mylist.EH_ML_SL_ESL_S_0009,,Lakshmi,,missing jira id,,,,Y,,,,,,,
+Y,MyList,com.dz.prism.test.Mylist.EH_ML_STLST_CSLST,,Lakshmi,4.2.1,PST-7910�,,,,Y,,,,,,,
+Y,MyList,com.dz.prism.test.Mylist.EH_ML_STL_STVCT_S_0154,,Lakshmi,4.2.1,PST-7919,,,,Y,,,,,,,
+N,Revenue Advanced,com.dz.prism.test.RevenueAdvance.EH_RA_RPN_PF_S_0009,,Hussain,,,,,,N,,,,,,,
+Y,Service ACcount tear sheet,com.dz.prism.test.ServiceAccountTearSheet.EH_SAT_AC_VMCTSA_S_0024,,Shamily,4.2.1,PST-7950,,,,Y,,,,,,,
+Y,Service ACcount tear sheet,com.dz.prism.test.ServiceAccountTearSheet.EH_SAT_AC_VMCTSA_S_0025,,Shamily,4.2.1,PST-7950,,,,Y,,,,,,,
+Y,Ticker Tear Sheet,com.dz.prism.test.TickerTearSheet.EH_TTS_AC_VMCTCA_S_0095,,Shamily,4.2.1,PST-7950,,,,Y,,,,,,,
+Y,Ticker Tear Sheet,com.dz.prism.test.TickerTearSheet.EH_TTS_AC_VMCTCA_S_0096,,Shamily,4.2.1,PST-7950,,,,,,,,,,,

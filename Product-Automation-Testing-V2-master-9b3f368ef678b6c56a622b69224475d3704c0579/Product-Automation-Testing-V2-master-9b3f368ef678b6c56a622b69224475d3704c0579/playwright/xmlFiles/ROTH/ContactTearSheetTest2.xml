@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="1" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.ContactTearSheet.ContactTearSheetTest">
+        <methods>
+          <include name="VerifyBulkUnSubscription"/>
+          <include name="verifyBulkSubscriptionInMycontactsAndMylist"/>
+          <include name="verifyAddBulkInterestList"/>
+          <include name="verifyBulkSubscriptionInRSV2AndTS"/>
+          <include name="verifyAddBulkSubscriptionInCTS"/>
+          <include name="addVerifyMultipleSectorSubscription"/>
+          <include name="verifyAddMultipleSectorInterestList"/>
+          <include name="addVerifySingleSectorSubscription"/>
+          <include name="checkAccountTierInHeadersForConfigZeroOrOne"/>
+          <include name="checkCTSActivityShowAndHideforExcludeFilter"/>
+          <include name="checkCTSActivityShowAndHideforIncludeFilter"/>
+          <include name="checkCTSFundsTabShowAndHideforExcludeFilter"/>
+          <include name="checkCTSFundsTabShowAndHideforIncludeFilter"/>
+          <include name="checkCTSFundsTabShowHideIncludeExcludeDefaultCheck"/>
+          <include name="checkCTSHoldingsTabShowHideIncludeExcludeDefaultCheck"/>
+          <include name="checkFundsTabShowHideExcludeFilterMulti"/>
+          <include name="checkFundsTabShowHideIncludeFilterMulti"/>
+          <include name="checkInterestListTabUploadFilePage"/>
+          <include name="checkLoggedByFieldDisplaInCTSLogInterPage"/>
+          <include name="checkModifyBtnForSectorSubscribedContact"/>
+          <include name="checkModifyBtnForTickerSubscribedContact"/>
+          <include name="multipleContactTSEditSubscription"/>
+          <include name="saveAddInterestListInCTS"/>
+          <include name="verifyAddInterestListByMifidTicker"/>
+          <include name="verifyAddMifidSectorSingleInterestList"/>
+          <include name="verifyAddSingleInterestListBySector"/>
+          <include name="verifyBulkUnSubscInRSV2AndTS"/>
+          <include name="verifyDeleteBulkSubscriptionInterestList"/>
+          <include name="verifyBulkUnSubscInMyContAndList"/>
+          <include name="verifyDeleteMulSectorSubscriptionInterestList"/>
+          <include name="verifyDeleteSingleSubscriptionInterestList"/>
+          <include name="verifySingleAddSubscriptionInterestList"/>
+          <include name="verifyInCTSActivityTab"/>
+          <include name="saveAddInteractionUsingDateandTime"/>
+          <include name="verifyInheritedSubSecInterestList"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ContactTearSheet.ContactTearSheetTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

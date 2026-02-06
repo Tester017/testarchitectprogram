@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="1" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.EventManager.EventManagerTest">
+        <methods>
+          <include name="deleteInvContandVerifyAllRoleCalendar"/>
+          <include name="addAnalystEventWithInvContactandVerifyInCalendar"/>
+          <include name="editVerifyCancelledCorpEventFromBookMeetingInCalendar"/>
+          <include name="editVerifyPendingConfirmCorpEventFromBookMeetingInCalendar"/>
+          <include name="editVerifyPendingConfirmMultiCorpEventBookMeetingInCalendar"/>
+          <include name="addVerifyMultipleSlotCorpEventFromBookMeetingInCalendar"/>
+          <include name="deleteCorporateContInSingleMeetSlotandVerifyInRespectiveAreas"/>
+          <include name="editCorporateContInSingleMeetSlotandVerifyInRespectiveAreas"/>
+          <include name="createCorporateContInSingleMeetSlotandVerifyInRespectiveAreas"/>
+          <include name="addVerifyCorpEventFromBookMeetingInCalendar"/>
+          <include name="CredServiceContfromOpenRequestandVerifyImpactedAreas"/>
+          <include name="addAnalystEventWithMandatoryFields"/>
+          <include name="addServiceContInSingleMeetSlotandVerifyInRespectiveAreas"/>
+          <include name="removeCoveredContandVerifyInAllRoleCalendar"/>
+          <include name="verifySalesPersonNameandSlotDetailsInSalesCalendar"/>
+          <include name="editVerifyCancelledMultiCorpEventBookMeetingInCalendar"/>
+          <include name="addInvContandVerifytheDetailsConfidential"/>
+          <include name="addAnalystEventConfidentialWithMandatoryFields"/>
+          <include name="credInvestorContInSingleMeetSlotandVerifyInRespectiveAreas"/>
+          <include name="editVerifyPendingConfirmServEventFromBookMeetingInCalendar"/>
+          <include name="addVerifyServEventFromBookMeetingInCalendar"/>
+          <include name="deleteVerifyMultiCorpEventFromBookMeetingInCalendar"/>
+          <include name="deleteVerifyServEventFromBookMeetingInCalendar"/>
+          <include name="editVerifyCancelledServEventFromBookMeetingInCalendar"/>
+          <include name="verifyConfidentialEventInAllRolesCalendar"/>
+          <include name="verifyCalendarSlotEventType"/>
+          <include name="verifyEventWithIntrAttendeeAsAnalystVerifyInCalendar"/>
+          <include name="editAnalystEventWithJointBrokrandIntrnalAttendees"/>
+          <include name="deleteVerifyCorpEventFromBookMeetingInCalendar"/>
+          <include name="credServiceContInSingleMeetSlotandDoLogInteraction"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.EventManager.EventManagerTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

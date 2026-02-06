@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="2" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.Mylist.MyListTest">
+        <methods>
+        <include name="createandVerifySearchbarForDynamicList"/>
+          <include name="createandVerifySearchbarForSimpleList"/>
+<include name="verifyMyListPinAndUnpinOption"/>
+          <include name="verifyNoMatchingRecordsFoundOnMyListSearchbar"/>
+          <include name="verifySearchbarForGreaterthanThousandContactsinMyList"/>
+          <include name="verifySearchbarForPinnedDynamicListinMyList"/>
+          <include name="verifySearchbarForPinnedStaticList"/>
+          <include name="verifyResearchLinkHoveredvalue"/>
+          <include name="verifyUsedTemplateInDraftTab"/>
+          <include name="verifyLastUsedDateColumAddedInTemplateTable"/>
+          <include name="verifySentCountInBulkMailLogPage"/>
+          <include name="checkLoggedByFieldDisplaInMyListDynamicListLogInterPage"/>
+          <include name="checkLoggedByFieldDisplaInMyListSimpleListLogInterPage"/>
+         </methods>
+      </class> <!-- com.dz.prism.test.Mylist.MyListTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="12" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="listeners.DriverListener"/>
+  </listeners>
+  <test thread-count="20" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="test.Activity">
+        <methods>
+          <include name="ActivityPageDeleteInteraction"/>
+          <include name="verifyActivityTileData"/>
+          <include name="ActivityPageWithContactTearSheet"/>
+          <include name="ActivityPageEditInteractionVerifyHistory"/>
+          <include name="ActivityPageWithAccTearSheet"/>
+          <include name="ActivityPageShowAndHide"/>
+          <include name="checkColumnSorting"/>
+          <include name="ActivityPageShowAndHideIncludeandExcludeFilterWithMultiFilterSearch"/>
+          <include name="ActivityPageShowAndHideExcludeFilterWithSingleFilterSearch"/>
+          <include name="ActivityPageShowAndHideExcludeRandomFilter"/>
+          <include name="ActivityPageShowAndHideIncludeFilterWithSingleFilterSearch"/>
+        </methods>
+      </class> <!-- test.Activity -->
+      <class name="test.Dashboard">
+        <methods>
+          <include name="TopSalesTraderAcctCovPopupWithRevenueTab"/>
+          <include name="TopResearchSalesPerAcctCovPopupWithRevenueTab"/>
+        </methods>
+      </class> <!-- test.Dashboard -->
+      <class name="test.Readership">
+        <methods>
+          <include name="ReadershipPageWithAccTearSheet"/>
+          <include name="ReadershipPageWithTickerTearSheet"/>
+          <include name="ReadershipPageWithContactTearSheet"/>
+          <include name="ReadershipPageWithMyList"/>
+          <include name="verifyTilesCount"/>
+          <include name="verifyReadershipDataWithCTSReaderShipData"/>
+          <include name="verifySalesCoverageInReaderShipData"/>
+          <include name="ReadershipPageWithAccountTearSheet"/>
+          <include name="ReaderShipPageShowAndHideIncludeandExcludeFilterWithMultiFilterSearch"/>
+          <include name="ReaderShipPageShowAndHideExcludeFilterWithSingleFilterSearch"/>
+          <include name="ReaderShipPageShowAndHideIncludeFilterWithSingleFilterSearch"/>
+        </methods>
+      </class> <!-- test.Readership -->
+      <class name="test.ResearchSalesTearSheet">
+        <methods>
+          <include name="verifyTradesPopUpPage"/>
+          <include name="RevenuByResearchSalesTableCalculateHeaderSum"/>
+          <include name="calculateAllSubCommisionInGrossPopUpPage"/>
+          <include name="verifyPreviousCommTileAndAnnualCommTiles"/>
+          <include name="verifyAccountIdInGrosCommPopupPageWithATS_DrillDown"/>
+          <include name="verifySubProductCommPopupPageHeaderSumValidation"/>
+        </methods>
+      </class> <!-- test.ResearchSalesTearSheet -->
+      <class name="test.Revenue">
+        <methods>
+          <include name="revenueByAccountCalcAnnComm"/>
+          <include name="revenueByAccountCalcNetCommission"/>
+          <include name="revByAccSuperAccHeaderComparison"/>
+          <include name="revenueByAccountCalcValActions"/>
+          <include name="revenueByAccountCalcCSA"/>
+          <include name="revenueByAccountYOYcomparison"/>
+          <include name="revByAccSuperAccCalcNetComm"/>
+          <include name="revenueByAccountCalcTotalCommInclusiveOfCSA"/>
+          <include name="revenueByPerson"/>
+          <include name="revenueByAccountCalcLossRatio"/>
+          <include name="revByAccSuperAccGoalComparison"/>
+          <include name="revenueByPersonTableValueCalculation"/>
+          <include name="revByAccSuperAccYOYcomparison"/>
+          <include name="revenueByAccountCalcNetComm"/>
+          <include name="revenueByResearchSalesTableValueCalculation"/>
+          <include name="calculateRevenueByAccountHeaderSum"/>
+          <include name="revByAccSuperAccCalcNetCommission"/>
+          <include name="RevByAccountValActionsCalc"/>
+          <include name="revByAccSuperAccCoverage"/>
+          <include name="revenueByAccount_Coverage"/>
+          <include name="revByAccSuperAccCalcAnnComm"/>
+          <include name="revenueByAccountGoalComparison"/>
+          <include name="revenueByAccountVerifyInAccTearsheet"/>
+          <include name="revByAccSuperAccCalcCSA"/>
+          <include name="revByAccSuperAccTotalComm"/>
+          <include name="revByAccSuperAccCalcValActions"/>
+          <include name="revByRegionTab"/>
+          <include name="revByAccSuperAccCalcLossRatio"/>
+          <include name="verifyRevByRegNamesWithDashCommChrt"/>
+          <include name="revenueByAccountCalcTotalCommExclusiveOfCSA"/>
+          <include name="verifyRevByRegionCommissionPopupPageTableValidation"/>
+          <include name="revByAccSuperAccTotalCommInclusiveOfCSA"/>
+          <include name="verifyRevByRegnCommVsRevByRegionDashBard_RegionPopUPPageCommVal"/>
+          <include name="revByAccSuperAccTotalCommExclusiveOfCSA"/>
+          <include name="verifyRevByRegionCommVsCommByRegionWidget"/>
+          <include name="verifyRevByRegionCommissionPopUpPg"/>
+        </methods>
+      </class> <!-- test.Revenue -->
+      <class name="test.RevenueHeaderValidation">
+        <methods>
+          <include name="revenueByAccountTableHeader"/>
+        </methods>
+      </class> <!-- test.RevenueHeaderValidation -->
+      <class name="test.TickerTearSheet">
+        <methods>
+          <include name="checkSalesCoverageInRedership"/>
+          <include name="updateTickerSymbol"/>
+          <include name="addSponsorCompanies"/>
+          <include name="TickerTearSheetActivityTabShowAndHideMultiFilterSearch"/>
+          <include name="TickerTearSheetActivityTabShowAndHideSingleIncludeFilterSearch"/>
+          <include name="TickerTearSheetActivityTabShowAndHideSingleExcludeFilterSearch"/>
+        </methods>
+      </class> <!-- test.TickerTearSheet -->
+      <class name="test.Trades">
+        <methods>
+          <include name="tradesNetValueValidationForTradesRollUpToggleOn"/>
+          <include name="tradesNetValueCommissionCalculated"/>
+          <include name="tradesValidationInTickerTearSheetForTradesRollUpToggleOn"/>
+          <include name="tradesValidationInTickerTearSheet"/>
+          <include name="tradesValidationInAccTearSheetForTradesRollUpToggleOn"/>
+          <include name="verifyTradeSummaryInAccountTS"/>
+          <include name="verifyTradesWithSalesPersonTearSheet"/>
+          <include name="verifyTradesWithAccTearSheet"/>
+          <include name="verifyTradesWithDashboardTile"/>
+        </methods>
+      </class> <!-- test.Trades -->
+      <class name="test.AccountTearSheet">
+        <methods>
+          <include name="AccountTearSheetActivityTabShowAndHideSingleExcludeFilterSearch"/>
+          <include name="AccountTearSheetActivityTabShowAndHideSingleIncludeFilterSearch"/>
+          <include name="AccountTearSheetActivityTabShowAndHideMultiFilterSearch"/>
+        </methods>
+      </class> <!-- test.AccountTearSheet -->
+      <class name="test.ContactTearSheet">
+        <methods>
+          <include name="ContactTearSheetActivityTabShowAndHideMultiFilterSearch"/>
+          <include name="ContactTearSheetActivityTabShowAndHideSingleExcludeFilterSearch"/>
+          <include name="ContactTearSheetActivityTabShowAndHideSingleIncludeFilterSearch"/>
+        </methods>
+      </class> <!-- test.ContactTearSheet -->
+      <class name="test.MyList">
+        <methods>
+          <include name="MyListDynamicListWithContactTearSheet"/>
+          <include name="MyListStaticListWithContactTearSheet"/>
+        </methods>
+      </class> <!-- test.MyList -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

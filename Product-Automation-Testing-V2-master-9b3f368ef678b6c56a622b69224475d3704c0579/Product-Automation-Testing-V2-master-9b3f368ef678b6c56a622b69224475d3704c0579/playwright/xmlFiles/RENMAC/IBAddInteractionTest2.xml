@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="2" name="Suite" data-provider-thread-count="1">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" verbose="2" name="Test" parallel="methods">
+    <classes>
+      <class name="com.dz.prism.test.ib.addinteraction.IBAddInteractionTest">
+        <methods>
+          <include name="addDealWithInvAccountDoLogIntrFromDealTSandVerifyImpactAreas"/>
+          <include name="verifyEditedDealHistoryInDealTSActivity"/>
+          <include name="addInteractionViaDealDropdwn"/>
+          <include name="addInteractionViaContactTearsheet"/>
+          <include name="updateInteractionWithoutChanges"/>
+          <include name="deleteEditedInteraction"/>
+          <include name="saveAddInteractionForSaveAddAnother"/>
+          <include name="checkAlertMailByAddInteraction"/>
+          <include name="verifyErrorMessageWhenSaveWithoutEnterDealName"/>
+          <include name="addInteractionViaContactTearsheetUsingClosingQuatorInDealField"/>
+          <include name="addInteractionViaActivityModule"/>
+          <include name="checkInteractionFlowInIBAdminWithInternalAttendee"/>
+          <include name="addInteractionViaTickerTearsheet"/>
+          <include name="checkWithDifferentFileType"/>
+          <include name="verifyErrorMessageWhenEnterWrongDealName"/>
+          <include name="updateInteractionInToMeeting"/>
+          <include name="addInteractionFromFloatingATS"/>
+          <include name="checkInteractionFlowInIBAdmin"/>
+          <include name="addInteractionViaServiceTearsheet"/>
+          <include name="verifyNoResultsFoundWhenSearchIrreleventData"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.ib.addinteraction.IBAddInteractionTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

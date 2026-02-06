@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="2" name="Suite" data-provider-thread-count="1">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" verbose="2" name="Test" parallel="methods">
+    <classes>
+      <class name="com.dz.prism.test.Revenue.RevenueModule">
+        <methods>
+          <include name="verifyRevenueByAccountInAccountTearSheet"/>
+          <include name="verifyRevenueByProductPrevComm"/>
+          <include name="calculateVerifyGrowthValues"/>
+          <include name="verifyYearsPeriodFilter"/>
+          <include name="verifyRevenueByProductGrossComm"/>
+          <include name="verifyRevenueByProductCommInRevPersonTab"/>
+          <include name="verifyRevenueByProductPrevCommInDashboard"/>
+          <include name="compareRevByRegnCommValWithATSRevByProdVal"/>
+          <include name="verifyRevenueByProductGrossCommInDashboard"/>
+          <include name="verifyRevenueByProductCommInTradesTab"/>
+          <include name="verifyYTDvsPrevCommOfEachProduct"/>
+          <include name="verifyRevenueByProductCommInRevAccountTab"/>
+          <include name="verifyAllSymbolsEachProduct"/>
+          <include name="verifyCommissionBreakUpInAccountTearsheet"/>
+          <include name="verifyRevByTeamGrossComm"/>
+          <include name="calculateVerifyNetComm"/>
+          <include name="calculateVerifyGrossComm"/>
+          <include name="verifyYTDvsGoalOfEachProduct"/>
+          <include name="calculateVerifyPrevYearNetComm"/>
+          <include name="verifyRevenueByProductCommInRevRegionTab"/>
+          <include name="verifyRevenueByProductCommInDashboardProductWidget"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Revenue.RevenueModule -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

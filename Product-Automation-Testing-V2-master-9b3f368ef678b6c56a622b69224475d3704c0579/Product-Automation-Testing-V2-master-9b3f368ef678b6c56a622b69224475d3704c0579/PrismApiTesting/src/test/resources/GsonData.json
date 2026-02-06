@@ -1,0 +1,380 @@
+[
+  {
+    "data": "_checkbox_selector",
+    "checked": true,
+    "title": "",
+    "width": 30,
+    "demo":["one","two"]
+  },
+  {
+    "data": "contact_name",
+    "checked": true,
+    "title": "Contact Name",
+    "isDefault": "yes",
+    "width": 127
+  },
+  {
+    "data": "account_name",
+    "checked": true,
+    "title": "Client Name",
+    "isDefault": "yes",
+    "width": 127
+  },
+  {
+    "data": "account_id",
+    "checked": true,
+    "title": "Account ID",
+    "isDefault": "yes",
+    "width": 127
+  },
+  {
+    "data": "contact_first_name",
+    "checked": true,
+    "title": "Contact First Name",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "contact_last_name",
+    "checked": true,
+    "title": "Contact Last Name",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "preferred_name",
+    "checked": true,
+    "title": "Preferred Name",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "contact_email",
+    "checked": true,
+    "title": "Email ID",
+    "isDefault": "yes",
+    "width": 126
+  },
+  {
+    "data": "contact_phone1",
+    "checked": true,
+    "title": "Phone No.",
+    "isDefault": "no",
+    "width": 126
+  },
+  {
+    "data": "address_1",
+    "checked": true,
+    "title": "Address 1",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "city",
+    "checked": true,
+    "title": "Contact City",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "state",
+    "checked": false,
+    "title": "Contact State",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "pincode",
+    "checked": true,
+    "title": "Contact PinCode",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "contact_notes",
+    "checked": true,
+    "title": "Contact Notes",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "client_notes",
+    "checked": true,
+    "title": "Client Notes",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "acc_type",
+    "checked": true,
+    "title": "Acct. Type",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "acc_subtype",
+    "checked": false,
+    "title": "Acct. Sub Type",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "corporate_title",
+    "checked": false,
+    "title": "Title",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "email_opt_out",
+    "checked": true,
+    "title": "Email Opt Out",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "report_csr",
+    "checked": false,
+    "title": "CSR",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "focus_micro_industry",
+    "checked": true,
+    "title": "Contact Sub Sector",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "contact_sector_focus",
+    "checked": true,
+    "title": "Contact Sector Focus",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "last_interact_date",
+    "checked": true,
+    "title": "Last Interacted Date",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "last_interact_type",
+    "checked": true,
+    "title": "Last Interacted Mode",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "last_interact_by_emp_id",
+    "checked": false,
+    "title": "Last Interacted By Emp. ID",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "last_interact_by_emp_name",
+    "checked": true,
+    "title": "Last Interacted By Emp. Name",
+    "isDefault": "no",
+    "width": 126
+  },
+  {
+    "data": "last_interact_date_by_me",
+    "checked": true,
+    "title": "Last Interacted Date By Me",
+    "isDefault": "no",
+    "width": 126
+  },
+  {
+    "data": "last_interact_type_by_me",
+    "checked": true,
+    "title": "Last Interacted Mode By Me",
+    "isDefault": "no",
+    "width": 126
+  },
+  {
+    "data": "sales_team",
+    "checked": false,
+    "title": "Sales Coverage",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "custom_account_id2",
+    "checked": false,
+    "title": "Account ID2",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "aum",
+    "checked": false,
+    "title": "Account AUM",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "ii300",
+    "checked": false,
+    "title": "II300",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "contact_phone2",
+    "checked": false,
+    "title": "Mobile",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "is_focus",
+    "checked": false,
+    "title": "Is Focus",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "is_interest",
+    "checked": false,
+    "title": "Is Interest",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "is_13f",
+    "checked": false,
+    "title": "Is 13F",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "is_subscribe",
+    "checked": false,
+    "title": "Is Subscribe",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "designation",
+    "checked": true,
+    "title": "Designation",
+    "isDefault": "no",
+    "width": 126
+  },
+  {
+    "data": "last_communicated",
+    "checked": false,
+    "title": "Last Communicated",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "acc_tier",
+    "checked": false,
+    "title": "Tier",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "commu_freq",
+    "checked": false,
+    "title": "Communication Freq",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "pref_commu_mode",
+    "checked": false,
+    "title": "Pf. Comm. Mode",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "focus_sector",
+    "checked": false,
+    "title": "Focus Sector",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "phone_type1",
+    "checked": true,
+    "title": "Phone Type",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "human_id",
+    "checked": false,
+    "title": "Human ID",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "donot_call",
+    "checked": false,
+    "title": "Do Not Call",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "events_opt_out",
+    "checked": false,
+    "title": "Events Opt Out",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "status",
+    "checked": true,
+    "title": "Status",
+    "isDefault": "no",
+    "width": 100
+  },
+  {
+    "data": "score",
+    "checked": true,
+    "title": "Search Score",
+    "isDefault": "no",
+    "width": 126
+  },
+  {
+    "data": "filterscore",
+    "checked": true,
+    "title": "Filter Score",
+    "isDefault": "no",
+    "width": 126
+  },
+  {
+    "data": "researchEmail",
+    "checked": true,
+    "title": "Research Email",
+    "isDefault": "no",
+    "width": 126
+  },
+  {
+    "data": "secondaryEmail",
+    "checked": true,
+    "title": "Secondary Email",
+    "isDefault": "no",
+    "width": 126
+  },
+  {
+    "data": "personalEmail",
+    "checked": true,
+    "title": "Personal Email",
+    "isDefault": "no",
+    "width": 126
+  },
+  {
+    "data": "otherHome",
+    "checked": true,
+    "title": "Home",
+    "isDefault": "no",
+    "width": 126
+  }
+]

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite" parallel="classes" thread-count="1">
+    
+    <test name="CreateLeadTest_Playwright_Firefox">
+        <parameter name="browserEngine" value="PLAYWRIGHT"/>
+        <parameter name="browserType" value="FIREFOX"/>
+        <classes>
+            <class name="testcases.TC001_CreateLead"/>
+           <!--  <class name="testcases.TC002_EditLead"/>
+            <class name="testcases.TC003_DuplicateLead"/>
+            <class name="testcases.TC004_DeleteLead"/> -->
+        </classes>
+    </test>
+    <test name="CreateLeadTest">
+        <parameter name="browserEngine" value="SELENIUM"/>
+        <parameter name="browserType" value="CHROME"/>
+        <classes>
+            <class name="testcases.TC001_CreateLead"/>
+          <!--   <class name="testcases.TC002_EditLead"/>
+            <class name="testcases.TC003_DuplicateLead"/>
+            <class name="testcases.TC004_DeleteLead"/> -->
+
+        </classes>
+    </test> 
+</suite>
+

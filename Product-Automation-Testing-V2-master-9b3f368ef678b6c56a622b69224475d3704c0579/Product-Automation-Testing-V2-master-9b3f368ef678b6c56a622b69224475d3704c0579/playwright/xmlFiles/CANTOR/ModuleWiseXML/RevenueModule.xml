@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="2" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.Revenue.RevenueModule">
+        <methods>
+          <include name="demoTestException"/>
+          <include name="calculateVerifyGrossComm"/>
+          <include name="calculateVerifyGrowthValues"/>
+          <include name="calculateVerifyNetComm"/>
+          <include name="calculateVerifyPrevYearNetComm"/>
+          <include name="compareCommValFrmRevByRegionWithDashbrdRegionCommWidget"/>
+          <include name="compareRevByRegnCommValWithATSRevByProdVal"/>
+          <include name="gotoRevenuModule"/>
+          <include name="verifyAllSymbolsEachProduct"/>
+          <include name="verifyCommissionBreakUpInAccountTearsheet"/>
+          <include name="verifyGrossCommOfEachProduct"/>
+          <include name="verifyPrevCommOfEachProduct"/>
+          <include name="verifyRevByTeamGrossComm"/>
+          <include name="verifyRevenueByAccountInAccountTearSheet"/>
+          <include name="verifyRevenueByProductCommInDashboardProductWidget"/>
+          <include name="verifyRevenueByProductCommInRevAccountTab"/>
+          <include name="verifyRevenueByProductCommInRevPersonTab"/>
+          <include name="verifyRevenueByProductCommInRevRegionTab"/>
+          <include name="verifyRevenueByProductCommInTradesTab"/>
+          <include name="verifyRevenueByProductGrossComm"/>
+          <include name="verifyRevenueByProductGrossCommInDashboard"/>
+          <include name="verifyRevenueByProductPrevComm"/>
+          <include name="verifyRevenueByProductPrevCommInDashboard"/>
+          <include name="verifyYearsPeriodFilter"/>
+          <include name="verifyYTDvsGoalOfEachProduct"/>
+          <include name="verifyYTDvsPrevCommOfEachProduct"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Revenue.RevenueModule -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

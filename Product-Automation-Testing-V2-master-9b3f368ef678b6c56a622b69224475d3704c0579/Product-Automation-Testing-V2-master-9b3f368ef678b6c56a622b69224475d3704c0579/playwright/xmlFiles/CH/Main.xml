@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Playwright test">
+  <suite-files>
+    <suite-file path="./xmlFiles/CH/VersionWiseXML/AccountTearsheetBulkAddContactTest.xml"/>
+    <suite-file path="./xmlFiles/CH/VersionWiseXML/AccountTearSheetTest.xml"/>
+    <suite-file path="./xmlFiles/CH/VersionWiseXML/AddAccountUsingApi.xml"/>
+    <suite-file path="./xmlFiles/CH/VersionWiseXML/AddContactTest.xml"/>
+    <suite-file path="./xmlFiles/CH/VersionWiseXML/AddContactUsingAPI.xml"/>
+    <suite-file path="./xmlFiles/CH/VersionWiseXML/AddInteractionTest.xml"/>
+    <suite-file path="./xmlFiles/CH/VersionWiseXML/BulkAddContactsTest.xml"/>
+    <suite-file path="./xmlFiles/CH/VersionWiseXML/ClosedDealsTest.xml"/>
+    <suite-file path="./xmlFiles/CH/VersionWiseXML/ContactTearSheetTest.xml"/>
+    <suite-file path="./xmlFiles/CH/VersionWiseXML/MyListTest.xml"/>
+    <suite-file path="./xmlFiles/CH/VersionWiseXML/ServiceAccountTearsheetBulkAddContactTest.xml"/>
+    <suite-file path="./xmlFiles/CH/VersionWiseXML/ServiceAccountTest.xml"/>
+    <suite-file path="./xmlFiles/CH/VersionWiseXML/TickerTearsheetBulkAddContactTest.xml"/>
+    <suite-file path="./xmlFiles/CH/VersionWiseXML/TickerTearsheetBulkEditContactTest.xml"/>
+    <suite-file path="./xmlFiles/CH/VersionWiseXML/TickerTearSheetTest.xml"/>
+    <suite-file path="./xmlFiles/CH/ModuleWiseXML/FloatingCTSTest.xml"/>
+     <suite-file path="./xmlFiles/CH/ModuleWiseXML/FloatingATSTest.xml"/>
+      <suite-file path="./xmlFiles/CH/ModuleWiseXML/FloatingTTSTest.xml"/>
+    
+  </suite-files>
+</suite> <!-- Playwright test -->

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="2" name="Suite" data-provider-thread-count="1">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" verbose="2" name="Test" parallel="methods">
+    <classes>
+      <class name="com.dz.prism.test.TickerTearSheet.TickerTearSheetTest">
+        <methods>
+          <include name="checkIBBankingSectorandSubsectorInTickerBanner"/>
+          <include name="checkBulkMailSubjectContentHasRestrictedData"/>
+          <include name="verifyTickerSymbolFieldInEditAccountPage"/>
+          <include name="verifyCleanUpPrefForBrokenLinkCleanSendFromTTS"/>
+          <include name="checkActivityPeriodFilterTypes"/>
+          <include name="verifyTickerSymbolInTradesShowHideFilter"/>
+          <include name="verifyTickerSymbolInActivityShowHideFilter"/>
+          <include name="verifyExcludedBulkMailLogFromBulkMailInTTSContacts"/>
+          <include name="checkCorporateEditAccountTabsDataInTTS"/>
+          <include name="checkBulkMailCovAccountsOnlyConfigsfromTTS"/>
+          <include name="verifyCleanUpPrefForInvalidLinkFromTTS"/>
+          <include name="verifyInTickerTearSheetActivityTabforExclude"/>
+          <include name="verifySuspendResearchFromTTS"/>
+          <include name="checkEditedSectorHistoryFromEquityToIBAdmin"/>
+          <include name="verifySingleInterestListusingTickerConts"/>
+          <include name="checkHoldingTabShowHideIncludeFilter"/>
+          <include name="verifyTickerSymbolInShowHideFilterTickerFieldSugg"/>
+          <include name="verifyTickerSymbolInReaderShipShowHideFilter"/>
+          <include name="checkShowOnlyActiveCovDisp"/>
+          <include name="verifyInheritedSubInterestList"/>
+          <include name="checkShowHideFilterExcludeBtn"/>
+          <include name="verifyHideTradesTabConfigInNewAccountPositionHoldngWidget"/>
+          <include name="verifyInteractionCountInSummaryActiveWidget"/>
+          <include name="checkHoldingTabShowHideExcludeFilter"/>
+          <include name="checkAbletoAddAttachments"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.TickerTearSheet.TickerTearSheetTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

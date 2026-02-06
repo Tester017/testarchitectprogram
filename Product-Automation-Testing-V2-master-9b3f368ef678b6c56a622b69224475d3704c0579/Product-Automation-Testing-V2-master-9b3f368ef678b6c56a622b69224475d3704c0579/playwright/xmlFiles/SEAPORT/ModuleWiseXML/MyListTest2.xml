@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="1" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.Mylist.MyListTest">
+        <methods>
+          <include name="verifyCleanUpPrefForValidLinkByRightClickDynamic"/>
+          <include name="verifyBulkMailCCFieldforStatic"/>
+          <include name="verifyBulkMailPreviouslyUsedCheckboxLogicChange"/>
+          <include name="credOperationForSimpleListQuickAddContactsAndDeleteContact"/>
+          <include name="verifyExistingSimpleListLoads"/>
+          <include name="credOperationForSimpleList"/>
+          <include name="verifyCleanUpPrefForBrokenLinkCleanSendDynamic"/>
+          <include name="verifyDynamicListBulkMailSendLaterPopUpPg"/>
+          <include name="verifyReadershipTickerLastReadDocumentData"/>
+          <include name="verifyUserMasterAdminConfigFuncInMyListIB"/>
+          <include name="checkBulkMailDocumentLinkHasRestrictedData"/>
+          <include name="verifyLastUsedDateColumAddedInTemplateTable"/>
+          <include name="verifyCleanUpPrefForBrokenLinkByRightClickSkipDynamic"/>
+          <include name="verifyBulkMailCCFieldforDynamic"/>
+          <include name="verifySearchbarForGreaterthanThousandContactsinMyList"/>
+          <include name="verifyCleanUpPrefForValidLinkDynamic"/>
+          <include name="verifyListIsOpened"/>
+          <include name="verifyMylistHeaders"/>
+          <include name="verifyCleanUpPrefForBrokenLinkSkipStatic"/>
+          <include name="verifySentCountInBulkMailLogPage"/>
+          <include name="createandVerifySearchbarForSimpleList"/>
+          <include name="verifyExcludedBulkMailLogFromBulkMailInMyList"/>
+          <include name="verifyResearchLinkHoveredvalue"/>
+          <include name="checkBulkMailPageInMylistDynamicList"/>
+          <include name="verifyShareListMylistHistory"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Mylist.MyListTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

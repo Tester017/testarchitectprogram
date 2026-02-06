@@ -1,0 +1,38 @@
+pipeline {
+    agent any
+    
+    environment {
+        SSH_USER = 'datazoic' // The SSH user to login to the remote machine
+        SSH_HOST = '192.168.3.66' // The SSH host IP or hostname
+        SSH_KEY_ID = credentials('pemof66') // Jenkins stored SSH key ID
+    }
+
+    stages {
+        stage('Check Memory') {
+            steps {
+                script {
+                    // Set the path to the SSH private key from Jenkins credentials
+                    def sshKeyPath = SSH_KEY_ID
+
+                    // SSH to the machine and check RAM and ROM sizes
+                    def freeRamMemory = sh(script: """
+                        ssh -o StrictHostKeyChecking=no -i ${sshKeyPath} ${SSH_USER}@${SSH_HOST} "free -m | awk '/^Mem:/ {print $4}'"
+                    """, returnStdout: true).trim()
+
+                    def freeRomMemory = sh(script: """
+                        ssh -o StrictHostKeyChecking=no -i ${sshKeyPath} ${SSH_USER}@${SSH_HOST} df -h / | awk 'NR==2 {print $4}'
+                    """, returnStdout: true).trim()
+
+                    echo "Free RAM Memory: ${freeRamMemory} MB"
+                    echo "Free ROM Memory: ${freeRomMemory}"
+                }
+            }
+        }
+    }
+    
+    post {
+        always {
+            echo "Memory check completed."
+        }
+    }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="2" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.Mylist.MyListTest">
+        <methods>
+        <include name="verifyCleanUpPrefForInvalidLinkByRightClickStatic"/>
+          <include name="verifyCleanUpPrefForBrokenLinkCleanSendStatic"/>
+          <include name="verifyCleanUpPrefForBrokenLinkCleanSendDynamic"/>
+          <include name="verifyCleanUpPrefForValidLinkByRightClickStatic"/>
+          <include name="verifyCleanUpPrefForValidLinkDynamic"/>
+          <include name="verifyCleanUpPrefForBrokenLinkCleanSendByRightClickStatic"/>
+          <include name="verifyCleanUpPrefForBrokenLinkSkipDynamic"/>
+          <include name="verifyCleanUpPrefForBrokenLinkByRightClickSkipStatic"/>
+          <include name="verifyCleanUpPrefForInvalidLinkDynamic"/>
+          <include name="verifyCleanUpPrefForBrokenLinkByRightClickSkipDynamic"/>
+          <include name="verifyCleanUpPrefForInvalidLinkByRightClickDynamic"/>
+          <include name="verifyCleanUpPrefForValidLinkByRightClickDynamic"/>
+          <include name="verifyCleanUpPrefForInvalidLinkStatic"/>
+          <include name="verifyCleanUpPrefForBrokenLinkCleanSendByRightClickDynamic"/>
+          <include name="verifyCleanUpPrefForValidLinkStatic"/>
+          <include name="verifyCleanUpPrefForBrokenLinkSkipStatic"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Mylist.MyListTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

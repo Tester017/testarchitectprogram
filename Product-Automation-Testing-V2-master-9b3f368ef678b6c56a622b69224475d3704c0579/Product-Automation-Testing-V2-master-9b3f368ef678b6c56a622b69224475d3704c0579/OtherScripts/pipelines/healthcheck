@@ -1,0 +1,71 @@
+pipeline {
+    agent any
+    stages {
+        stage('Check Node Status') {
+            steps {
+                script {
+                    def nodes = ['labelslave1', 'labelslave2', 'labelslave3', 'labelslave4', 'labelslave5']
+                    
+                    // Map node labels to email addresses
+                    def emailMap = [
+                        'labelslave1': 'hussains@datazoic.com',
+                        'labelslave2': 'shamilya@datazoic.com',
+                        'labelslave3': 'nallendhiran@datazoic.com',
+                        'labelslave4': 'salmankhan@datazoic.com',
+                        'labelslave5': 'kowsalya@datazoic.com'
+                    ]
+                    
+                    nodes.each { nodeLabel ->
+                        try {
+                            // Use a timeout to prevent indefinite waiting
+                            timeout(time: 10, unit: 'SECONDS') {
+                                // Dynamically allocate agent
+                                node(nodeLabel) {
+                                    echo "Node '${nodeLabel}' is online and available."
+                                    sh 'pwd'
+                                    sh 'hostname --ip-address'
+                                    
+                                    // Extract free memory and swap in MB and check if free memory < 1 GB
+                                    def freeMemoryMB = sh(script: '''
+                                        free -m | awk '/^Mem:/ {print $4}'
+                                    ''', returnStdout: true).trim()
+                                    
+                                    def freeSwapMB = sh(script: '''
+                                        free -m | awk '/^Swap:/ {print $4}'
+                                    ''', returnStdout: true).trim()
+                                    
+                                    echo "Free Memory: ${freeMemoryMB} MB"
+                                    echo "Free Swap: ${freeSwapMB} MB"
+                                    
+                                    // Convert free memory to GB for comparison
+                                    def freeMemoryGB = freeMemoryMB.toInteger() / 1024
+                                    
+                                    def currentUser = sh(script: 'whoami', returnStdout: true).trim()
+                                    echo "Current User: ${currentUser}"
+                                    
+                                    // If free memory is less than 1 GB, trigger email
+                                    if (freeMemoryGB < 1) {
+                                        echo "Free Memory is less than 1 GB: ${freeMemoryGB} GB"
+                                        sh """
+                                            pwd
+                                            /home/${currentUser}/daniel/shfiles/sendramemail.sh "Warning: Low Memory on ${nodeLabel}" "${currentBuild.durationString}" "${env.NODE_NAME}" "${freeMemoryGB}" "${freeSwapMB}" "${emailMap[nodeLabel]}"
+                                        """
+                                    } else {
+                                        echo "Sufficient free memory: ${freeMemoryGB} GB"
+                                    }
+                                }
+                            }
+                        } catch (Exception e) {
+                            echo "Node '${nodeLabel}' is offline or not available: ${e.message}"
+                            sh """
+                                echo testinsidesh
+                                pwd
+                                /var/lib/jenkins/workspace/healthcheck/sendemail.sh "${nodeLabel} is offline" "${env.JOB_NAME}" "1" "Failed" "${currentBuild.durationString}" "Jenkins" "${emailMap[nodeLabel]}"
+                            """
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+[
+    {
+        "isExecution":true,
+		"EnvironmentName": "CraigHallum",
+		"BaseUrl": "https://craighallumuat.datazoic.com/chprismstws/",
+		"UserName": "Elavarasan",
+		"PassWord": "ganesh@123",
+		"loginType":"PRISM",
+		"IsEncrypt": false,
+		"toAddress":"DZQAAutomation@datazoic.com",
+		"Dashboard": true,
+		"Activity": true,
+		"Revenue" : true
+	},
+	{	
+		"isExecution":true,
+		"EnvironmentName": "renmac",
+		"BaseUrl": "https://renmacuat.datazoic.com/renmacstws/",
+		"UserName": "Lakshmi",
+		"PassWord": "Automation@123",
+		"loginType":"PRISM",
+		"IsEncrypt": false,
+		"toAddress":"DZQAAutomation@datazoic.com",
+		"Dashboard": true,
+		"Activity": true,
+		"Revenue" : true
+	} ,
+	{
+	    "isExecution":true,
+		"EnvironmentName": "capital",
+		"BaseUrl": "https://capitaloneuat.datazoic.com/prismstws/",
+		"UserName": "Hussain",
+		"PassWord": "Welcome@1",
+		"loginType":"PRISM",
+		"IsEncrypt": true,
+		"toAddress":"DZQAAutomation@datazoic.com",
+		"Dashboard": true,
+		"Activity": true,
+		"Revenue" : true
+	} ,
+	{
+	    "isExecution":true, 
+		"EnvironmentName": "sidoti",
+		"BaseUrl": "https://sidotiuat.datazoic.com/prismstws/",
+		"UserName": "kowsalya",
+		"PassWord": "Sidoti@2023",
+		"loginType":"PRISM",
+		"IsEncrypt": true,
+		"toAddress":"DZQAAutomation@datazoic.com",
+		"Dashboard": true,
+		"Activity": true,
+		"Revenue" : true
+	}  ,
+	{
+	    "isExecution":true,
+		"EnvironmentName": "liberum",
+		"BaseUrl": "https://liberum.datazoic.com/prismstws/",
+		"UserName": "Elavarasan",
+		"PassWord": "Liberum@2023",
+		"loginType":"PRISM",
+		"IsEncrypt": true,
+		"toAddress":"DZQAAutomation@datazoic.com",
+		"Dashboard": true,
+		"Activity": true,
+		"Revenue" : true
+	} ,
+	{
+	    "isExecution":true,
+		"EnvironmentName": "liberum",
+		"BaseUrl": "https://liberum.datazoic.com/prismstws/",
+		"UserName": "Elavarasan",
+		"PassWord": "Liberum@2023",
+		"loginType":"PRISM",
+		"IsEncrypt": true,
+		"toAddress":"DZQAAutomation@datazoic.com",
+		"Dashboard": true,
+		"Activity": true,
+		"Revenue" : true
+	}
+	
+	
+	
+  
+]

@@ -1,0 +1,126 @@
+pipeline {
+    agent any
+    stages {
+        stage('slave') {
+            steps {
+                script {
+                    // Define mappings
+                    def hostMapping = [
+                        'slave1': '192.168.3.66',
+                        'slave2': '192.168.3.160',
+                        'slave3': '192.168.3.161',
+                        'slave4': '192.168.3.162',
+                        'slave5': '192.168.3.164'
+                    ]
+
+                    def userMapping = [
+                        'slave1': 'datazoic',
+                        'slave2': 'support',
+                        'slave3': 'datazoic',
+                        'slave4': 'support',
+                        'slave5': 'datazoic'
+                    ]
+
+                    def credentialMapping = [
+                        'slave1': 'pemof66',
+                        'slave2': 'pemof160',
+                        'slave3': 'pemof161',
+                        'slave4': 'pemof162',
+                        'slave5': 'pemof164'
+                    ]
+
+                    def jenkinsAgentSecrets = [
+                        'slave1': '9ea9f6c8ac6891f9e6b2cae1fe272b36fa4990c2df0bc97146d31255b57b5b94',
+                        'slave2': 'af33e01bbcc5c288a605cc84aaa8aaf96ee2da6bb9e359732d75ccbc0421c669',
+                        'slave3': '5c1d891aa877fabc99c61672ed0c0a282a48408ae56ebc03a5c0cb11793adbe1',
+                        'slave4': '4af3569a3717c89fc8b62c4061f5e203be299b7b48288b5dc52f97101be7c5b8',
+                        'slave5': 'fa29c0a6291103fdcd284f742ba8cd60ffc9eca48bda285adb0e81fd5b04e878'
+                    ]
+
+                    def passwordMapping = [
+                        'slave1': 'ganesh@123',
+                        'slave2': 'ganesh',
+                        'slave3': 'ganesh',
+                        'slave4': 'ganesh',
+                        'slave5': 'ganesh'
+                    ]
+
+                    def selectedIP = hostMapping[params.slave]
+                    def selectedUser = userMapping[params.slave]
+                    def selectedCredential = credentialMapping[params.slave]
+                    def jenkinsSecret = jenkinsAgentSecrets[params.slave]
+                    def selectedPassword = passwordMapping[params.slave]
+                    def workDir = (selectedUser == 'datazoic') ? "/home/datazoic" : "/home/support"
+
+                    if (!selectedIP || !selectedUser || !selectedCredential) {
+                        error "Invalid selection: Slave = ${params.slave}, IP = ${selectedIP}, User = ${selectedUser}, Credential = ${selectedCredential}"
+                    }
+
+                    echo "Connecting to ${params.slave} (${selectedIP}) as ${selectedUser} using credentials: ${selectedCredential}"
+
+                    // Use SSH with proper username and IP
+                    sshagent(credentials: [selectedCredential]) {
+                        sh """
+                            ssh -o StrictHostKeyChecking=no ${selectedUser}@${selectedIP} << EOF
+                            echo "Logged into ${params.slave} (${selectedIP}) as ${selectedUser}"
+                            hostname
+                            whoami
+
+                            if [ "${params.operation}" = "checkMemory" ]; then
+                                echo "==== Memory Usage ===="
+                                free -h | awk '/Mem:/ {print "RAM Free: " \$7 " / " \$2}'
+                                free -h | awk '/Swap:/ {print "Swap Free: " \$4 " / " \$2}'
+
+                                echo "==== Disk Usage ===="
+                                df -h / | awk 'NR==2 {print "Disk Free: " \$4 " / " \$2}'
+
+                            elif [ "${params.operation}" = "removeWorkspace" ]; then
+                                echo "Removing workspace directory..."
+                                rm -rf workspace/
+                                df -h / | awk 'NR==2 {print "Disk Free: " \$4 " / " \$2}'
+
+                            elif [ "${params.operation}" = "connectSlave" ]; then
+                                echo "Starting Jenkins agent on ${params.slave}..."
+                                nohup java -jar agent.jar -url http://192.168.3.112:8080/ -secret ${jenkinsSecret} -name ${params.slave} -webSocket -workDir "${workDir}" > /dev/null 2>&1 &
+                                echo "Jenkins agent started successfully."
+
+                            elif [ "${params.operation}" = "restartPC" ]; then
+                                echo "Restarting ${params.slave}..."
+                                if [ "${selectedUser}" = "datazoic" ]; then
+                                    echo "${selectedPassword}" | sudo -S sync && echo 3 | sudo -S reboot
+                                else
+                                    echo "${selectedPassword}" | su -c "echo '${selectedPassword}' | sudo -S sync && echo 3 | sudo -S reboot" datazoic
+                                fi
+
+                            elif [ "${params.operation}" = "deleteApacheReport" ]; then
+                                echo "Deleting old Apache test reports..."
+                                if [ "${selectedUser}" = "datazoic" ]; then
+                                    if [[ -z "${params.cutoffDate}" || ! "${params.cutoffDate}" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}\$ ]]; then
+                                        echo "Invalid or empty cutoffDate. Please provide in YYYY-MM-DD format."
+                                    else
+                                        echo "${selectedPassword}" | sudo -S find /var/www/html/testreport/qaExecution -type d -name "result*" ! -newermt "${params.cutoffDate}" -exec rm -rf {} +
+                                        echo "${selectedPassword}" | sudo -S find /var/www/html/testreport/smoke -type d -name "result*" ! -newermt "${params.cutoffDate}" -exec rm -rf {} +
+                                        echo "${selectedPassword}" | sudo -S find /var/www/html/testreport/playwright-ts -type d -name "result*" ! -newermt "${params.cutoffDate}" -exec rm -rf {} +
+                                    fi
+                                else
+                                    if [[ -z "${params.cutoffDate}" || ! "${params.cutoffDate}" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}\$ ]]; then
+                                        echo "Invalid or empty cutoffDate. Please provide in YYYY-MM-DD format."
+                                    else
+                                        echo '${selectedPassword}' | su -c "echo '${selectedPassword}' | sudo -S find /var/www/html/testreport/qaExecution -type d -name 'result*' ! -newermt '${params.cutoffDate}' -exec rm -rf {} +" datazoic
+                                        echo '${selectedPassword}' | su -c "echo '${selectedPassword}' | sudo -S find /var/www/html/testreport/smoke -type d -name 'result*' ! -newermt '${params.cutoffDate}' -exec rm -rf {} +" datazoic
+                                        echo '${selectedPassword}' | su -c "echo '${selectedPassword}' | sudo -S find /var/www/html/testreport/playwright-ts -type d -name 'result*' ! -newermt '${params.cutoffDate}' -exec rm -rf {} +" datazoic
+                                    fi
+                                fi
+                            else
+                                echo "Invalid operation: ${params.operation}"
+                                exit 1
+                            fi
+                            exit
+EOF
+                        """
+                    }
+                }
+            }
+        }
+    }
+}

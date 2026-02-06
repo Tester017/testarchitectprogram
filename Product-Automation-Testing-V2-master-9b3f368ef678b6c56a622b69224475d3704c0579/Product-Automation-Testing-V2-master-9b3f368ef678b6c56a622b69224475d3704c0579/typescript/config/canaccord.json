@@ -1,0 +1,15 @@
+{
+    "environment": {
+        "prismUrl": "https://canaccord.datazoic.com/prismst/home.html",
+        "storageStatePath": "secure/storage-state/OutlookLoginAuth_prismalert.json"
+    },
+    "login": {
+        "loginType": "Prism Support SSO"
+    },
+    "Activity": {
+        "parentModule": null
+    },
+    "Readership": {
+        "parentModule": "Research"
+    }
+}

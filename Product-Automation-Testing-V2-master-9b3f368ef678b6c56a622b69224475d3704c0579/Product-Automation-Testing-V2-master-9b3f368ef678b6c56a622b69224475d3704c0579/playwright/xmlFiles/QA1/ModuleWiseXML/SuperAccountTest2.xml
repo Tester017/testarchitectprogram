@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="2" name="Suite" data-provider-thread-count="1">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" verbose="2" name="Test" parallel="methods">
+    <classes>
+      <class name="com.dz.prism.test.SuperAccountTearSheet.SuperAccountTest">
+        <methods>
+          <include name="verifyCleanUpPrefForBrokenLinkSkipFromSuperATS"/>
+          <include name="verifyAnnualCommInSACRevbyAccountTab"/>
+          <include name="verifyCleanUpPrefForBrokenLinkCleanSendFromSuperATS"/>
+          <include name="checkNanInvalidDateInQuickLookTab"/>
+          <include name="verifyCleanUpPrefForInvalidLinkFromSuperATS"/>
+          <include name="saveBulkLogInteration"/>
+          <include name="checkTableUsingShowHideFilter"/>
+          <include name="checkActivityPeriodFilters"/>
+          <include name="verifyAnnualCommInSACRevbyProductTab"/>
+          <include name="checkSuperAccountTearSheetTabs"/>
+          <include name="verifyRevByAccSuperAccount"/>
+          <include name="checkAddSuperAccountErrorToast"/>
+          <include name="checkAccountTierInHeadersForConfigZeroOrOne"/>
+          <include name="verifyCleanUpPrefforvalidLinkFromSuperATS"/>
+          <include name="checkYOYComparisonRenamedHeadersInRevByAcc"/>
+          <include name="addToBulkMailSuperATSContacts"/>
+          <include name="verifyExcludedBulkMailSuperATSContacts"/>
+          <include name="verifySuspendResearchFromSuperATS"/>
+          <include name="addActivityBulkMailSuperATSContacts"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.SuperAccountTearSheet.SuperAccountTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

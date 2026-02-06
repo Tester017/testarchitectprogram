@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite data-provider-thread-count="1" name="Suite" verbose="3">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="3">
+    <classes>
+      <class name="com.dz.prism.test.Dashboard.DashboardTest">
+        <methods>
+          <include name="checkAccCovrdCountInRevByPersonTab"/>
+          <include name="checkAddContactDataFromPlusIcon"/>
+          <include name="checkAddInteractionDataFromPlusIcon"/>
+          <include name="checkAnnuCommInAnnualizedCommTile"/>
+          <include name="checkAnnuCommInGrossCommTileProductPopup"/>
+          <include name="gotoCommissionTilePopup"/>
+          <include name="checkAnnualizedCommissionTiles"/>
+          <include name="checkCommissionByProductWidget"/>
+          <include name="checkCommissionByProductWidgetGridHeaderVerification"/>
+          <include name="checkCommissionByRegionWidget"/>
+          <include name="checkCommissionByRegionWidgetGridHeaderVerification"/>
+          <include name="checkCommissionBySectorInDashboard"/>
+          <include name="checkCommissionBySectorWidgetGridHeaderVerification"/>
+          <include name="checkCorporateAddAccountTabsDataFromPlusIcon"/>
+          <include name="checkDashboardCommWithRevByAccTable"/>
+          <include name="checkDashboardTiles"/>
+          <include name="checkDeltaPCalculationInTopClientsByCommTab"/>
+          <include name="checkFadingContCallIconandIntrMode"/>
+          <include name="checkFadingContactsDataInActivity"/>
+          <include name="checkFadingContactsWhenUpdatingCTS"/>
+          <include name="checkGrossCommissionTilesPopup"/>
+          <include name="checkGrossCommissionTilesPopupDelta"/>
+          <include name="checkGrossCommissionTilesPopupHeaderValidation"/>
+          <include name="checkGrossCommissionTilesPopupWithRevByAccount"/>
+          <include name="checkGrossCommissionasofPreviousDayTiles"/>
+          <include name="checkInvestorAddAccountTabsDataFromPlusIcon"/>
+          <include name="checkPreviousFullYearTiles"/>
+          <include name="checkQuickActionAddAccountContent"/>
+          <include name="checkServiceAddAccountTabsDataFromPlusIcon"/>
+          <include name="checkTabsInDashboard"/>
+          <include name="checkTopClientByCommissionHeadersandSymbols"/>
+          <include name="checkTopClientsByCommTabWithATS"/>
+          <include name="checkTopClientsByCommWithRevByAccount"/>
+          <include name="checkTopClientsByCommissionTableDataForPeriods"/>
+          <include name="checkTopReaserchAnalystHeaders"/>
+          <include name="checkTopResearchBySalesPersonTable"/>
+          <include name="checkTopResearchSalesPersonDeltaCalculation"/>
+          <include name="checkTopResearchSalesPersonExpandTable"/>
+          <include name="checkTopResearchSalesPersonHeadersandSymbols"/>
+          <include name="checkTopResearchSalesPersonTable"/>
+          <include name="checkTopSalesTraderDeltaCalculation"/>
+          <include name="checkTopSalesTraderHeadersandSymbols"/>
+          <include name="checkTopSalesTraderTable"/>
+          <include name="checkTopSalesTraderWithSalesTearSheet"/>
+          <include name="checkTopTickersByCommHeadersandSymbols"/>
+          <include name="checkWdigets"/>
+          <include name="checkpreviousYTDTiles"/>
+          <include name="saveAddInteractionWithSponserResearchCheckBox"/>
+          <include name="verifyAnnualCommInGrossCommPopUpTable"/>
+          <include name="verifyAnnualCommInTopResearchSalesPersonTab"/>
+          <include name="verifyAnnualCommInTopSalesTraderTab"/>
+          <include name="verifyAnnualCommInTopTickerByCommTab"/>
+          <include name="verifyAnnualCommInTopclientByCommTab"/>
+          <include name="verifyDefaultDurationTime"/>
+          <include name="verifyFadingContAccNameAftrEmpChangeInAnalyst"/>
+          <include name="verifyFadingContAftrChangeAccType"/>
+          <include name="verifyFadingContAftrChangeAccTypeFromAnalyst"/>
+          <include name="verifyFadingContFilters"/>
+          <include name="verifySectorWidgetRevByAccountTable"/>
+          <include name="verifySectorWidgetRevByProductTable"/>
+          <include name="verifyTagAsMandFadingContactLogInteractionPage"/>
+          <include name="verifyTopClientByCommPrevFullYearColumn"/>
+          <include name="verifyTopResearchSalesAcctsCoveredData"/>
+          <include name="verifyTopTickersByCommTab"/>
+          <include name="verifyYesterdayDateFilterInDashboard"/>
+          <include name="verifyingFadingContactsFilter"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Dashboard.DashboardTest -->
+      <class name="com.dz.prism.test.Dashboard.ClosedDealsTest">
+        <methods>
+          <include name="checkClosedDealsShowHideFilter"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Dashboard.ClosedDealsTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

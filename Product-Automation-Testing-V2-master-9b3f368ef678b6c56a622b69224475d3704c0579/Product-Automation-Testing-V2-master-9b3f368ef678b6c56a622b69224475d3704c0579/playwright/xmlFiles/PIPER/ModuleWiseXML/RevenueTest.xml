@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" data-provider-thread-count="2" name="Suite" verbose="2">
+  <listeners>
+    <listener class-name="com.dz.core.testng.listeners.DriverListener2"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test" verbose="2">
+    <classes>
+      <class name="com.dz.prism.test.Revenue.RevenueTest">
+        <methods>
+          <!-- <include name="checkSubProdWithATSRevByProdTab"/>
+          <include name="checkSubProdWithDashboardPopUpTile"/>
+          <include name="verifyRegionNameInATSBanner"/>
+          <include name="verifyRevByAccOverallSubProductsComm"/>
+          <include name="verifyRevByAccSubProductsComm"/>
+          <include name="verifyRevByAccSuperAccount"/>
+          <include name="verifyRevByAccTotalGrossCommWithATSTileComm"/>
+          <include name="verifyRevByRegionCommCalculation"/>
+          <include name="verifyRevenueByAccountOnSalesTearSheet"/>
+          <include name="verifyRevenueByAccountTableCommision"/>
+          <include name="verifySubProductInRevByProd"/>
+          <include name="checkCommInRevByAccAndRevByPersonTableWithDashboard"/>
+          <include name="checkTabsInRevenue"/>
+          <include name="checkFiscalYearFilters"/>
+          <include name="checkFiveYearsFilters"/>
+          <include name="verifyRevByAccountGoalComparisonColumn"/>
+          <include name="verifyRevByAccountYOYComparisonDelta"/>
+          <include name="verifyRevByAccPeriodFilters"/>
+          <include name="verifyRevByPersonAccCoveredColumn"/>
+          <include name="checkTradeDrillDown"/>
+          <include name="checkTradeDrillDownForDateFilter"/>
+          <include name="checkTradeDrillDownColVisibility"/>
+          <include name="checkYOYComparisonRenamedHeadersInRevByAcc"/>
+          <include name="checkYOYComparisonRenamedHeadersInRevByPerson"/> -->
+          <include name="verifyAnnualCommInATSRevbyProductForConfigOne"/>
+          <include name="verifyAnnCommvsPrevFullYrCommOfEachProduct"/>
+          <include name="verifyAnnualCommInATSRevbyProductForConfigZero"/>
+          <include name="verifyAnnualCommInRevByAccForConfigOne"/>
+          <include name="verifyRevByAccountAnnualizedCommDelta"/>
+          <include name="verifyAnnualCommInRevByAccForConfigZero"/>
+          <include name="verifyAnnualCommInRevbyPersonForConfigOne"/>
+          <include name="verifyAnnualCommInRevbyPersonForConfigZero"/>
+        </methods>
+      </class> <!-- com.dz.prism.test.Revenue.RevenueTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

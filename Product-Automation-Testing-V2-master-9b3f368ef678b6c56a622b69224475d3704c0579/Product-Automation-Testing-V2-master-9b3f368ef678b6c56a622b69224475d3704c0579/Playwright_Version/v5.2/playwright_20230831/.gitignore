@@ -1,0 +1,15 @@
+/target/
+/test-output/
+/.settings
+/reports
+/src/test/resources/AutoLogin/
+aTemphtml.html
+.classpath
+PlayWrightTestGenerator.bat
+.project
+/PrismApiTesting/.settings
+/PrismApiTesting/target/
+/PrismApiTesting/test-output/
+/PrismApiTesting/.classpath
+/PrismApiTesting/.project
+/bin/
